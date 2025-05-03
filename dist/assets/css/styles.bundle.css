@@ -15743,4 +15743,63 @@ textarea.form-control-lg {
   font-weight: 500;
 }
 
+.footer {
+  background-color: #4c4631;
+  color: white;
+  padding: 2rem 1rem;
+}
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.footer .footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.footer .footer-section {
+  flex: 1 1 200px;
+}
+.footer .footer-section h4, .footer .footer-section .h4 {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.125rem;
+}
+.footer .footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+.footer .footer-section ul li {
+  margin-bottom: 0.5rem;
+}
+.footer .footer-section p {
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+.footer .footer-section a {
+  text-decoration: none;
+}
+.footer .social-icons {
+  display: flex;
+  gap: 1rem;
+}
+.footer .social-icons svg {
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+.footer .social-icons svg:hover {
+  transform: scale(1.2);
+}
+.footer hr {
+  margin: 2rem 0 1rem;
+  border: none;
+  border-top: 1px solid rgba(255, 255, 255, 0.631372549);
+}
+.footer .footer-copy {
+  text-align: center;
+  font-size: 0.9rem;
+}
+
 /*# sourceMappingURL=styles.bundle.css.map*/
