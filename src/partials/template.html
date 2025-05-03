@@ -31,16 +31,13 @@ License: -
 <body>
 
   <!-- Start:: header navbar section -->
+  {{> layout/header.html}}
   <!-- End:: header navbar section -->
 
-   <section class="home-section">
-  <div class="container container-home">
-    <h2 class="section-title">Selamat Datang di Website Kami</h2>
-  </div>
-</section>
- 
+  {{#if @partial-block}} {{> @partial-block }} {{/if}}
 
   <!-- Start:: header navbar section -->
+  {{> layout/footer.html}}
   <!-- End:: header navbar section -->
 
   <!-- Start::Global Bundle Scripts (used by all pages) -->
