@@ -1,0 +1,50 @@
+// Font-face rule with local font file
+// Make sure that you use the right file path within the url() function
+@mixin font-face($font-family-name, $file-name, $font-weight: 400, $font-style: normal) {
+  @font-face {
+    font-family: "#{$font-family-name}";
+    src: url("../../media/fonts/#{$file-name}.eot");
+    src: url("../../media/fonts/#{$file-name}.eot?#iefix") format("embedded-opentype"),
+    url("../../media/fonts/#{$file-name}.woff") format("woff"),
+    url("../../media/fonts/#{$file-name}.ttf") format("truetype"),
+    url("../../media/fonts/#{$file-name}.svg?#webfont") format("svg");
+    font-weight: $font-weight;
+    font-style: $font-style;
+  }
+}
+
+// Keyframe animations with prefixes
+// So you don't need to add multeple keyframes manually
+@mixin keyframes($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+
+  @-moz-keyframes #{$name} {
+    @content;
+  }
+
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+// Text shortener
+// It performs truncation on any text that overflows its containing element and adds an ellipsis (…) to the end
+@mixin text-shorten($line: 1) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $line;
+}
+
+@mixin heading-size($font-size, $mobile-font-size, $line-height, $mobile-line-height) {
+  font-size: $font-size;
+  line-height: $line-height;
+
+  @include media-breakpoint-down(sm) {
+    font-size: $mobile-font-size;
+    line-height: $mobile-line-height;
+  }
+}

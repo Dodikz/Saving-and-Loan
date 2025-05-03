@@ -1,0 +1,9 @@
+.form-control {
+  &::placeholder {
+    font-weight: $font-weight-base;
+  }
+
+  &:focus {
+    border-width: 2px;
+  }
+}
