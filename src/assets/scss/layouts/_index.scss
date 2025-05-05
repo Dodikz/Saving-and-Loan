@@ -1,2 +1,19 @@
 @import 'header';
 @import 'footer';
+
+.home-section {
+  padding-top: 150px;
+  padding-bottom: 100px;
+
+  .container-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+  }
+}
