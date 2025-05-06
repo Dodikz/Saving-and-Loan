@@ -15903,18 +15903,90 @@ textarea.form-control-lg {
 }
 
 .home-section {
-  padding-top: 150px;
-  padding-bottom: 100px;
+  padding-top: 13.375rem;
+  padding-bottom: 6.25rem;
 }
 .home-section .container-home {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.home-section .section-title {
-  font-size: 2.5rem;
+.home-section .display-4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 3.125rem;
+  color: #504B38;
+}
+.home-section .lead {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: #504B38;
+}
+.home-section img {
+  border-radius: 8px;
+}
+.home-section .card {
+  border: 3px solid rgba(0, 0, 0, 0.21);
+}
+.home-section .card .card-body {
+  flex-direction: column;
+  align-items: flex-start;
+}
+.home-section .card .card-body svg {
+  margin-bottom: -0.5rem;
+}
+.home-section .card .card-body .lead {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  font-size: 1.125rem;
+}
+.home-section .card .card-body .text {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  color: #504B38;
+}
+.home-section .location-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #f1f1f1;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.home-section .location-wrapper .location-info {
+  flex: 1;
+  padding: 2rem;
+  background-color: #f1f1f1;
+  font-family: Arial, sans-serif;
+}
+.home-section .location-wrapper .location-info h4, .home-section .location-wrapper .location-info .h4,
+.home-section .location-wrapper .location-info h5,
+.home-section .location-wrapper .location-info .h5 {
+  margin-top: 0;
   font-weight: bold;
-  text-align: center;
+}
+.home-section .location-wrapper .location-info p {
+  margin: 0.5rem 0;
+  display: flex;
+  align-items: center;
+  color: #504B38;
+}
+.home-section .location-wrapper .location-info p .icon {
+  display: inline-flex;
+  margin-right: 0.5rem;
+}
+.home-section .location-wrapper .location-info p .icon svg {
+  fill: #333;
+}
+.home-section .location-wrapper .location-map {
+  flex: 1;
+  min-height: 300px;
+}
+.home-section .location-wrapper .location-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
 /*# sourceMappingURL=styles.bundle.css.map*/
