@@ -17,12 +17,12 @@
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-/*!*********************************************!*\
-  !*** ./src/assets/scss/pages/articles.scss ***!
-  \*********************************************/
+/*!********************************************!*\
+  !*** ./src/assets/scss/pages/layanan.scss ***!
+  \********************************************/
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 /******/ })()
 ;
-//# sourceMappingURL=articles.js.map
+//# sourceMappingURL=layanan.js.map
