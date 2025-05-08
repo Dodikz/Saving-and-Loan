@@ -39,9 +39,13 @@
           display: flex;
           align-items: center;
           gap: 0.25rem;
+          transition: all linear 0.4s;
   
           &:hover {
             color: #504B38;
+            svg{
+              rotate: 180deg !important;
+            }
           }
   
           .caret {
@@ -50,18 +54,21 @@
               width: 15px;
               height: 15px;
               margin-top: 1px;
+              rotate: 0deg;
+              transition: all linear 0.2s;
             }
           }
         }
   
         &.dropdown:hover .dropdown-menu {
           display: block;
+          opacity: 1;
         }
   
         .dropdown-menu {
+          opacity: 0;
           display: none;
           position: absolute;
-          top: 4rem;
           left: 0;
           background-color: #fff;
           border-radius: 0.5rem;
@@ -69,6 +76,7 @@
           min-width: 150px;
           padding: 0.5rem 0;
           z-index: 10;
+          transition: all linear 0.4s;
   
           li a {
             display: block;

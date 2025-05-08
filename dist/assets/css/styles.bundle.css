@@ -15782,9 +15782,13 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   gap: 0.25rem;
+  transition: all linear 0.4s;
 }
 .navbar .navbar-menu li a:hover {
   color: #504B38;
+}
+.navbar .navbar-menu li a:hover svg {
+  rotate: 180deg !important;
 }
 .navbar .navbar-menu li a .caret {
   display: inline-flex;
@@ -15793,14 +15797,17 @@ textarea.form-control-lg {
   width: 15px;
   height: 15px;
   margin-top: 1px;
+  rotate: 0deg;
+  transition: all linear 0.2s;
 }
 .navbar .navbar-menu li.dropdown:hover .dropdown-menu {
   display: block;
+  opacity: 1;
 }
 .navbar .navbar-menu li .dropdown-menu {
+  opacity: 0;
   display: none;
   position: absolute;
-  top: 4rem;
   left: 0;
   background-color: #fff;
   border-radius: 0.5rem;
@@ -15808,6 +15815,7 @@ textarea.form-control-lg {
   min-width: 150px;
   padding: 0.5rem 0;
   z-index: 10;
+  transition: all linear 0.4s;
 }
 .navbar .navbar-menu li .dropdown-menu li a {
   display: block;
