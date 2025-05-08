@@ -10,4 +10,20 @@
     padding-top: 8.375rem;
     padding-bottom: 6.25rem;
     background-color: $white;
+
+    label{
+        font-family: 'Inter', sans-serif;
+        font-weight: 700;
+        font-size: 1.125rem;
+        color: #504B38;
+    }
+
+
+    a{
+        font-family: 'Inter', sans-serif;
+        font-weight: 500;
+        font-size: 0.875rem;
+        color: #504B38;
+    }
+
 }

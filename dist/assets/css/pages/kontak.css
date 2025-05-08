@@ -100,7 +100,7 @@
   font-style: italic;
 }
 /*!
- * Bootstrap Reboot v5.3.5 (https://getbootstrap.com/)
+ * Bootstrap Reboot v5.3.6 (https://getbootstrap.com/)
  * Copyright 2011-2025 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
@@ -824,6 +824,18 @@ h6 {
   padding-top: 8.375rem;
   padding-bottom: 6.25rem;
   background-color: #FFFFFF;
+}
+.kontak-section label {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 1.125rem;
+  color: #504B38;
+}
+.kontak-section a {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #504B38;
 }
 
 /*# sourceMappingURL=kontak.css.map*/
