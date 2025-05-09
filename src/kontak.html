@@ -1,162 +1,90 @@
 {{#> partials/template_non-user.html }}
-<section class="kontak-section ">
-    <div class="container text-center mb-4">
-        <h1 class="fw-bold" style="color: #5d503d;">Hubungi Kami</h1>
-        <p class="mt-2">Kami siap membantu kebutuhan Anda. Jangan ragu untuk menghubungi kami<br>
-            melalui formulir atau informasi kontak di bawah ini.</p>
-    </div>
+<section class="kontak-section">
+  <div class="kontak-container">
+    <h1 class="kontak-heading">Hubungi Kami</h1>
+    <p class="kontak-subheading">
+      Kami siap membantu kebutuhan Anda. Jangan ragu untuk menghubungi kami<br />
+      melalui formulir atau informasi kontak di bawah ini.
+    </p>
+  </div>
 
-    <div class="container">
-        <div class="row gy-5 justify-content-center align-items-start">
-            <div class="col-md-6">
-                <div class="p-4 border rounded gap-4">
-                    <form>
-                        <div class="mb-3">
-                            <label for="nama" class="form-label">Nama Lengkap</label>
-                            <input type="text" class="form-control" id="nama" placeholder="Nama Lengkap">
-                        </div>
-                        <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Email">
-                        </div>
-                        <div class="mb-3">
-                            <label for="telepon" class="form-label">Nomer Telepon</label>
-                            <input type="text" class="form-control" id="telepon" placeholder="Nomer Telepon">
-                        </div>
-                        <div class="mb-3">
-                            <label for="pesan" class="form-label">Pesan</label>
-                            <textarea class="form-control" id="pesan" rows="4" placeholder="Pesan"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-dark w-100">Kirim Pesan</button>
-                    </form>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-                <div class="mb-3 d-flex gap-4">
-                    <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="35px" viewBox="0 0 64 64"
-                        enable-background="new 0 0 64 64" xml:space="preserve" fill="#504B38">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path fill="#504B38"
-                                d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24 C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24 C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z">
-                            </path>
-                        </g>
-                    </svg>
-                    <div>
-                        <strong>Alamat Kantor</strong><br>
-                        Jl.nn ajah duluh No.123<br>
-                        Kota Anomali, 098765
-                    </div>
-                </div>
-                <div class="mb-3 d-flex gap-4">
-                    <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <path
-                                d="M16.5562 12.9062L16.1007 13.359C16.1007 13.359 15.0181 14.4355 12.0631 11.4972C9.10812 8.55901 10.1907 7.48257 10.1907 7.48257L10.4775 7.19738C11.1841 6.49484 11.2507 5.36691 10.6342 4.54348L9.37326 2.85908C8.61028 1.83992 7.13596 1.70529 6.26145 2.57483L4.69185 4.13552C4.25823 4.56668 3.96765 5.12559 4.00289 5.74561C4.09304 7.33182 4.81071 10.7447 8.81536 14.7266C13.0621 18.9492 17.0468 19.117 18.6763 18.9651C19.1917 18.9171 19.6399 18.6546 20.0011 18.2954L21.4217 16.883C22.3806 15.9295 22.1102 14.2949 20.8833 13.628L18.9728 12.5894C18.1672 12.1515 17.1858 12.2801 16.5562 12.9062Z"
-                                fill="#504B38"></path>
-                        </g>
-                    </svg>
-                    <div>
-                        <strong>Nomer Telepon</strong><br>
-                        +62 123 456 7890
-                    </div>
-                </div>
-                <div class="mb-3 d-flex gap-4">
-                    <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                        <g id="SVGRepo_iconCarrier">
-                            <rect width="24" height="24" fill="white"></rect>
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M5.96802 4H18.032C18.4706 3.99999 18.8491 3.99998 19.1624 4.02135C19.4922 4.04386 19.8221 4.09336 20.1481 4.22836C20.8831 4.53284 21.4672 5.11687 21.7716 5.85195C21.9066 6.17788 21.9561 6.50779 21.9787 6.83762C22 7.15088 22 7.52936 22 7.96801V16.032C22 16.4706 22 16.8491 21.9787 17.1624C21.9561 17.4922 21.9066 17.8221 21.7716 18.1481C21.4672 18.8831 20.8831 19.4672 20.1481 19.7716C19.8221 19.9066 19.4922 19.9561 19.1624 19.9787C18.8491 20 18.4706 20 18.032 20H5.96801C5.52936 20 5.15088 20 4.83762 19.9787C4.50779 19.9561 4.17788 19.9066 3.85195 19.7716C3.11687 19.4672 2.53284 18.8831 2.22836 18.1481C2.09336 17.8221 2.04386 17.4922 2.02135 17.1624C1.99998 16.8491 1.99999 16.4706 2 16.032V7.96802C1.99999 7.52937 1.99998 7.15088 2.02135 6.83762C2.04386 6.50779 2.09336 6.17788 2.22836 5.85195C2.53284 5.11687 3.11687 4.53284 3.85195 4.22836C4.17788 4.09336 4.50779 4.04386 4.83762 4.02135C5.15088 3.99998 5.52937 3.99999 5.96802 4ZM4.31745 6.27777C4.68114 5.86214 5.3129 5.82002 5.72854 6.1837L11.3415 11.095C11.7185 11.4249 12.2815 11.4249 12.6585 11.095L18.2715 6.1837C18.6871 5.82002 19.3189 5.86214 19.6825 6.27777C20.0462 6.69341 20.0041 7.32517 19.5885 7.68885L13.9755 12.6002C12.8444 13.5899 11.1556 13.5899 10.0245 12.6002L4.41153 7.68885C3.99589 7.32517 3.95377 6.69341 4.31745 6.27777Z"
-                                fill="#504B38"></path>
-                        </g>
-                    </svg>
-                    <div>
-                        <strong>Email</strong><br>
-                        <a>tralalatrileeh@gmail.com</a>
-                    </div>
-                </div>
-                <hr>
-                <div class="mb-3">
-                    <strong>Ikuti Kami</strong><br>
-                    <div class="gap-4 d-flex justify-content-start align-items-start">
-                        <a href="#" class="gap-4">
-                            <svg width="35px" height="35px" viewBox="0 0 24 24" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path
-                                        d="M20 12.05C19.9813 10.5255 19.5273 9.03809 18.6915 7.76295C17.8557 6.48781 16.673 5.47804 15.2826 4.85257C13.8921 4.2271 12.3519 4.01198 10.8433 4.23253C9.33473 4.45309 7.92057 5.10013 6.7674 6.09748C5.61422 7.09482 4.77005 8.40092 4.3343 9.86195C3.89856 11.323 3.88938 12.8781 4.30786 14.3442C4.72634 15.8103 5.55504 17.1262 6.69637 18.1371C7.83769 19.148 9.24412 19.8117 10.75 20.05V14.38H8.75001V12.05H10.75V10.28C10.7037 9.86846 10.7483 9.45175 10.8807 9.05931C11.0131 8.66687 11.23 8.30827 11.5161 8.00882C11.8022 7.70936 12.1505 7.47635 12.5365 7.32624C12.9225 7.17612 13.3368 7.11255 13.75 7.14003C14.3498 7.14824 14.9482 7.20173 15.54 7.30003V9.30003H14.54C14.3676 9.27828 14.1924 9.29556 14.0276 9.35059C13.8627 9.40562 13.7123 9.49699 13.5875 9.61795C13.4627 9.73891 13.3667 9.88637 13.3066 10.0494C13.2464 10.2125 13.2237 10.387 13.24 10.56V12.07H15.46L15.1 14.4H13.25V20C15.1399 19.7011 16.8601 18.7347 18.0985 17.2761C19.3369 15.8175 20.0115 13.9634 20 12.05Z"
-                                        fill="#504B38"></path>
-                                </g>
-                            </svg>
-                            @tralala
-                        </a>
-                        <a href="#" class="gap-4">
-                            <svg width="35px" height="35px" viewBox="0 -0.5 25 25" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M15.5 5H9.5C7.29086 5 5.5 6.79086 5.5 9V15C5.5 17.2091 7.29086 19 9.5 19H15.5C17.7091 19 19.5 17.2091 19.5 15V9C19.5 6.79086 17.7091 5 15.5 5Z"
-                                        stroke="#504B38" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    </path>
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M12.5 15C10.8431 15 9.5 13.6569 9.5 12C9.5 10.3431 10.8431 9 12.5 9C14.1569 9 15.5 10.3431 15.5 12C15.5 12.7956 15.1839 13.5587 14.6213 14.1213C14.0587 14.6839 13.2956 15 12.5 15Z"
-                                        stroke="#504B38" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                    </path>
-                                    <rect x="15.5" y="9" width="2" height="2" rx="1" transform="rotate(-90 15.5 9)"
-                                        fill="#504B38"></rect>
-                                    <rect x="16" y="8.5" width="1" height="1" rx="0.5" transform="rotate(-90 16 8.5)"
-                                        stroke="#504B38" stroke-linecap="round"></rect>
-                                </g>
-                            </svg>
-                            @tralala
-                        </a>
-                        <a href="#" class="gap-4">
-                            <svg width="30px" height="30px" viewBox="0 -2 20 20" version="1.1"
-                                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-                                fill="#504B38">
-                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                                <g id="SVGRepo_iconCarrier">
-                                    <title>twitter [#154]</title>
-                                    <desc>Created with Sketch.</desc>
-                                    <defs> </defs>
-                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                        <g id="Dribbble-Light-Preview" transform="translate(-60.000000, -7521.000000)"
-                                            fill="#504B38">
-                                            <g id="icons" transform="translate(56.000000, 160.000000)">
-                                                <path
-                                                    d="M10.29,7377 C17.837,7377 21.965,7370.84365 21.965,7365.50546 C21.965,7365.33021 21.965,7365.15595 21.953,7364.98267 C22.756,7364.41163 23.449,7363.70276 24,7362.8915 C23.252,7363.21837 22.457,7363.433 21.644,7363.52751 C22.5,7363.02244 23.141,7362.2289 23.448,7361.2926 C22.642,7361.76321 21.761,7362.095 20.842,7362.27321 C19.288,7360.64674 16.689,7360.56798 15.036,7362.09796 C13.971,7363.08447 13.518,7364.55538 13.849,7365.95835 C10.55,7365.79492 7.476,7364.261 5.392,7361.73762 C4.303,7363.58363 4.86,7365.94457 6.663,7367.12996 C6.01,7367.11125 5.371,7366.93797 4.8,7366.62489 L4.8,7366.67608 C4.801,7368.5989 6.178,7370.2549 8.092,7370.63591 C7.488,7370.79836 6.854,7370.82199 6.24,7370.70483 C6.777,7372.35099 8.318,7373.47829 10.073,7373.51078 C8.62,7374.63513 6.825,7375.24554 4.977,7375.24358 C4.651,7375.24259 4.325,7375.22388 4,7375.18549 C5.877,7376.37088 8.06,7377 10.29,7376.99705"
-                                                    id="twitter-[#154]"> </path>
-                                            </g>
-                                        </g>
-                                    </g>
-                                </g>
-                            </svg>
-                            @tralala
-                        </a>
-                    </div>
-                </div>
-                <div>
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.2861801051!2d112.5493810698351!3d-7.978637204840746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Malang%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1746503064828!5m2!1sen!2sid"
-                        width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
+  <div class="kontak-wrapper">
+    <div class="kontak-form-card">
+      <form>
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" placeholder="Nama Lengkap" />
         </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <label for="telepon">Nomor Telepon</label>
+          <input type="text" id="telepon" placeholder="Nomor Telepon" />
+        </div>
+        <div class="form-group">
+          <label for="pesan">Pesan</label>
+          <textarea id="pesan" rows="4" placeholder="Pesan"></textarea>
+        </div>
+        <button type="submit" class="btn-submit">Kirim Pesan</button>
+      </form>
     </div>
+
+    <div class="kontak-info">
+      <div class="info-item">
+        <div class="icon">
+          <img src="assets/media/svg/location.svg" alt="Location Icon" />
+        </div>
+        <div>
+          <strong>Alamat Kantor</strong><br />
+          Jl.nn ajah duluh No.123<br />
+          Kota Anomali, 098765
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="icon">
+          <img src="assets/media/svg/location.svg" alt="Location Icon" />
+        </div>
+        <div>
+          <strong>Nomor Telepon</strong><br />
+          +62 123 456 7890
+        </div>
+      </div>
+      <div class="info-item">
+        <div class="icon">
+          <img src="assets/media/svg/location.svg" alt="Location Icon" />
+        </div>
+        <div>
+          <strong>Email</strong><br />
+          info@example.com
+        </div>
+      </div>
+
+      <hr>
+      
+      <strong>Ikuti Kami</strong><br/>
+      <div class="medsos-info">
+        <div class="icon">
+          <img src="assets/media/svg/location.svg" alt="Location Icon" />
+        </div>
+        <p>@tralala</p>
+        <div class="icon">
+          <img src="assets/media/svg/location.svg" alt="Location Icon" />
+        </div>
+        <p>@tralala</p>
+        <div class="icon">
+          <img src="assets/media/svg/location.svg" alt="Location Icon" />
+        </div>
+        <p>@tralala</p>
+      </div>
+      <div class="location-map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126438.2861801051!2d112.5493810698351!3d-7.978637204840746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd62822063dc2fb%3A0x78879446481a4da2!2sMalang%2C%20Malang%20City%2C%20East%20Java!5e0!3m2!1sen!2sid!4v1746503064828!5m2!1sen!2sid"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </div>
 </section>
-
-
-{{/ partials/template_non-user.html }}
+{{/partials/template_non-user.html}}

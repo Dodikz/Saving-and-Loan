@@ -825,17 +825,157 @@ h6 {
   padding-bottom: 6.25rem;
   background-color: #FFFFFF;
 }
-.kontak-section label {
-  font-family: "Inter", sans-serif;
-  font-weight: 700;
-  font-size: 1.125rem;
-  color: #504B38;
+.kontak-section .kontak-container {
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
-.kontak-section a {
-  font-family: "Inter", sans-serif;
+.kontak-section .kontak-container .kontak-heading {
+  font-size: 3.875rem;
+  font-weight: 700;
+  color: #504b38;
+}
+.kontak-section .kontak-container .kontak-subheading {
+  font-size: 1rem;
   font-weight: 500;
+  color: #504b38;
+}
+.kontak-section .kontak-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.5rem;
+  justify-content: center;
+  margin-left: 2rem;
+}
+@media (max-width: 767.98px) {
+  .kontak-section .kontak-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.kontak-section .kontak-wrapper .kontak-form-card {
+  background-color: #fff;
+  padding: 2rem;
+  border: 0.1875rem solid #ccc;
+  border-radius: 0.5rem;
+  width: 100%;
+  max-width: 40.25rem;
+  max-height: 40rem;
+}
+@media (max-width: 575.98px) {
+  .kontak-section .kontak-wrapper .kontak-form-card {
+    max-width: 100%;
+  }
+}
+.kontak-section .kontak-wrapper .kontak-form-card form .form-group {
+  margin-bottom: 1.25rem;
+}
+.kontak-section .kontak-wrapper .kontak-form-card form .form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: #504b38;
+}
+.kontak-section .kontak-wrapper .kontak-form-card form .form-group input,
+.kontak-section .kontak-wrapper .kontak-form-card form .form-group textarea {
+  width: 100%;
+  padding: 0.625rem 0.875rem;
+  border: 0.125rem solid #ccc;
+  border-radius: 0.375rem;
   font-size: 0.875rem;
-  color: #504B38;
+  outline: none;
+}
+.kontak-section .kontak-wrapper .kontak-form-card form .form-group input:focus,
+.kontak-section .kontak-wrapper .kontak-form-card form .form-group textarea:focus {
+  border-color: #504b38;
+}
+.kontak-section .kontak-wrapper .kontak-form-card form .form-group textarea {
+  resize: vertical;
+}
+.kontak-section .kontak-wrapper .kontak-form-card form .btn-submit {
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #504b38;
+  color: white;
+  font-weight: 600;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.kontak-section .kontak-wrapper .kontak-form-card form .btn-submit:hover {
+  background-color: #3e3a2c;
+}
+.kontak-section .kontak-wrapper hr {
+  width: 100%;
+  height: 0.125rem;
+  background-color: #504b38;
+  margin: 2.5rem 0;
+}
+.kontak-section .kontak-wrapper .kontak-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 31.25rem;
+  width: 100%;
+}
+@media (max-width: 575.98px) {
+  .kontak-section .kontak-wrapper .kontak-info {
+    max-width: 100%;
+  }
+}
+.kontak-section .kontak-wrapper .kontak-info .info-item {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.kontak-section .kontak-wrapper .kontak-info .info-item .icon {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  color: #504b38;
+}
+.kontak-section .kontak-wrapper .kontak-info .info-item .icon img {
+  width: 100%;
+  height: 100%;
+  color: #504b38;
+}
+.kontak-section .kontak-wrapper .kontak-info .info-item strong {
+  display: block;
+  margin-bottom: -1.75rem;
+  color: #504b38;
+}
+.kontak-section .kontak-wrapper .kontak-info .info-item div {
+  font-size: 0.875rem;
+  color: #555;
+}
+.kontak-section .kontak-wrapper .medsos-info {
+  display: flex;
+  gap: 2rem;
+}
+.kontak-section .kontak-wrapper .medsos-info .icon {
+  flex-shrink: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+  fill: #504b38;
+}
+.kontak-section .kontak-wrapper .medsos-info .icon img {
+  width: 100%;
+  height: 100%;
+  fill: #504b38;
+}
+.kontak-section .kontak-wrapper .medsos-info a {
+  color: #504b38;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+.kontak-section .kontak-wrapper .medsos-info a:hover {
+  color: #3e3a2c;
+}
+.kontak-section .kontak-wrapper .location-map iframe {
+  width: 100%;
+  height: 15.75rem;
+  border: none;
 }
 
 /*# sourceMappingURL=kontak.css.map*/
