@@ -13,6 +13,171 @@
   .kontak-container {
     text-align: center;
     margin-bottom: 2.5rem;
+    gap: 4rem;
+    display: flex;
+    flex-direction: column;
+
+    .kontak-wrapper {
+      display: flex;
+      gap: 2rem;
+  
+      @include media-breakpoint-down(md) {
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      .kontak-form-card {
+        background-color: #fff;
+        padding: 2rem;
+        border: toRem(3) solid #ccc;
+        border-radius: 0.5rem;
+        width: 100%;
+  
+        @include media-breakpoint-down(sm) {
+          max-width: 100%;
+        }
+  
+        form {
+          .form-group {
+            margin-bottom: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;;
+  
+            label {
+              display: block;
+              margin-bottom: 0.5rem;
+              font-size: toRem(18);
+              font-weight: 500;
+              color: #504b38;
+            }
+  
+            input,
+            textarea {
+              width: 100%;
+              padding: 0.625rem 0.875rem;
+              border: toRem(2) solid #ccc;
+              border-radius: 0.375rem;
+              font-size: 0.875rem;
+              outline: none;
+  
+              &:focus {
+                border-color: #504b38;
+              }
+            }
+  
+            textarea {
+              resize: vertical;
+            }
+          }
+  
+          .btn-submit {
+            width: 100%;
+            padding: 0.75rem;
+            background-color: #504b38;
+            color: white;
+            font-weight: 600;
+            border: none;
+            border-radius: 0.375rem;
+            cursor: pointer;
+            transition: background 0.3s;
+  
+            &:hover {
+              background-color: #3e3a2c;
+            }
+          }
+        }
+      }
+  
+      hr{
+        width: 100%;
+        background-color: #504b38;
+      }
+  
+      .kontak-info {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        width: 100%;
+  
+        @include media-breakpoint-down(sm) {
+          max-width: 100%;
+        }
+  
+        .info-items {
+          display: flex;
+          gap: 1rem;
+          align-items: flex-start;
+  
+          .info-item{
+            font-size: 0.875rem;
+            color: #555;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+          }
+          .icon {
+            flex-shrink: 0;
+            width: toRem(36);
+            height: toRem(36);
+            color: #504b38;
+  
+            img {
+              width: 100%;
+              height: 100%;
+              color: #504b38;
+            }
+          }
+  
+          strong {
+            display: block;
+            margin-bottom: -1.75rem;
+            color: #504b38;
+          }
+  
+          div {
+            font-size: 0.875rem;
+            color: #555;
+          }
+        }
+      }
+  
+      .medsos-info {
+        display: flex;
+        gap: 2rem;
+  
+        .icon {
+          flex-shrink: 0;
+          width: toRem(36);
+          height: toRem(36);
+          fill: #504b38;
+  
+          img {
+            width: 100%;
+            height: 100%;
+            fill: #504b38;
+          }
+        }
+  
+        a {
+          color: #504b38;
+          font-size: toRem(24);
+          transition: color 0.3s;
+  
+          &:hover {
+            color: #3e3a2c;
+          }
+        }
+      }
+  
+      .location-map {
+        iframe {
+          width: 100%;
+          height: 15.75rem;
+          border: none;
+        }
+      }
+    }
 
     .kontak-heading {
       font-size: toRem(62);
@@ -27,164 +192,6 @@
     }
   }
 
-  .kontak-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2.5rem;
-    justify-content: center;
-    margin-left: 2rem;
-
-    @include media-breakpoint-down(md) {
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .kontak-form-card {
-      background-color: #fff;
-      padding: 2rem;
-      border: toRem(3) solid #ccc;
-      border-radius: 0.5rem;
-      width: 100%;
-      max-width: 40.25rem;
-      max-height: 40rem;
-
-      @include media-breakpoint-down(sm) {
-        max-width: 100%;
-      }
-
-      form {
-        .form-group {
-          margin-bottom: 1.25rem;
-
-          label {
-            display: block;
-            margin-bottom: 0.5rem;
-            font-size: toRem(18);
-            font-weight: 500;
-            color: #504b38;
-          }
-
-          input,
-          textarea {
-            width: 100%;
-            padding: 0.625rem 0.875rem;
-            border: toRem(2) solid #ccc;
-            border-radius: 0.375rem;
-            font-size: 0.875rem;
-            outline: none;
-
-            &:focus {
-              border-color: #504b38;
-            }
-          }
-
-          textarea {
-            resize: vertical;
-          }
-        }
-
-        .btn-submit {
-          width: 100%;
-          padding: 0.75rem;
-          background-color: #504b38;
-          color: white;
-          font-weight: 600;
-          border: none;
-          border-radius: 0.375rem;
-          cursor: pointer;
-          transition: background 0.3s;
-
-          &:hover {
-            background-color: #3e3a2c;
-          }
-        }
-      }
-    }
-
-    hr{
-      width: 100%;
-      height: 0.125rem;
-      background-color: #504b38;
-      margin: 2.5rem 0;
-    }
-
-    .kontak-info {
-      display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      max-width: 31.25rem;
-      width: 100%;
-
-      @include media-breakpoint-down(sm) {
-        max-width: 100%;
-      }
-
-      .info-item {
-        display: flex;
-        gap: 1rem;
-        align-items: flex-start;
-
-        .icon {
-          flex-shrink: 0;
-          width: toRem(36);
-          height: toRem(36);
-          color: #504b38;
-
-          img {
-            width: 100%;
-            height: 100%;
-            color: #504b38;
-          }
-        }
-
-        strong {
-          display: block;
-          margin-bottom: -1.75rem;
-          color: #504b38;
-        }
-
-        div {
-          font-size: 0.875rem;
-          color: #555;
-        }
-      }
-    }
-
-    .medsos-info {
-      display: flex;
-      gap: 2rem;
-
-      .icon {
-        flex-shrink: 0;
-        width: toRem(36);
-        height: toRem(36);
-        fill: #504b38;
-
-        img {
-          width: 100%;
-          height: 100%;
-          fill: #504b38;
-        }
-      }
-
-      a {
-        color: #504b38;
-        font-size: toRem(24);
-        transition: color 0.3s;
-
-        &:hover {
-          color: #3e3a2c;
-        }
-      }
-    }
-
-    .location-map {
-      iframe {
-        width: 100%;
-        height: 15.75rem;
-        border: none;
-      }
-    }
-  }
+  
 }
 
