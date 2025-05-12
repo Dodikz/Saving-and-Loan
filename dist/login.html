@@ -58,62 +58,24 @@ License: -
 <body>
 
   <!-- Start:: header navbar section -->
-  <nav class="navbar">
-    <div class="container">
-      <div class="navbar-brand">
-        <img src="assets/media/images/Logo.png" alt="Logo" />
-      </div>
-      <ul class="navbar-menu">
-        <li><a href="index.html">Beranda</a></li>
-        <li><a href="layanan.html">Layanan</a></li>
-        <li class="dropdown">
-          <a href="tentangkami.html">
-            Tentang Kami
-            <span class="caret">
-              <svg fill="#000000" width="15px" height="15px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0.256 8.606c0-0.269 0.106-0.544 0.313-0.75 0.412-0.412 1.087-0.412 1.5 0l14.119 14.119 13.913-13.912c0.413-0.412 1.087-0.412 1.5 0s0.413 1.088 0 1.5l-14.663 14.669c-0.413 0.413-1.088 0.413-1.5 0l-14.869-14.869c-0.213-0.213-0.313-0.481-0.313-0.756z" />
-              </svg>
-            </span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Test 1</a></li>
-            <li><a href="#">Test 2</a></li>
-            <li><a href="#">Test 2</a></li>
-          </ul>
-        </li>
-        <li><a href="artikel.html">Artikel</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-      </ul>
-      <div class="navbar-actions">
-        <button class="btn btn-dark">Sign Up</button>
-        <button class="btn btn-light">Login</button>
-      </div>
-    </div>
-  </nav>  <!-- End:: header navbar section -->
+   <div style="margin-top: 4rem"></div>
+  <!-- End:: header navbar section -->
 
    <section class="login-section">
   <div class="container container--login">
-    <div class="row">
-      <div class="col-lg-6">
-        <h1 class="display-4">Login</h1>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+    <div class="login-form">
+      <h2 class="login-title">Login</h2>
+      <form action="/login" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" />
+        </div>
+        <button type="submit" class="btn-submit">Login</button>
+      </form>
     </div>
   </div>
 </section>
@@ -124,7 +86,7 @@ License: -
       <div class="container">
           <div class="footer-grid">
               <div class="footer-section">
-                  <h4>Koperasi Bombardilo</h4>
+                  <h4>Koperasi Indonesia</h4>
                   <p>Koperasi anomali bombardilo crocodilo<br>anomali ini hanya muncul bang bang discord discord.</p>
               </div>
               <div class="footer-section">
