@@ -1,27 +1,20 @@
-{{#> partials/template_non-user.html }}
+{{#> partials/login_pages.html }}
 <section class="login-section">
   <div class="container container--login">
-    <div class="row">
-      <div class="col-lg-6">
-        <h1 class="display-4">Login</h1>
-        <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Email address</label>
-            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-              placeholder="Enter email">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputPassword1">Password</label>
-            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-          </div>
-          <div class="form-group form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Check me out</label>
-          </div>
-          <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-      </div>
+    <div class="login-form">
+      <h2 class="login-title">Login</h2>
+      <form action="/login" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" />
+        </div>
+        <button type="submit" class="btn-submit">Login</button>
+      </form>
     </div>
   </div>
 </section>
-{{/ partials/template_non-user.html }}
+{{/ partials/login_pages.html }}
