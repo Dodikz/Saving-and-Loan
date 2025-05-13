@@ -1,3 +1,133 @@
-.sidebar{
-  
+.sidebar {
+  width: 14rem;
+  background-color: #504b38;
+  border-radius: 0 1.75rem 1.75rem 0;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+  transition: width 0.3s ease;
+  font-family: "Inter", sans-serif;
+
+  .logo img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: width 0.3s ease;
+  }
+  .logo .large-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 1.25rem 0.75rem;
+    img {
+      width: 100%;
+      height: auto;
+      transition: width 0.3s ease;
+    }
+  }
+  .logo .small-logo {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    img {
+      width: 50%;
+      height: 50%;
+      transition: width 0.3s ease;
+    }
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    padding: 0.625rem 1.25rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+
+    &:hover {
+      background-color: #6b5f4d;
+      color: #fff;
+    }
+
+    &.active {
+      background-color: #ffff;
+      color: #504b38;
+
+       img {
+      filter: invert(31%) sepia(22%) saturate(431%) hue-rotate(7deg)
+        brightness(47%) contrast(91%);
+    }
+    }
+
+  }
+  .nav-link img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.625rem;
+    //   fill: #fff;
+  }
+}
+
+.sidebar.collapsed {
+  width: 4.75rem;
+
+  .logo {
+    margin: 0 auto;
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .logo .large-logo {
+    display: none;
+    margin-top: 0.75rem;
+  }
+
+  .logo .small-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0.75rem 1.25rem 0.75rem;
+    img {
+      width: 50%;
+      height: auto;
+      transition: width 0.3s ease;
+    }
+  }
+
+  .nav-link {
+    justify-content: center;
+
+    img {
+      margin-right: 0;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+
+.navbar.collapsed {
+  position: fixed;
+  top: 1.5rem;
+  left: 52.5%;
+  transform: translateX(-50%);
+  background-color: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0 2px #e6e6e6;
+  z-index: 1000;
+  width: 100%;
+  max-width: 90%;
+  transition: max-width 0.3s ease;
+  transition: left 0.3s ease;
 }
