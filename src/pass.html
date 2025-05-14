@@ -1,0 +1,20 @@
+{{#> partials/login_pages.html }}
+<section class="login-section">
+  <div class="container container--login">
+    <div class="login-form">
+      <h2 class="login-title">Login</h2>
+      <form action="/login" method="POST">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" />
+        </div>
+        <button type="submit" class="btn-submit">Login</button>
+      </form>
+    </div>
+  </div>
+</section>
+{{/ partials/login_pages.html }}
