@@ -34,22 +34,10 @@ License: -
         return window.location.href.includes(url);
       }
 
-      if (isCurrentPage("index.html")) {
+      if (isCurrentPage("login.html")) {
         document.querySelector(".page-responsive").href =
-          "assets/css/pages/beranda.css";
-      } else if (isCurrentPage("kontak.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/kontak.css";
-      }else if (isCurrentPage("tentangkami.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/tentangkami.css";
-      } else if (isCurrentPage("layanan.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/layanan.css";
-      } else if (isCurrentPage("artikel.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/artikel.css";
-      }
+          "assets/css/pages/login.css";
+      } 
     });
   </script>
   <!-- End::Global Function -->
