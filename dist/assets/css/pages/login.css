@@ -857,7 +857,7 @@ h6 {
   background-color: #504b38;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 8px;
   cursor: pointer;
 }
 .login-section .container--login .login-form form button:hover {
