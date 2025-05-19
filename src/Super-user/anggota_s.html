@@ -1,3 +1,118 @@
 {{#> ../partials/template_super-user.html }}
+<section class="anggota-superadmin-section">
+    <div class="container container-anggota">
 
+        <div class="summary-cards">
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/people-community-svgrepo-com (2).svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Total Anggota</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/check-brown.svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Aktif Saat Ini</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/no-svgrepo-com.svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Tidak Aktif</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/person-add-svgrepo-com.svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Anggota Baru</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+        </div>
+        <div class="filter-bar">
+            <div class="filter-item search-input">
+                <img class="icon" src="../assets/media/svg/search.svg" alt="search">
+                <input type="text" placeholder="Cari Nama / NIK / No HP">
+            </div>
+
+            <div class="filter-item filter-select">
+                <select>
+                    <option>Status: Semua</option>
+                    <option>Aktif</option>
+                    <option>Tidak Aktif</option>
+                </select>
+                <select>
+                    <option>Semua Kategori</option>
+                </select>
+            </div>
+
+            <div class="filter-item">
+                <button>
+                    <img src="../assets/media/svg/filter-svgrepo-com.svg" alt="filter">
+                    <span>Filter</span>
+                </button>
+                <button>
+                    <img src="../assets/media/svg/print-svgrepo-com.svg" alt="print">
+                    <span>Cetak</span>
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <div class="table-container">
+            <h4>Daftar Anggota</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>NIK</th>
+                        <th>Nomor HP</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Okta Sigma</td>
+                        <td>12 Apr 2025</td>
+                        <td>+62 123456789</td>
+                        <td><span class="badge aktif">Aktif</span></td>
+                        <td class="aksi">
+                            <button title="Lihat"><img src="../assets/media/svg/eye-svgrepo-com.svg"
+                                    alt="print"></button>
+                            <button title="Edit"><img src="../assets/media/svg/pencil.svg" alt="print"></button>
+                            <button title="aktivasi"><img src="../assets/media/svg/key.svg" alt="print"></button>
+                            <button title="non-aktif"><img src="../assets/media/svg/no-svgrepo-com (1).svg"
+                                    alt="print"></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button>&lt;</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>&gt;</button>
+            </div>
+        </div>
+
+    </div>
+</section>
 {{/ ../partials/template_super-user.html }}

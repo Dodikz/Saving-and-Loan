@@ -48,7 +48,7 @@ License: -
           "../assets/css/pages/simpanan_s.css";
       } else if (isCurrentPage("laporan_s.html")) {
         document.querySelector(".page-responsive").href =
-          "../assets/css/pages/lapran_s.css";
+          "../assets/css/pages/laporan_s.css";
       }
     });
   </script>
@@ -129,7 +129,107 @@ License: -
       </a>
     </aside>  <!-- End:: sidebar section -->
 
-   
+   <section class="simpanan-superadmin-section">
+    <div class="container container-simpanan">
+
+        <div class="summary-cards">
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/pie-chart-2-svgrepo-com.svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Total Anggota</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/money-bag-svgrepo-com.svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Tidak Aktif</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/wallet-money-svgrepo-com.svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Anggota Baru</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+        </div>
+
+
+        
+        <div class="filter-bar">
+            <div class="filter-item search-input">
+                <img class="icon" src="../assets/media/svg/search.svg" alt="search">
+                <input type="text" placeholder="Cari Nama / NIK / No HP">
+            </div>
+
+            <div class="filter-item filter-select">
+                <select>
+                    <option>Jenis Transaksi</option>
+                    <option>Aktif</option>
+                    <option>Tidak Aktif</option>
+                </select>
+                <input class="date-picker" type="date" placeholder="Tanggal">
+            </div>
+
+            <div class="filter-item">
+                <button>
+                    <img src="../assets/media/svg/xls-svgrepo-com (1).svg" alt="filter">
+                    <span>Export XLS</span>
+                </button>
+                <button>
+                    <img src="../assets/media/svg/pdf-svgrepo-com.svg" alt="print">
+                    <span>Export PDF</span>
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <div class="table-container">
+            <h4>Daftar Anggota</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Anggota</th>
+                        <th>Tanggal</th>
+                        <th>Keterangan</th>
+                        <th>Nominal</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Okta Sigma</td>
+                        <td>12 Apr 2025</td>
+                        <td>Simpanan Wajib</td>
+                        <td>Rp. 1.400.000</td>
+                        <td><span class="badge aktif">Lunas</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button>&lt;</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>&gt;</button>
+            </div>
+        </div>
+
+    </div>
+</section>
  
 
   <!-- Start:: footer section -->
