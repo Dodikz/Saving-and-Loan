@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Template Name: - 
+Author: -
+Website: -
+Contact: -
+License: -
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saving and Loan</title>
+  <link rel="shortcut icon" href="../assets/media/images/Logo.png" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+
+    <!-- Start::Global Styles (used by all pages) -->
+    <link href="../assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
+  <!-- End::Global Styles (used by all pages) -->
+
+  <!-- Start::Page Styles (used by this page) -->
+  <link class="page-responsive" href="" rel="stylesheet" type="text/css" />
+  <!-- End::Page Styles -->
+  <!-- Start::Global Function (used by all pages) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function isCurrentPage(url) {
+        return window.location.href.includes(url);
+      }
+
+      if (isCurrentPage("beranda_u.html")) {
+        document.querySelector(".page-responsive").href =
+          "../assets/css/pages/beranda_u.css";
+      } else if (isCurrentPage("simpanan_u.html")) {
+        document.querySelector(".page-responsive").href =
+          "../assets/css/pages/simpanan_u.css";
+      }else if (isCurrentPage("pinjaman_s.html")) {
+        document.querySelector(".page-responsive").href =
+          "../assets/css/pages/pinjaman_s.css";
+      } 
+    });
+  </script>
+  <!-- End::Global Function -->
+</head>
+
+<body>
+
+  <!-- Start:: header navbar section -->
+  {{> layout/super-user/header.html}}
+  <!-- End:: header navbar section -->
+
+  <!-- Start:: sidebar section -->
+  {{> layout/super-user/sidebar.html}}
+  <!-- End:: sidebar section -->
+
+  {{#if @partial-block}} {{> @partial-block }} {{/if}}
+
+  <!-- Start:: footer section -->
+  {{> layout/super-user/footer.html}}
+  <!-- End:: footer section -->
+
+  <!-- Start::Global Bundle Scripts (used by all pages) -->
+  <script src="../assets/js/scripts.bundle.js"></script>
+  <!-- End::Global Bundle Scripts -->
+  <!-- Start::Page Scripts (used by this page) -->
+  <script src="../assets/js/pages/home-v1.js"></script>
+  <!-- End::Page Scripts -->
+</body>
+
+</html>
