@@ -30,8 +30,9 @@ $red-pale: #FFD1CB;
 // scss-docs-end accent-color-variables
 
 // scss-docs-start theme-color-variables
-$primary: $ultramarine-blue;
-$secondary: $sky-blue-crayola;
+$primary: #504B38;
+$secondary: #B9B28A;
+$tertiary: #EBE5C2;
 $success: $green;
 $info: $blue;
 $warning: $yellow;
@@ -73,9 +74,9 @@ $custom-colors: (
 );
 
 $theme-colors: (
-  "primary": #504B38,
-  "secondary": #B9B28A,
-  "tertiary": #EBE5C2,
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
   "success": $success,
   "info": $info,
   "warning": $warning,

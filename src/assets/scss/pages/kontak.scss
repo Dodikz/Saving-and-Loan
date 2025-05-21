@@ -49,7 +49,7 @@
               margin-bottom: 0.5rem;
               font-size: toRem(18);
               font-weight: 500;
-              color: #504b38;
+              color: $primary;
             }
   
             input,
@@ -62,7 +62,7 @@
               outline: none;
   
               &:focus {
-                border-color: #504b38;
+                border-color: $primary;
               }
             }
   
@@ -74,7 +74,7 @@
           .btn-submit {
             width: 100%;
             padding: 0.75rem;
-            background-color: #504b38;
+            background-color: $primary;
             color: white;
             font-weight: 600;
             border: none;
@@ -91,7 +91,7 @@
   
       hr{
         width: 100%;
-        background-color: #504b38;
+        background-color: $primary;
       }
   
       .kontak-info {
@@ -120,19 +120,19 @@
             flex-shrink: 0;
             width: toRem(36);
             height: toRem(36);
-            color: #504b38;
+            color: $primary;
   
             img {
               width: 100%;
               height: 100%;
-              color: #504b38;
+              color: $primary;
             }
           }
   
           strong {
             display: block;
             margin-bottom: -1.75rem;
-            color: #504b38;
+            color: $primary;
           }
   
           div {
@@ -150,17 +150,17 @@
           flex-shrink: 0;
           width: toRem(36);
           height: toRem(36);
-          fill: #504b38;
+          fill: $primary;
   
           img {
             width: 100%;
             height: 100%;
-            fill: #504b38;
+            fill: $primary;
           }
         }
   
         a {
-          color: #504b38;
+          color: $primary;
           font-size: toRem(24);
           transition: color 0.3s;
   
@@ -182,13 +182,13 @@
     .kontak-heading {
       font-size: toRem(62);
       font-weight: 700;
-      color: #504b38;
+      color: $primary;
     }
 
     .kontak-subheading {
       font-size: toRem(16);
       font-weight: 500;
-      color: #504b38;
+      color: $primary;
     }
   }
 

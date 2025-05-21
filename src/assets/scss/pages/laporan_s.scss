@@ -163,10 +163,10 @@
       .aksi {
         display: flex;
         gap: 0.5rem;
-        margin-bottom: -1px;
 
+      
         button {
-          background-color: #5a5134;
+          background-color: $primary;
           border: none;
           color: #fff;
           padding: 0.25rem 0.5rem;
@@ -204,9 +204,9 @@
         font-size: 0.75rem;
 
         &.active {
-          background-color: #5a5134;
+          background-color: $primary;
           color: #fff;
-          border-color: #5a5134;
+          border-color: $primary;
         }
       }
     }
