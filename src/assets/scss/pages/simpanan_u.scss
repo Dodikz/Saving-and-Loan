@@ -5,3 +5,243 @@
 @import "home";
 
 // Add your style here
+.simpanan-user-section {
+  position: absolute;
+  top: 5.625rem;
+  left: 15.3125rem;
+  width: calc(100% - 15.3125rem);
+  min-height: calc(100vh - 5.625rem);
+  padding: 1.5rem;
+  background-color: white;
+  font-family: "Inter", sans-serif;
+  color: #333;
+
+  @media only screen and (max-width: 600px) {
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .container-simpanan {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    @media only screen and (max-width: 600px) {
+      gap: 1rem;
+    }
+  }
+
+  .table-container {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    border: 0.125rem solid #e3e1d1;
+
+    h4 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #333;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+
+      thead {
+        background-color: white;
+        font-weight: 600;
+        border-bottom: 0.125rem solid #00000083;
+
+        th {
+          padding: 0.75rem 0.5rem;
+          font-size: 0.875rem;
+          color: #333;
+        }
+      }
+
+      tbody td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.875rem;
+        border-bottom: 0.125rem solid #00000083;
+      }
+
+      .badge.aktif {
+        background-color: #d1fadf;
+        color: #118e3c;
+        padding: 0.25rem 0.5rem;
+        border-radius: 0.25rem;
+        font-size: 0.75rem;
+        display: inline-block;
+      }
+
+      .aksi {
+        display: flex;
+        gap: 0.5rem;
+        margin-bottom: -1px;
+
+        button {
+          background-color: #5a5134;
+          border: none;
+          color: #fff;
+          padding: 0.25rem 0.5rem;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          font-size: 0.75rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background-color: #3d3623;
+          }
+
+          img {
+            width: 1.4375rem;
+            height: 1.4375rem;
+          }
+        }
+      }
+    }
+
+    .modal {
+      position: fixed;
+      display: none;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+      animation: fadeIn 0.3s ease;
+    }
+
+    .modal-content {
+      background-color: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      max-width: 800px;
+      width: 100%;
+      font-family: "Inter", sans-serif;
+      position: relative;
+      animation: slideIn 0.3s ease;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+
+      .total-pinjaman {
+        margin: 1rem 0;
+        .label {
+          font-weight: bold;
+          margin-right: 0.5rem;
+        }
+
+        .nominal {
+          background-color: #e5e2d5;
+          color: #504b38;
+          font-weight: bold;
+          padding: 4px 8px;
+          border-radius: 6px;
+        }
+      }
+
+      .detail-pinjaman-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+
+        th,
+        td {
+          padding: 10px 12px;
+          text-align: left;
+          border-bottom: 1px solid #ddd;
+          font-size: 0.95rem;
+        }
+
+        thead th {
+          font-weight: bold;
+        }
+
+        tfoot td {
+          font-weight: bold;
+          margin-top: 2rem;
+        }
+      }
+
+      .badge {
+        padding: 4px 8px;
+        border-radius: 5px;
+        font-size: 0.85rem;
+        font-weight: 500;
+
+        &.lunas {
+          background-color: #e0f8e7;
+          color: #1c944d;
+        }
+
+        &.belum {
+          background-color: #fef6c3;
+          color: #c29300;
+        }
+      }
+    }
+
+    .close {
+      position: absolute;
+      top: 12px;
+      right: 20px;
+      font-size: 24px;
+      font-weight: bold;
+      cursor: pointer;
+      color: #333;
+
+      &:hover {
+        color: #e74c3c;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .pagination {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: flex-end;
+      gap: 0.5rem;
+
+      button {
+        padding: 0.25rem 0.5rem;
+        border: 0.0625rem solid #ccc;
+        background-color: #fff;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        font-size: 0.875rem;
+
+        &.active {
+          background-color: #5a5134;
+          color: #fff;
+          border-color: #5a5134;
+        }
+      }
+    }
+  }
+}
