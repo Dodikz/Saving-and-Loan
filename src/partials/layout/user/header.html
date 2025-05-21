@@ -1,0 +1,36 @@
+<main class="main">
+
+  <div class="content">
+    <div class="navbar" id="navbar">
+      <div class="left">
+        <button id="toggleSidebar">☰</button>
+        <span>Hello, Admin</span>
+        <span class="date"></span>
+      </div>
+      <div class="right">
+        <img src="../assets/media/images/profile.jpg" alt="Admin Avatar" />
+      </div>
+</main>
+
+<script>
+  document.getElementById('toggleSidebar').addEventListener('click', () => {
+    const sidebar = document.getElementById('sidebar');
+    const navbar = document.getElementById('navbar');
+    navbar.classList.toggle('collapsed');
+    sidebar.classList.toggle('collapsed');
+  });
+
+  function updateDate() {
+    const dateElement = document.querySelector(".date");
+    const now = new Date();
+
+    const options = { day: 'numeric', month: 'long', year: 'numeric' };
+    const formattedDate = now.toLocaleDateString('id-ID', options);
+
+    dateElement.textContent = formattedDate;
+  }
+
+  updateDate();
+
+  setInterval(updateDate, 1000); 
+</script>
