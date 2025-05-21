@@ -997,7 +997,6 @@ h6 {
 .anggota-superadmin-section .table-container table .aksi {
   display: flex;
   gap: 0.5rem;
-  margin-bottom: -1px;
 }
 .anggota-superadmin-section .table-container table .aksi button {
   background-color: #5a5134;
