@@ -20,8 +20,8 @@ License: -
   <meta property="og:title" content="">
   <meta property="og:description" content="">
 
-    <!-- Start::Global Styles (used by all pages) -->
-    <link href="../assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
+  <!-- Start::Global Styles (used by all pages) -->
+  <link href="../assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
   <!-- End::Global Styles (used by all pages) -->
 
   <!-- Start::Page Styles (used by this page) -->
@@ -40,10 +40,10 @@ License: -
       } else if (isCurrentPage("simpanan_u.html")) {
         document.querySelector(".page-responsive").href =
           "../assets/css/pages/simpanan_u.css";
-      }else if (isCurrentPage("pinjaman_u.html")) {
+      } else if (isCurrentPage("pinjaman_u.html")) {
         document.querySelector(".page-responsive").href =
           "../assets/css/pages/pinjaman_u.css";
-      } 
+      }
     });
   </script>
   <!-- End::Global Function -->
@@ -128,8 +128,8 @@ License: -
                         <th>Keterangan</th>
                         <th>Tanggal</th>
                         <th>Nominal</th>
+                        <th>Pembayaran</th>
                         <th>Status</th>
-                        <th>Lihat Lebih Detail</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -138,66 +138,11 @@ License: -
                         <td>Simpanan Wajib</td>
                         <td>12 Apr 2025</td>
                         <td>Rp. 1.400.000</td>
+                        <td>BCA</td>
                         <td><span class="badge aktif">Lunas</span></td>
-                        <td class="aksi">
-                            <button title="Lihat" onclick="openModal()">
-                                <img src="../assets/media/svg/eye-svgrepo-com.svg" alt="print">
-                            </button>
-                        </td>
                     </tr>
                 </tbody>
             </table>
-
-
-            <div id="modal" class="modal" style="display: none;">
-                <div class="modal-content">
-                    <span class="close" onclick="closeModal()">&times;</span>
-                    <h4>Detail Simpanan</h4>
-
-                    <div class="total-pinjaman">
-                        <span class="label">Pinjaman :</span>
-                        <span class="nominal">Rp 50.000.000</span>
-                    </div>
-
-                    <table class="detail-pinjaman-table">
-                        <thead>
-                            <tr>
-                                <th>Bulan Ke</th>
-                                <th>Keterangan</th>
-                                <th>Tanggal</th>
-                                <th>Nominal Dibayar</th>
-                                <th>Status</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Tunai</td>
-                                <td>7 Mei 2025</td>
-                                <td>Rp 10.000.000</td>
-                                <td><span class="badge lunas">Dibayar</span></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Transfer</td>
-                                <td>10 Mei 2025</td>
-                                <td>Rp 10.000.000</td>
-                                <td><span class="badge belum">Belum Dibayar</span></td>
-                            </tr>
-                        </tbody>
-                        <tfoot >
-                            <tr>
-                                <td colspan="3"><strong>TOTAL DIBAYAR :</strong></td>
-                                <td colspan="2"><strong>Rp 20.000.000</strong></td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>PERLU DIBAYAR :</strong></td>
-                                <td colspan="2"><strong>Rp 20.000.000</strong></td>
-                            </tr>
-                        </tfoot>
-                    </table>
-                </div>
-            </div>
 
             <div class="pagination">
                 <button>&lt;</button>
@@ -211,29 +156,13 @@ License: -
 </section>
 
 
-<script>
-    function openModal() {
-        const modal = document.getElementById('modal');
-        modal.style.display = 'flex';
-    }
-
-    function closeModal() {
-        const modal = document.getElementById('modal');
-        modal.style.display = 'none';
-    }
-
-    window.onclick = function (event) {
-        const modal = document.getElementById('modal');
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    };
-</script>
 
  
 
   <!-- Start:: footer section -->
   <!-- End:: footer section -->
+
+  <script src="../assets/js/custom/modal.js"></script>
 
   <!-- Start::Global Bundle Scripts (used by all pages) -->
   <script src="../assets/js/scripts.bundle.js"></script>

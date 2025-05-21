@@ -20,8 +20,8 @@ License: -
   <meta property="og:title" content="">
   <meta property="og:description" content="">
 
-    <!-- Start::Global Styles (used by all pages) -->
-    <link href="../assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
+  <!-- Start::Global Styles (used by all pages) -->
+  <link href="../assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
   <!-- End::Global Styles (used by all pages) -->
 
   <!-- Start::Page Styles (used by this page) -->
@@ -40,10 +40,10 @@ License: -
       } else if (isCurrentPage("simpanan_u.html")) {
         document.querySelector(".page-responsive").href =
           "../assets/css/pages/simpanan_u.css";
-      }else if (isCurrentPage("pinjaman_u.html")) {
+      } else if (isCurrentPage("pinjaman_u.html")) {
         document.querySelector(".page-responsive").href =
           "../assets/css/pages/pinjaman_u.css";
-      } 
+      }
     });
   </script>
   <!-- End::Global Function -->
@@ -208,31 +208,12 @@ License: -
         </div>
     </div>
 </section>
-
-
-<script>
-    function openModal() {
-        const modal = document.getElementById('modal');
-        modal.style.display = 'flex';
-    }
-
-    function closeModal() {
-        const modal = document.getElementById('modal');
-        modal.style.display = 'none';
-    }
-
-    window.onclick = function (event) {
-        const modal = document.getElementById('modal');
-        if (event.target === modal) {
-            modal.style.display = 'none';
-        }
-    };
-</script>
-
  
 
   <!-- Start:: footer section -->
   <!-- End:: footer section -->
+
+  <script src="../assets/js/custom/modal.js"></script>
 
   <!-- Start::Global Bundle Scripts (used by all pages) -->
   <script src="../assets/js/scripts.bundle.js"></script>
