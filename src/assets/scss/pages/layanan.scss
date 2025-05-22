@@ -1,7 +1,141 @@
 // Initialize first
 @import "../init";
 
-// Import files  
+// Import files
 @import "home";
 
 // Add your style here
+.layanan-section-content {
+  padding: 8rem 8rem;
+  background-color: $white;
+
+  .container {
+    align-items: center;
+    gap: 2rem;
+
+    .title-content {
+      text-align: center;
+      .title {
+        font-size: 3.875rem;
+        font-weight: 700;
+        color: $primary;
+      }
+      .subtitle {
+        font-size: 1rem;
+        font-weight: 400;
+        color: $primary;
+      }
+    }
+
+    .summary-card {
+      display: flex;
+      justify-content: space-between;
+      gap: 2rem;
+      margin-top: 4rem;
+      .card {
+        width: 24.563rem;
+        height: 18.875rem;
+        padding: 2rem 1.5rem;
+        border-radius: 1.5rem;
+        background-color: $white;
+        border: 0.125rem solid rgba(0, 0, 0, 0.21);
+        align-items: center;
+        text-align: center;
+        transition: all 0.3s ease-in-out;
+
+        .card-icon {
+          width: 4.125rem;
+          height: 4.125rem;
+          margin-bottom: 1rem;
+        }
+
+        .card-title {
+          font-size: 1.25rem;
+          font-weight: 700;
+          color: $primary;
+          margin-bottom: 1rem;
+        }
+
+        .card-desc {
+          font-size: 1rem;
+          font-weight: 400;
+          color: $dark;
+        }
+      }
+    }
+
+    .card-layanan {
+    background-color: rgba(217, 217, 217, 0.2);
+    width: 64rem;
+    height: 27.688rem;
+    border-radius: 1.5rem;
+    border: 0.125rem solid rgba(0, 0, 0, 0.21);
+    padding: 4rem 5.5rem;
+      .card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+
+        .card-left {
+          flex: 1;
+
+          .card-title {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: $primary;
+            margin-bottom: 0.5rem;
+          }
+
+          .card-subtitle {
+            color: #777;
+            margin-bottom: 1.5rem;
+          }
+
+          .card-features {
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.5rem;
+
+            li {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+              margin-bottom: 0.75rem;
+              color: $primary;
+
+              img {
+                width: 1.25rem;
+                height: 1.25rem;
+              }
+            }
+          }
+
+          .cta-btn {
+            background-color: $primary;
+            color: white;
+            font-weight: bold;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+
+            &:hover {
+              background-color: #2f2c22;
+            }
+          }
+        }
+
+        .card-right {
+          flex-shrink: 0;
+
+          .card-image {
+            width: 10rem;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

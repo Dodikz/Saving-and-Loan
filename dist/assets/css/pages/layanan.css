@@ -820,4 +820,122 @@ h6 {
   }
 }
 
+.layanan-section-content {
+  padding: 8rem 8rem;
+  background-color: #FFFFFF;
+}
+.layanan-section-content .container {
+  align-items: center;
+  gap: 2rem;
+}
+.layanan-section-content .container .title-content {
+  text-align: center;
+}
+.layanan-section-content .container .title-content .title {
+  font-size: 3.875rem;
+  font-weight: 700;
+  color: #504B38;
+}
+.layanan-section-content .container .title-content .subtitle {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #504B38;
+}
+.layanan-section-content .container .summary-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-top: 4rem;
+}
+.layanan-section-content .container .summary-card .card {
+  width: 24.563rem;
+  height: 18.875rem;
+  padding: 2rem 1.5rem;
+  border-radius: 1.5rem;
+  background-color: #FFFFFF;
+  border: 0.125rem solid rgba(0, 0, 0, 0.21);
+  align-items: center;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+.layanan-section-content .container .summary-card .card .card-icon {
+  width: 4.125rem;
+  height: 4.125rem;
+  margin-bottom: 1rem;
+}
+.layanan-section-content .container .summary-card .card .card-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #504B38;
+  margin-bottom: 1rem;
+}
+.layanan-section-content .container .summary-card .card .card-desc {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #37455A;
+}
+.layanan-section-content .container .card-layanan {
+  background-color: rgba(217, 217, 217, 0.2);
+  width: 64rem;
+  height: 27.688rem;
+  border-radius: 1.5rem;
+  border: 0.125rem solid rgba(0, 0, 0, 0.21);
+  padding: 4rem 5.5rem;
+}
+.layanan-section-content .container .card-layanan .card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+.layanan-section-content .container .card-layanan .card-content .card-left {
+  flex: 1;
+}
+.layanan-section-content .container .card-layanan .card-content .card-left .card-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #504B38;
+  margin-bottom: 0.5rem;
+}
+.layanan-section-content .container .card-layanan .card-content .card-left .card-subtitle {
+  color: #777;
+  margin-bottom: 1.5rem;
+}
+.layanan-section-content .container .card-layanan .card-content .card-left .card-features {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+}
+.layanan-section-content .container .card-layanan .card-content .card-left .card-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: #504B38;
+}
+.layanan-section-content .container .card-layanan .card-content .card-left .card-features li img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.layanan-section-content .container .card-layanan .card-content .card-left .cta-btn {
+  background-color: #504B38;
+  color: white;
+  font-weight: bold;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+.layanan-section-content .container .card-layanan .card-content .card-left .cta-btn:hover {
+  background-color: #2f2c22;
+}
+.layanan-section-content .container .card-layanan .card-content .card-right {
+  flex-shrink: 0;
+}
+.layanan-section-content .container .card-layanan .card-content .card-right .card-image {
+  width: 10rem;
+  height: auto;
+}
+
 /*# sourceMappingURL=layanan.css.map*/

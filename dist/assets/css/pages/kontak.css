@@ -935,9 +935,12 @@ h6 {
   height: 100%;
   color: #504B38;
 }
-.kontak-section .kontak-container .kontak-wrapper .kontak-info .info-items strong {
+.kontak-section .kontak-container .kontak-wrapper .kontak-info .info-items p {
+  text-align: start;
+  font-size: 1.125rem;
+  font-weight: 600;
   display: block;
-  margin-bottom: -1.75rem;
+  margin-bottom: 1.75rem;
   color: #504B38;
 }
 .kontak-section .kontak-container .kontak-wrapper .kontak-info .info-items div {

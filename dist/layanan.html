@@ -34,7 +34,7 @@ License: -
         return window.location.href.includes(url);
       }
 
-      if (isCurrentPage("beranda.html")) {
+      if (isCurrentPage("Beranda.html")) {
         document.querySelector(".page-responsive").href =
           "assets/css/pages/beranda.css";
       } else if (isCurrentPage("kontak.html")) {
@@ -59,27 +59,24 @@ License: -
 
   <!-- Start:: header navbar section -->
   <nav class="navbar">
-    <div class="container">
+    <div class="container-navbar">
       <div class="navbar-brand">
         <img src="assets/media/images/Logo.png" alt="Logo" />
       </div>
       <ul class="navbar-menu">
-        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Beranda.html">Beranda</a></li>
         <li><a href="layanan.html">Layanan</a></li>
         <li class="dropdown">
-          <a href="tentangkami.html">
+          <a href="#">
             Tentang Kami
             <span class="caret">
-              <svg fill="#000000" width="15px" height="15px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0.256 8.606c0-0.269 0.106-0.544 0.313-0.75 0.412-0.412 1.087-0.412 1.5 0l14.119 14.119 13.913-13.912c0.413-0.412 1.087-0.412 1.5 0s0.413 1.088 0 1.5l-14.663 14.669c-0.413 0.413-1.088 0.413-1.5 0l-14.869-14.869c-0.213-0.213-0.313-0.481-0.313-0.756z" />
-              </svg>
+              <img src="assets/media/svg/arrow-down.svg" alt="caret">
             </span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Test 1</a></li>
-            <li><a href="#">Test 2</a></li>
-            <li><a href="#">Test 2</a></li>
+            <li><a href="#">Visi & Misi</a></li>
+            <li><a href="#">Struktur</a></li>
+            <li><a href="#">Sejarah</a></li>
           </ul>
         </li>
         <li><a href="artikel.html">Artikel</a></li>
@@ -90,9 +87,60 @@ License: -
         <button class="btn btn-light">Login</button>
       </div>
     </div>
-  </nav>  <!-- End:: header navbar section -->
+  </nav>
+  <!-- End:: header navbar section -->
 
-   
+   <section class="layanan-section-content">
+
+    <div class="container">
+        <div class="title-content">
+            <h1 class="title">Layanan Simpanan</h1>
+            <p class="subtitle">Nikmati keamanan dan keuntungan dari berbagai jenis simpanan koperasi.</p>
+        </div>
+
+        <div class="summary-card">
+            <div class="card">
+                <img class="card-icon" src="assets/media/svg/piggy-bank-brown.svg" alt="Simpanan">
+                <h3 class="card-title">Simpanan Pokok</h3>
+                <p class="card-desc">Simpanan awal yang wajib dibayar oleh setiap anggota saat bergabung dengan
+                    koperasi.</p>
+            </div>
+            <div class="card">
+                <img class="card-icon" src="assets/media/svg/wallet-brown.svg" alt="Simpanan">
+                <h3 class="card-title">Simpanan Wajib</h3>
+                <p class="card-desc">Simpanan rutin bulanan yang harus dibayarkan oleh setiap anggota koperasi.</p>
+            </div>
+            <div class="card">
+                <img class="card-icon" src="assets/media/svg/money-integral-line.svg" alt="Simpanan">
+                <h3 class="card-title">Simpanan Sukarela</h3>
+                <p class="card-desc">Simpanan tambahan yang dapat disetor kapan saja dengan jumlah yang fleksibel.</p>
+            </div>
+        </div>
+</section>
+
+<section class="layanan-section-content">
+    <div class="container">
+        <div class="card-layanan">
+            <div class="card-content">
+                <div class="card-left">
+                    <h3 class="card-title">Layanan Pinjaman</h3>
+                    <p class="card-subtitle">Ajukan pinjaman mudah dengan bunga ringan dan proses cepat.</p>
+                    <ul class="card-features">
+                        <li><img src="assets/media/svg/check-brown.svg" alt=""> Proses mudah dan cepat</li>
+                        <li><img src="assets/media/svg/shield-brown.svg" alt=""> Dijamin aman dan terpercaya</li>
+                        <li><img src="assets/media/svg/discount-brown.svg" alt=""> Bunga ringan dan kompetitif</li>
+                        <li><img src="assets/media/svg/clock-circle-brown.svg" alt=""> Pencairan dana cepat</li>
+                    </ul>
+                    <button class="cta-btn">Ajukan Sekarang</button>
+                </div>
+                <div class="card-right">
+                    <img src="assets/media/svg/hand-money-cash-hold.svg" alt="Layanan" class="card-image" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
  
 
   <!-- Start:: header navbar section -->
@@ -145,6 +193,8 @@ License: -
           <p class="footer-copy">Copyright © by Okta Pratama</p>
       </div>
   </footer>  <!-- End:: header navbar section -->
+
+  <script src="../assets/js/custom/carousel.js"></script>
 
   <!-- Start::Global Bundle Scripts (used by all pages) -->
   <script src="assets/js/scripts.bundle.js"></script>

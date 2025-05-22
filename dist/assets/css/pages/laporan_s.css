@@ -873,7 +873,7 @@ h6 {
   width: 1rem;
   height: 1rem;
   opacity: 0.6;
-  color: #504b38;
+  color: #504B38;
 }
 .simpanan-superadmin-section .filter-bar .filter-item.filter-select select {
   padding: 0.5rem 0.75rem;
@@ -897,14 +897,14 @@ h6 {
   border: 0.0625rem solid #ccc;
   border-radius: 0.375rem;
   font-size: 0.875rem;
-  color: #504b38;
+  color: #504B38;
   background-color: #fff;
 }
 .simpanan-superadmin-section .filter-bar .filter-item button {
   display: flex;
   align-items: center;
   gap: 0.375rem;
-  background-color: #504b38;
+  background-color: #504B38;
   color: #fff;
   padding: 0.5rem 0.75rem;
   border-radius: 0.375rem;

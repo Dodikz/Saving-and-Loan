@@ -34,7 +34,7 @@ License: -
         return window.location.href.includes(url);
       }
 
-      if (isCurrentPage("beranda.html")) {
+      if (isCurrentPage("Beranda.html")) {
         document.querySelector(".page-responsive").href =
           "assets/css/pages/beranda.css";
       } else if (isCurrentPage("kontak.html")) {
@@ -66,6 +66,8 @@ License: -
   <!-- Start:: header navbar section -->
   {{> layout/non-user/footer.html}}
   <!-- End:: header navbar section -->
+
+  <script src="../assets/js/custom/carousel.js"></script>
 
   <!-- Start::Global Bundle Scripts (used by all pages) -->
   <script src="assets/js/scripts.bundle.js"></script>

@@ -34,7 +34,7 @@ License: -
         return window.location.href.includes(url);
       }
 
-      if (isCurrentPage("beranda.html")) {
+      if (isCurrentPage("Beranda.html")) {
         document.querySelector(".page-responsive").href =
           "assets/css/pages/beranda.css";
       } else if (isCurrentPage("kontak.html")) {
@@ -59,27 +59,24 @@ License: -
 
   <!-- Start:: header navbar section -->
   <nav class="navbar">
-    <div class="container">
+    <div class="container-navbar">
       <div class="navbar-brand">
         <img src="assets/media/images/Logo.png" alt="Logo" />
       </div>
       <ul class="navbar-menu">
-        <li><a href="index.html">Beranda</a></li>
+        <li><a href="Beranda.html">Beranda</a></li>
         <li><a href="layanan.html">Layanan</a></li>
         <li class="dropdown">
-          <a href="tentangkami.html">
+          <a href="#">
             Tentang Kami
             <span class="caret">
-              <svg fill="#000000" width="15px" height="15px" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M0.256 8.606c0-0.269 0.106-0.544 0.313-0.75 0.412-0.412 1.087-0.412 1.5 0l14.119 14.119 13.913-13.912c0.413-0.412 1.087-0.412 1.5 0s0.413 1.088 0 1.5l-14.663 14.669c-0.413 0.413-1.088 0.413-1.5 0l-14.869-14.869c-0.213-0.213-0.313-0.481-0.313-0.756z" />
-              </svg>
+              <img src="assets/media/svg/arrow-down.svg" alt="caret">
             </span>
           </a>
           <ul class="dropdown-menu">
-            <li><a href="#">Test 1</a></li>
-            <li><a href="#">Test 2</a></li>
-            <li><a href="#">Test 2</a></li>
+            <li><a href="#">Visi & Misi</a></li>
+            <li><a href="#">Struktur</a></li>
+            <li><a href="#">Sejarah</a></li>
           </ul>
         </li>
         <li><a href="artikel.html">Artikel</a></li>
@@ -90,7 +87,8 @@ License: -
         <button class="btn btn-light">Login</button>
       </div>
     </div>
-  </nav>  <!-- End:: header navbar section -->
+  </nav>
+  <!-- End:: header navbar section -->
 
    <section class="kontak-section">
   <div class="container kontak-container">
@@ -138,7 +136,7 @@ License: -
         </div>
         <div class="info-items">
           <div class="icon">
-            <img src="assets/media/svg/location.svg" alt="Location Icon" />
+            <img src="assets/media/svg/phone.svg" alt="Location Icon" />
           </div>
           <div class="info-item">
             <strong>Nomor Telepon</strong><br />
@@ -147,7 +145,7 @@ License: -
         </div>
         <div class="info-items">
           <div class="icon">
-            <img src="assets/media/svg/location.svg" alt="Location Icon" />
+            <img src="assets/media/svg/mail.svg" alt="Location Icon" />
           </div>
           <div class="info-item">
             <strong>Email</strong><br />
@@ -157,18 +155,20 @@ License: -
   
         <hr>
         
-        <strong>Ikuti Kami</strong>
+        <div class="info-items">
+          <p>Ikuti Kami</p>
+        </div>
         <div class="medsos-info">
           <div class="icon">
-            <img src="assets/media/svg/location.svg" alt="Location Icon" />
+            <img src="assets/media/svg/facebook.svg" alt="Location Icon" />
           </div>
           <p>@tralala</p>
           <div class="icon">
-            <img src="assets/media/svg/location.svg" alt="Location Icon" />
+            <img src="assets/media/svg/instagram.svg" alt="Location Icon" />
           </div>
           <p>@tralala</p>
           <div class="icon">
-            <img src="assets/media/svg/location.svg" alt="Location Icon" />
+            <img src="assets/media/svg/twitter.svg" alt="Location Icon" />
           </div>
           <p>@tralala</p>
         </div>
@@ -235,6 +235,8 @@ License: -
           <p class="footer-copy">Copyright © by Okta Pratama</p>
       </div>
   </footer>  <!-- End:: header navbar section -->
+
+  <script src="../assets/js/custom/carousel.js"></script>
 
   <!-- Start::Global Bundle Scripts (used by all pages) -->
   <script src="assets/js/scripts.bundle.js"></script>

@@ -17,12 +17,12 @@
 /******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
-/*!******************************************!*\
-  !*** ./src/assets/scss/pages/login.scss ***!
-  \******************************************/
+/*!************************************************!*\
+  !*** ./src/assets/scss/pages/login_pages.scss ***!
+  \************************************************/
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
 /******/ })()
 ;
-//# sourceMappingURL=login.js.map
+//# sourceMappingURL=login_pages.js.map

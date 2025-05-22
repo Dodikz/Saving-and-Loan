@@ -129,9 +129,12 @@
             }
           }
   
-          strong {
+          p {
+            text-align: start;
+            font-size: toRem(18);
+            font-weight: 600;
             display: block;
-            margin-bottom: -1.75rem;
+            margin-bottom: 1.75rem;
             color: $primary;
           }
   
