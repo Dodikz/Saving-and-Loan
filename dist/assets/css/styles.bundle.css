@@ -15751,109 +15751,174 @@ textarea.form-control-lg {
   position: fixed;
   top: 1.5rem;
   left: 50%;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
   background-color: #fff;
   border-radius: 1.5rem;
   box-shadow: 0 0 0 2px #e6e6e6;
   z-index: 1000;
   width: 100%;
   max-width: 80%;
-  transition: max-width 0.3s ease;
-  transition: left 0.3s ease;
+  transition: 0.3s ease-in-out;
 }
 .navbar .container-navbar {
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-between;
   padding: 0 1rem;
+  flex-wrap: nowrap;
 }
 .navbar .container-navbar .navbar-brand img {
   height: 40px;
 }
-.navbar .container-navbar .navbar-menu {
+.navbar .container-navbar .navbar-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.navbar .container-navbar .navbar-toggle img {
+  width: 28px;
+  height: 28px;
+}
+.navbar .container-navbar .navbar-collapse {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.navbar .container-navbar .navbar-collapse .navbar-menu {
   display: flex;
   list-style: none;
   gap: 2rem;
-  align-items: center;
-  margin: 0 16rem 0 0;
+  margin: 0;
   padding: 0;
 }
-.navbar .container-navbar .navbar-menu li {
+.navbar .container-navbar .navbar-collapse .navbar-menu li {
   position: relative;
 }
-.navbar .container-navbar .navbar-menu li a {
+.navbar .container-navbar .navbar-collapse .navbar-menu li a {
   text-decoration: none;
   color: #000;
   font-size: 0.875rem;
   font-weight: 600;
   display: flex;
-  align-items: start;
+  align-items: center;
   gap: 0.25rem;
-  transition: all linear 0.4s;
+  transition: all 0.3s ease;
 }
-.navbar .container-navbar .navbar-menu li a:hover {
+.navbar .container-navbar .navbar-collapse .navbar-menu li a:hover {
   color: #504b38;
 }
-.navbar .container-navbar .navbar-menu li a:hover img {
-  rotate: 180deg !important;
+.navbar .container-navbar .navbar-collapse .navbar-menu li a:hover .caret img {
+  rotate: 180deg;
 }
-.navbar .container-navbar .navbar-menu li a .caret {
-  display: inline-flex;
-}
-.navbar .container-navbar .navbar-menu li a .caret img {
+.navbar .container-navbar .navbar-collapse .navbar-menu li a .caret img {
   width: 15px;
   height: 15px;
-  margin-top: 1px;
-  rotate: 0deg;
-  transition: all linear 0.2s;
+  transition: all 0.3s ease;
 }
-.navbar .container-navbar .navbar-menu li.dropdown:hover .dropdown-menu {
+.navbar .container-navbar .navbar-collapse .navbar-menu li.dropdown:hover .dropdown-menu {
   display: block;
   opacity: 1;
+  visibility: visible;
 }
-.navbar .container-navbar .navbar-menu li .dropdown-menu {
+.navbar .container-navbar .navbar-collapse .navbar-menu li .dropdown-menu {
   opacity: 0;
-  display: none;
+  visibility: hidden;
+  display: block;
   position: absolute;
-  left: 0;
+  top: 100%;
+  right: 0;
   background-color: #fff;
   border-radius: 0.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   min-width: 150px;
   padding: 0.5rem 0;
   z-index: 10;
-  transition: all linear 0.4s;
+  transition: all 0.3s ease;
 }
-.navbar .container-navbar .navbar-menu li .dropdown-menu li a {
+.navbar .container-navbar .navbar-collapse .navbar-menu li .dropdown-menu li a {
   display: block;
   padding: 0.5rem 1rem;
   font-size: 0.875rem;
   font-weight: 400;
 }
-.navbar .container-navbar .navbar-menu li .dropdown-menu li a:hover {
+.navbar .container-navbar .navbar-collapse .navbar-menu li .dropdown-menu li a:hover {
   background-color: #f5f5f5;
 }
-.navbar .navbar-actions {
+.navbar .container-navbar .navbar-collapse .navbar-actions {
   display: flex;
   gap: 0.5rem;
+  align-items: center;
 }
-.navbar .left {
-  display: flex;
-  align-items: start;
-  gap: 16px;
-  margin-left: 1rem;
+.navbar .container-navbar .navbar-collapse .navbar-actions button {
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
 }
-.navbar .left button {
-  font-size: 18px;
-  background: none;
-  border: none;
-  cursor: pointer;
+@media (max-width: 1220px) {
+  .navbar {
+    max-width: 90%;
+  }
 }
-.navbar .right img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  margin-right: 1rem;
+@media (max-width: 1024px) {
+  .navbar {
+    max-width: 95%;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    top: 1rem;
+  }
+  .navbar .container-navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .navbar .container-navbar .navbar-toggle {
+    display: block;
+    margin-left: auto;
+    margin-top: 0.5rem;
+  }
+  .navbar .container-navbar .navbar-collapse {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+  }
+  .navbar .container-navbar .navbar-collapse.show {
+    display: flex;
+    max-height: 500px;
+  }
+  .navbar .container-navbar .navbar-collapse .navbar-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar .container-navbar .navbar-collapse .navbar-menu li {
+    width: 100%;
+  }
+  .navbar .container-navbar .navbar-collapse .navbar-menu li a {
+    padding: 0.5rem 1rem;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navbar .container-navbar .navbar-collapse .navbar-menu li .dropdown-menu {
+    position: relative;
+    box-shadow: none;
+    padding-left: 1rem;
+    background: none;
+  }
+  .navbar .container-navbar .navbar-collapse .navbar-actions {
+    width: 100%;
+    justify-content: center;
+  }
+}
+@media (max-width: 425px), (max-width: 375px), (max-width: 320px) {
+  .navbar .navbar-actions {
+    flex-direction: column;
+    gap: 0.25rem;
+  }
 }
 
 .footer-non {

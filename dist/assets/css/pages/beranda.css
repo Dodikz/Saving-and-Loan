@@ -961,4 +961,76 @@ h6 {
   height: 100%;
 }
 
+@media (max-width: 992px) {
+  .beranda-section-content {
+    padding: 6rem 1.5rem;
+  }
+  .beranda-section-content .container .beranda-content {
+    flex-direction: column;
+    gap: 3rem;
+  }
+  .beranda-section-content .container .beranda-content .card-icon-header {
+    display: none;
+  }
+  .beranda-section-content .container .beranda-content .beranda-content-header {
+    text-align: center;
+  }
+  .beranda-section-content .container .beranda-content .beranda-content-header h1.beranda-content-title {
+    font-size: 2.5rem;
+  }
+  .beranda-section-content .container .beranda-content .beranda-content-header p.beranda-content-subtitle {
+    font-size: 1rem;
+  }
+  .beranda-section-content .container .beranda-content .beranda-content-body img {
+    width: 100%;
+    max-width: 28rem;
+  }
+  .beranda-section-content .container .beranda-content .card-summary {
+    flex-direction: column;
+    align-items: center;
+  }
+  .beranda-section-content .container .beranda-content .card-summary .card {
+    width: 100%;
+    max-width: 100%;
+  }
+  .beranda-section-content .container .beranda-content .layanan-image .beranda-content-image {
+    width: 100%;
+    max-width: 22rem;
+  }
+  .beranda-section-content .container .beranda-content .card-location {
+    flex-direction: column;
+  }
+  .beranda-section-content .container .beranda-content .card-location .location-desc,
+  .beranda-section-content .container .beranda-content .card-location .location-map {
+    width: 100%;
+  }
+  .beranda-section-content .container .beranda-content .card-location .location-map {
+    min-height: 250px;
+  }
+}
+@media (max-width: 768px) {
+  .card-icon-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
+  .card-icon-header img,
+  .card-icon-header svg {
+    width: 2rem;
+    height: 2rem;
+  }
+}
+@media (max-width: 576px) {
+  .card-icon-header {
+    gap: 0.75rem;
+  }
+  .card-icon-header img,
+  .card-icon-header svg {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+}
+
 /*# sourceMappingURL=beranda.css.map*/

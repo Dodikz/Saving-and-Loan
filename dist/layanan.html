@@ -60,34 +60,67 @@ License: -
   <!-- Start:: header navbar section -->
   <nav class="navbar">
     <div class="container-navbar">
+  
+      <!-- Logo -->
       <div class="navbar-brand">
         <img src="assets/media/images/Logo.png" alt="Logo" />
       </div>
-      <ul class="navbar-menu">
-        <li><a href="Beranda.html">Beranda</a></li>
-        <li><a href="layanan.html">Layanan</a></li>
-        <li class="dropdown">
-          <a href="#">
-            Tentang Kami
-            <span class="caret">
-              <img src="assets/media/svg/arrow-down.svg" alt="caret">
-            </span>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Visi & Misi</a></li>
-            <li><a href="#">Struktur</a></li>
-            <li><a href="#">Sejarah</a></li>
-          </ul>
-        </li>
-        <li><a href="artikel.html">Artikel</a></li>
-        <li><a href="kontak.html">Kontak</a></li>
-      </ul>
-      <div class="navbar-actions">
-        <button class="btn btn-dark">Sign Up</button>
-        <button class="btn btn-light">Login</button>
+  
+      <!-- Tombol toggle (untuk mobile) -->
+      <button class="navbar-toggle" id="navbarToggle">
+        <img src="assets/media/svg/menu.svg" alt="Menu" />
+      </button>
+  
+      <!-- Menu yang bisa dikollapse -->
+      <div class="navbar-collapse" id="navbarCollapse">
+  
+        <!-- Navigasi utama -->
+        <ul class="navbar-menu">
+          <li><a href="Beranda.html">Beranda</a></li>
+          <li><a href="layanan.html">Layanan</a></li>
+  
+          <!-- Dropdown -->
+          <li class="dropdown">
+            <a href="#">
+              Tentang Kami
+              <span class="caret">
+                <img src="assets/media/svg/arrow-down.svg" alt="caret" />
+              </span>
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Visi & Misi</a></li>
+              <li><a href="#">Struktur</a></li>
+              <li><a href="#">Sejarah</a></li>
+            </ul>
+          </li>
+  
+          <li><a href="artikel.html">Artikel</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+  
+        <!-- Tombol Sign Up dan Login -->
+        <div class="navbar-actions">
+          <button class="btn btn-dark">Sign Up</button>
+          <button class="btn btn-light">Login</button>
+        </div>
+  
       </div>
     </div>
   </nav>
+  
+  
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const toggleBtn = document.getElementById("navbarToggle");
+    const collapse = document.getElementById("navbarCollapse");
+  
+    toggleBtn.addEventListener("click", () => {
+      collapse.classList.toggle("show");
+    });
+  });
+  
+  </script>
+  
   <!-- End:: header navbar section -->
 
    <section class="layanan-section-content">
