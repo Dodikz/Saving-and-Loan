@@ -52,68 +52,42 @@ License: -
 <body>
 
   <!-- Start:: header navbar section -->
-  <main class="main">
+  <nav class="navbar-user">
+    <div class="container container-navbar">
+      <div class="navbar-brand">
+        <img src="../assets/media/images/Logo.png" alt="Logo">
+      </div>
   
-    <div class="content">
-      <div class="navbar" id="navbar">
-        <div class="left">
-          <button id="toggleSidebar">☰</button>
-          <span>Hello, Admin</span>
-          <span class="date"></span>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  
+      <div class="navbar-menu" id="navbar-menu">
+        <div class="nav-item"><img src="../assets/media/svg/home-c.svg" class="svg"><a href="beranda_u.html">Beranda</a></div>
+        <div class="nav-item"><img src="../assets/media/svg/simpanan.svg" class="svg"><a href="simpanan_u.html">Simpanan</a></div>
+        <div class="nav-item"><img src="../assets/media/svg/pinjaman.svg" class="svg"><a href="pinjaman_u.html">Pinjaman</a></div>
+        <div class="logout">
+          <img src="../assets/media/svg/log-out.svg" alt="Logout" class="svg"> <a href="logout.html">Logout</a>
         </div>
-        <div class="right">
-          <img src="../assets/media/images/profile.jpg" alt="Admin Avatar" />
-        </div>
-  </main>
+      </div>
+  
+    </div>
+  </nav>
   
   <script>
-    document.getElementById('toggleSidebar').addEventListener('click', () => {
-      const sidebar = document.getElementById('sidebar');
-      const navbar = document.getElementById('navbar');
-      navbar.classList.toggle('collapsed');
-      sidebar.classList.toggle('collapsed');
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.getElementById('hamburger');
+      const navbarMenu = document.getElementById('navbar-menu');
+  
+      hamburger.addEventListener('click', function () {
+        navbarMenu.classList.toggle('navbar-show');
+        hamburger.classList.toggle('hamburger--active');
+      });
     });
-  
-    function updateDate() {
-      const dateElement = document.querySelector(".date");
-      const now = new Date();
-  
-      const options = { day: 'numeric', month: 'long', year: 'numeric' };
-      const formattedDate = now.toLocaleDateString('id-ID', options);
-  
-      dateElement.textContent = formattedDate;
-    }
-  
-    updateDate();
-  
-    setInterval(updateDate, 1000); 
   </script>  <!-- End:: header navbar section -->
 
-  <!-- Start:: sidebar section -->
-  <aside class="sidebar" id="sidebar">
-      <div>
-        <div class="logo">
-          <img src="../assets/media/images/logo-sidebar.png" alt="Logo Koperasi"  class="large-logo"/>
-          <img src="../assets/media/images/LogoBulata.png" alt="Logo Koperasi" class="small-logo" />
-        </div>
-        <a href="beranda_u.html" class="nav-link active">
-          <img src="../assets/media/svg/home-white.svg" alt="Dashboard" />
-          <span>Dashboard</span>
-        </a>
-        <a href="simpanan_u.html" class="nav-link">
-          <img src="../assets/media/svg/credit-card-fill-white.svg" alt="Simpanan" />
-          <span>Simpanan</span>
-        </a>
-        <a href="pinjaman_u.html" class="nav-link">
-          <img src="../assets/media/svg/money-cash-white.svg" alt="Pinjaman" />
-          <span>Pinjaman</span>
-        </a>
-      </div>
-      <a href="memekan" class="nav-link logout">
-        <img src="../assets/media/svg/log-out.svg" alt="Logout" />
-        <span>Log Out</span>
-      </a>
-    </aside>  <!-- End:: sidebar section -->
 
    
 <section class="pinjaman-user-section">
@@ -213,7 +187,7 @@ License: -
   <!-- Start:: footer section -->
   <!-- End:: footer section -->
 
-  <script src="../assets/js/custom/modal.js"></script>
+  <!-- <script src="../assets/js/custom/modal.js"></script> -->
 
   <!-- Start::Global Bundle Scripts (used by all pages) -->
   <script src="../assets/js/scripts.bundle.js"></script>
