@@ -59,69 +59,38 @@ License: -
 
   <!-- Start:: header navbar section -->
   <nav class="navbar">
-    <div class="container-navbar">
-  
-      <!-- Logo -->
+    <div class="container container-navbar">
       <div class="navbar-brand">
-        <img src="assets/media/images/Logo.png" alt="Logo" />
+        <img src="assets/media/images/Logo.png" alt="Logo">
       </div>
   
-      <!-- Tombol toggle (untuk mobile) -->
-      <button class="navbar-toggle" id="navbarToggle">
-        <img src="assets/media/svg/menu.svg" alt="Menu" />
-      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
   
-      <!-- Menu yang bisa dikollapse -->
-      <div class="navbar-collapse" id="navbarCollapse">
-  
-        <!-- Navigasi utama -->
-        <ul class="navbar-menu">
-          <li><a href="Beranda.html">Beranda</a></li>
-          <li><a href="layanan.html">Layanan</a></li>
-  
-          <!-- Dropdown -->
-          <li class="dropdown">
-            <a href="#">
-              Tentang Kami
-              <span class="caret">
-                <img src="assets/media/svg/arrow-down.svg" alt="caret" />
-              </span>
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Visi & Misi</a></li>
-              <li><a href="#">Struktur</a></li>
-              <li><a href="#">Sejarah</a></li>
-            </ul>
-          </li>
-  
-          <li><a href="artikel.html">Artikel</a></li>
-          <li><a href="kontak.html">Kontak</a></li>
-        </ul>
-  
-        <!-- Tombol Sign Up dan Login -->
-        <div class="navbar-actions">
-          <button class="btn btn-dark">Sign Up</button>
-          <button class="btn btn-light">Login</button>
-        </div>
-  
+      <div class="navbar-menu" id="navbar-menu">
+        <div><a href="Beranda.html">Beranda</a></div>
+        <div><a href="layanan.html">Layanan</a></div>
+        <div><a href="tentangkami.html">Tentang Kami</a></div>
+        <div><a href="artikel.html">Artikel</a></div>
+        <div><a href="kontak.html">Kontak</a></div>
       </div>
     </div>
   </nav>
   
-  
   <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const toggleBtn = document.getElementById("navbarToggle");
-    const collapse = document.getElementById("navbarCollapse");
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.getElementById('hamburger');
+      const navbarMenu = document.getElementById('navbar-menu');
   
-    toggleBtn.addEventListener("click", () => {
-      collapse.classList.toggle("show");
+      hamburger.addEventListener('click', function () {
+        navbarMenu.classList.toggle('navbar-show');
+        hamburger.classList.toggle('hamburger--active');
+      });
     });
-  });
-  
-  </script>
-  
-  <!-- End:: header navbar section -->
+  </script>  <!-- End:: header navbar section -->
 
    <section class="artikel-teratas">
     <div class="container container--teratas">

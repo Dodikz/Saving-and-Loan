@@ -1,6 +1,6 @@
 .navbar {
   position: fixed;
-  top: 1.5rem;
+  top: .5rem;
   left: 50%;
   transform: translateX(-50%);
   background-color: #fff;
@@ -18,181 +18,74 @@
     padding: 0 1rem;
     flex-wrap: nowrap;
 
-    .navbar-brand img {
-      height: 40px;
-    }
-
-    .navbar-toggle {
-      display: none;
-      background: none;
-      border: none;
-      cursor: pointer;
-
+    .navbar-brand {
       img {
-        width: 28px;
-        height: 28px;
+        height: toRem(40);
       }
     }
 
-    .navbar-collapse {
-      display: flex;
+    .hamburger {
+      display: none;
+
+      span {
+        display: block;
+        width: toRem(25);
+        height: 3px;
+        background-color: #000;
+        margin: toRem(5) 0;
+        transition: all 0.3s ease;
+      }
+
+      @include media-breakpoint-down(lg) {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    .hamburger--active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translate(toRem(7), toRem(6));
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: rotate(-45deg) translate(toRem(5), toRem(-5));
+      }
+    }
+
+    .navbar-menu {
+      display: flex ;
       align-items: center;
       gap: 2rem;
 
-      .navbar-menu {
-        display: flex;
-        list-style: none;
-        gap: 2rem;
-        margin: 0;
-        padding: 0;
-
-        li {
-          position: relative;
-
-          a {
-            text-decoration: none;
-            color: #000;
-            font-size: 0.875rem;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
-            gap: 0.25rem;
-            transition: all 0.3s ease;
-
-            &:hover {
-              color: #504b38;
-
-              .caret img {
-                rotate: 180deg;
-              }
-            }
-
-            .caret img {
-              width: 15px;
-              height: 15px;
-              transition: all 0.3s ease;
-            }
-          }
-
-          &.dropdown:hover .dropdown-menu {
-            display: block;
-            opacity: 1;
-            visibility: visible;
-          }
-
-          .dropdown-menu {
-            opacity: 0;
-            visibility: hidden;
-            display: block;
-            position: absolute;
-            top: 100%;
-            right: 0;
-            background-color: #fff;
-            border-radius: 0.5rem;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            min-width: 150px;
-            padding: 0.5rem 0;
-            z-index: 10;
-            transition: all 0.3s ease;
-
-            li a {
-              display: block;
-              padding: 0.5rem 1rem;
-              font-size: 0.875rem;
-              font-weight: 400;
-
-              &:hover {
-                background-color: #f5f5f5;
-              }
-            }
-          }
-        }
-      }
-
-      .navbar-actions {
-        display: flex;
-        gap: 0.5rem;
-        align-items: center;
-
-        button {
-          padding: 0.4rem 1rem;
-          font-size: 0.875rem;
-        }
-      }
-    }
-  }
-
-  // RESPONSIVE jan otak atik
-  @media (max-width: 1220px) {
-    max-width: 90%;
-  }
-
-  @media (max-width: 1024px) {
-    max-width: 95%;
-  }
-
-  @media (max-width: 768px) {
-    top: 1rem;
-
-    .container-navbar {
-      flex-direction: column;
-      align-items: flex-start;
-
-      .navbar-toggle {
-        display: block;
-        margin-left: auto;
-        margin-top: 0.5rem;
-      }
-
-      .navbar-collapse {
+      @include media-breakpoint-down(lg) {
         display: none;
-        flex-direction: column;
+        position: absolute;
+        top: toRem(49);
+        left: 0;
         width: 100%;
-        gap: 1rem;
-        margin-top: 1rem;
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.4s ease;
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 0 0 1.5rem 1.5rem;
+        box-shadow: 0 toRem(2) 0 toRem(2) #e6e6e6;
+        transition: all 0.3s linear;
+      }
 
-        &.show {
-          display: flex;
-          max-height: 500px; 
-        }
-
-        .navbar-menu {
-          flex-direction: column;
-          width: 100%;
-
-          li {
-            width: 100%;
-
-            a {
-              padding: 0.5rem 1rem;
-              width: 100%;
-              justify-content: space-between;
-            }
-
-            .dropdown-menu {
-              position: relative;
-              box-shadow: none;
-              padding-left: 1rem;
-              background: none;
-            }
-          }
-        }
-
-        .navbar-actions {
-          width: 100%;
-          justify-content: center;
+      .nav-item {
+        a {
+          color: #000;
+          font-weight: 500;
+          font-size: 1rem;
         }
       }
     }
-  }
-
-  @media (max-width: 425px), (max-width: 375px), (max-width: 320px) {
-    .navbar-actions {
+    .navbar-show{
+      display: flex !important;
       flex-direction: column;
-      gap: 0.25rem;
     }
   }
+
 }
