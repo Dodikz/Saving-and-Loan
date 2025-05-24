@@ -15849,6 +15849,7 @@ textarea.form-control-lg {
   display: flex;
   gap: 0.5rem;
   align-items: center;
+  margin-left: auto;
 }
 .navbar .container-navbar .navbar-collapse .navbar-actions button {
   padding: 0.4rem 1rem;
