@@ -94,7 +94,7 @@
   position: fixed;
   width: 100%;
   border-bottom: 1px solid #e6e6e6;
-  padding: toRem(8) 0;
+  padding: toRem(16) 0;
   z-index: 1000;
 
   .container-navbar {
@@ -206,4 +206,123 @@
     }
     
   }
+}
+
+.navbar-super-user{
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #e6e6e6;
+  padding: toRem(16) 0;
+  z-index: 1000;
+
+  .container-navbar {
+    display: flex;
+    justify-content: space-between;
+
+    .navbar-brand {
+      img {
+        height: toRem(40);
+      }
+    }
+
+    .hamburger {
+      display: none;
+
+      span {
+        display: block;
+        width: toRem(25);
+        height: 3px;
+        background-color: #000;
+        margin: toRem(5) 0;
+        transition: all 0.3s ease;
+      }
+      span:nth-child(3) {
+        width: toRem(20);
+        
+      }
+
+      @include media-breakpoint-down(lg) {
+        display: block;
+        cursor: pointer;
+      }
+    }
+
+    .hamburger--active {
+      span:nth-child(1) {
+        transform: rotate(45deg) translate(toRem(7), toRem(6));
+      }
+
+      span:nth-child(2) {
+        transform: rotate(-45deg) translate(toRem(-1), 0);
+      }
+      
+      span:nth-child(3) {
+        opacity: 0;
+      }
+    }
+
+    .navbar-menu {
+      display: flex ;
+      align-items: center;
+      gap: 2rem;
+      @include media-breakpoint-down(lg) {
+        display: flex;
+        position: absolute;
+        top: -100vh;
+        left: 0;
+        z-index: -1;
+        width: 100%;
+        height: 100vh;
+        padding: 4rem 0;
+        background-color: #bebebe;
+        flex-direction: column;
+        transition: all 0.3s linear;
+        opacity: 0;
+      }
+
+      .logout{
+        display: flex;
+        gap: toRem(8);
+        align-items: center;
+        background-color: $primary;
+        color: #fff;
+        padding: 1rem;
+        border-radius: 0.3125rem;
+        border: none;
+        cursor: pointer;
+        font-size: 0.875rem;
+        height: 2.375rem;
+        transition: background-color 0.2s ease-in-out;
+
+        @include media-breakpoint-down(lg) {
+          width: 90%;
+          justify-content: center;
+        }
+        a{
+          color: #fff;
+        }
+
+        .svg{
+          height: toRem(20);
+        }
+      }
+      .nav-item {
+        display: flex;
+        gap: toRem(8);
+        align-items: center;
+
+        .svg{
+          width: toRem(20);
+        }
+      }
+    }
+
+    .navbar-show{
+      top: 0 !important;
+      left: 0 !important;
+      opacity: 1 !important;
+    }
+    
+  }
+
 }
