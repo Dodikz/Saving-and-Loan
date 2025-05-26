@@ -15764,7 +15764,7 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1rem;
+  padding: 1rem;
   flex-wrap: nowrap;
 }
 .navbar-non-user .container-navbar .navbar-brand img {
