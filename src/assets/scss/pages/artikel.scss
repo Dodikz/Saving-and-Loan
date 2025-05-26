@@ -211,3 +211,264 @@
     }
   }
 }
+
+//responsive layanan jan hapus
+@include media-breakpoint-down(md) {
+  .artikel-teratas {
+    margin-top: 4rem;
+
+    .container--teratas {
+      .section-title {
+        font-size: 2.5rem;
+      }
+
+      .carousel-wrapper {
+        .carousel-track {
+          gap: 0.5rem;
+        }
+
+        .artikel-card {
+          width: 100%;
+          height: auto;
+          margin: 1rem 0;
+        }
+
+        .carousel-button {
+          height: 200px;
+          width: 80px;
+
+          img {
+            width: 16px;
+            height: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .pengumuman {
+    margin: 0 2rem;
+
+    .container--pengumuman{
+      .section-title {
+        font-size: 2.5rem;
+      }
+
+      .pengumuman-card {
+        flex-direction: column;
+        align-items: center;
+
+        .image-wrapper {
+          width: 100%;
+          height: auto;
+  
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+          }
+        }
+
+        .artikel-content {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs-1) {
+  .artikel-teratas {
+    margin-top: 2rem;
+
+    .container--teratas {
+      .section-title {
+        font-size: 1.875rem;
+      }
+
+      .carousel-wrapper {
+        .carousel-track {
+          gap: 0.25rem;
+        }
+
+        .artikel-card {
+          width: 100%;
+          height: auto;
+          margin: 0.5rem 0;
+        }
+
+        .carousel-button {
+          height: 150px;
+          width: 60px;
+
+          img {
+            width: 14px;
+            height: 14px;
+          }
+        }
+      }
+    }
+  }
+
+  .pengumuman {
+    margin: 0 1rem;
+
+    .container--pengumuman{
+      .section-title {
+        font-size: 1.875rem;
+      }
+
+      .pengumuman-card {
+        flex-direction: column;
+        align-items: center;
+
+        .image-wrapper {
+          width: 100%;
+          height: auto;
+  
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+          }
+        }
+
+        .artikel-content {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm){
+  .artikel-teratas {
+    margin-top: 1rem;
+
+    .container--teratas {
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .carousel-wrapper {
+        .carousel-track {
+          gap: 0.125rem;
+        }
+
+        .artikel-card {
+          width: 100%;
+          height: auto;
+          margin: 0.25rem 0;
+        }
+
+        .carousel-button {
+          height: 100px;
+          width: 40px;
+
+          img {
+            width: 12px;
+            height: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .pengumuman {
+    margin: 0 0.5rem;
+
+    .container--pengumuman{
+      .section-title {
+        font-size: 1.5rem;
+      }
+
+      .pengumuman-card {
+        flex-direction: column;
+        align-items: center;
+
+        .image-wrapper {
+          width: 100%;
+          height: auto;
+  
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+          }
+        }
+
+        .artikel-content {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .artikel-teratas {
+    margin-top: 10rem;
+
+    .container--teratas {
+      .section-title {
+        font-size: 4rem;
+      }
+
+      .carousel-wrapper {
+        .carousel-track {
+          gap: 2rem;
+        }
+
+        .artikel-card {
+          width: 350px;
+          height: 400px;
+          margin: 2rem 0.5rem;
+        }
+
+        .carousel-button {
+          height: 400px;
+          width: 160px;
+
+          img {
+            width: 28px;
+            height: 28px;
+          }
+        }
+      }
+    }
+  }
+
+  .pengumuman {
+    margin: 0 10rem;
+
+    .container--pengumuman{
+      .section-title {
+        font-size: 4rem;
+      }
+
+      .pengumuman-card {
+        flex-direction: row;
+        align-items: center;
+
+        .image-wrapper {
+          width: 30%;
+          height: auto;
+  
+          img {
+            width: 100%;
+            height: auto;
+            border-radius: 1rem;
+          }
+        }
+
+        .artikel-content {
+          width: 70%;
+          text-align: left;
+        }
+      }
+    }
+  }
+}

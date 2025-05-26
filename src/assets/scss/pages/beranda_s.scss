@@ -13,7 +13,7 @@
   left: 15.3125rem;
   top: 5.625rem;
 
-  .container-beranda {
+  .container--beranda {
     width: 100%;
     height: auto;
     display: flex;
@@ -88,3 +88,45 @@
   }
 }
 
+@include media-breakpoint-up(xs) {
+  .beranda-superadmin-section {
+    left: 17.5rem;
+    top: 6.25rem;
+
+    .container--beranda {
+      padding: 0 1.875rem;
+    }
+
+    .card-information {
+      grid-template-columns: repeat(3, minmax(22.5rem, 1fr));
+    }
+  }
+
+}
+
+@include media-breakpoint-up(xs-1) {
+  .beranda-superadmin-section {
+    left: 18.75rem;
+    top: 7.5rem;
+
+    .container--beranda {
+      padding: 0 2.5rem;
+    }
+
+    .card-information {
+      grid-template-columns: repeat(3, minmax(25rem, 1fr));
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+
+}
+
+@include media-breakpoint-up(md) {
+
+}
+
+@include media-breakpoint-up(lg) {
+
+}

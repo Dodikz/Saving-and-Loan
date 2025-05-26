@@ -993,4 +993,193 @@ h6 {
   text-align: end;
 }
 
+@media (max-width: 767.98px) {
+  .artikel-teratas {
+    margin-top: 4rem;
+  }
+  .artikel-teratas .container--teratas .section-title {
+    font-size: 2.5rem;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-track {
+    gap: 0.5rem;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .artikel-card {
+    width: 100%;
+    height: auto;
+    margin: 1rem 0;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-button {
+    height: 200px;
+    width: 80px;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-button img {
+    width: 16px;
+    height: 16px;
+  }
+  .pengumuman {
+    margin: 0 2rem;
+  }
+  .pengumuman .container--pengumuman .section-title {
+    font-size: 2.5rem;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .artikel-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 479.98px) {
+  .artikel-teratas {
+    margin-top: 2rem;
+  }
+  .artikel-teratas .container--teratas .section-title {
+    font-size: 1.875rem;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-track {
+    gap: 0.25rem;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .artikel-card {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem 0;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-button {
+    height: 150px;
+    width: 60px;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-button img {
+    width: 14px;
+    height: 14px;
+  }
+  .pengumuman {
+    margin: 0 1rem;
+  }
+  .pengumuman .container--pengumuman .section-title {
+    font-size: 1.875rem;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .artikel-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (max-width: 575.98px) {
+  .artikel-teratas {
+    margin-top: 1rem;
+  }
+  .artikel-teratas .container--teratas .section-title {
+    font-size: 1.5rem;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-track {
+    gap: 0.125rem;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .artikel-card {
+    width: 100%;
+    height: auto;
+    margin: 0.25rem 0;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-button {
+    height: 100px;
+    width: 40px;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-button img {
+    width: 12px;
+    height: 12px;
+  }
+  .pengumuman {
+    margin: 0 0.5rem;
+  }
+  .pengumuman .container--pengumuman .section-title {
+    font-size: 1.5rem;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .image-wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .artikel-content {
+    width: 100%;
+    text-align: center;
+  }
+}
+@media (min-width: 992px) {
+  .artikel-teratas {
+    margin-top: 10rem;
+  }
+  .artikel-teratas .container--teratas .section-title {
+    font-size: 4rem;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-track {
+    gap: 2rem;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .artikel-card {
+    width: 350px;
+    height: 400px;
+    margin: 2rem 0.5rem;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-button {
+    height: 400px;
+    width: 160px;
+  }
+  .artikel-teratas .container--teratas .carousel-wrapper .carousel-button img {
+    width: 28px;
+    height: 28px;
+  }
+  .pengumuman {
+    margin: 0 10rem;
+  }
+  .pengumuman .container--pengumuman .section-title {
+    font-size: 4rem;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card {
+    flex-direction: row;
+    align-items: center;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .image-wrapper {
+    width: 30%;
+    height: auto;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .image-wrapper img {
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+  .pengumuman .container--pengumuman .pengumuman-card .artikel-content {
+    width: 70%;
+    text-align: left;
+  }
+}
+
 /*# sourceMappingURL=artikel.css.map*/

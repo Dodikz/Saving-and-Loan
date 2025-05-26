@@ -6,10 +6,16 @@
 
 // Add your style here
 .layanan-section-content {
-  padding: 8rem 8rem;
+  margin-top: 8rem;
+  justify-content: center;
   background-color: $white;
 
-  .container {
+  .container--custom {
+    width: 100%;
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 2rem;
 
@@ -31,7 +37,7 @@
       display: flex;
       justify-content: space-between;
       gap: 2rem;
-      margin-top: 4rem;
+      margin: 0 auto;
       .card {
         width: 24.563rem;
         height: 18.875rem;
@@ -71,6 +77,7 @@
     border-radius: 1.5rem;
     border: 0.125rem solid rgba(0, 0, 0, 0.21);
     padding: 4rem 5.5rem;
+    margin-bottom: 7rem;
       .card-content {
         display: flex;
         justify-content: space-between;
@@ -133,6 +140,320 @@
           .card-image {
             width: 10rem;
             height: auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+//responsive layanan jan hapus
+
+@include media-breakpoint-down(xs) {
+  .layanan-section-content {
+    margin-top: 8rem;
+
+    .container--custom {
+      .title-content {
+        .title {
+          font-size: 2.5rem;
+        }
+      }
+
+      .summary-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .card {
+          width: 100%;
+          height: auto;
+          padding: 1.5rem;
+        }
+      }
+
+      .card-layanan {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+        margin-bottom: 4rem;
+
+        .card-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+
+          .card-left {
+            .card-title {
+              font-size: 1.5rem;
+            }
+
+            .card-subtitle {
+              margin-bottom: 1rem;
+            }
+
+            .card-features {
+              margin-bottom: 1rem;
+            }
+
+            .cta-btn {
+              padding: 0.5rem 1rem;
+            }
+          }
+
+          .card-right {
+            .card-image {
+              width: 8rem;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(xs-1) {
+  .layanan-section-content {
+    .container--custom {
+      .title-content {
+        .title {
+          font-size: 2.25rem;
+        }
+      }
+
+      .summary-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .card {
+          width: 100%;
+          height: auto;
+          padding: 1.25rem;
+        }
+      }
+
+      .card-layanan {
+        width: 100%;
+        height: auto;
+        padding: 1.5rem;
+
+        .card-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+
+          .card-left {
+            .card-title {
+              font-size: 1.25rem;
+            }
+
+            .card-subtitle {
+              margin-bottom: 0.75rem;
+            }
+
+            .card-features {
+              margin-bottom: 0.75rem;
+            }
+
+            .cta-btn {
+              padding: 0.5rem 0.75rem;
+            }
+          }
+
+          .card-right {
+            .card-image {
+              width: 7rem;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .layanan-section-content {
+    .container--custom {
+      .title-content {
+        .title {
+          font-size: 2rem;
+        }
+      }
+
+      .summary-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .card {
+          width: 100%;
+          height: auto;
+          padding: 1.125rem;
+        }
+      }
+
+      .card-layanan {
+        width: 100%;
+        height: auto;
+        padding: 1.25rem;
+
+        .card-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+
+          .card-left {
+            .card-title {
+              font-size: 1.125rem;
+            }
+
+            .card-subtitle {
+              margin-bottom: 0.5rem;
+            }
+
+            .card-features {
+              margin-bottom: 0.5rem;
+            }
+
+            .cta-btn {
+              padding: 0.5rem 0.75rem;
+            }
+          }
+
+          .card-right {
+            .card-image {
+              width: 6rem;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .layanan-section-content {
+    .container--custom {
+      .title-content {
+        .title {
+          font-size: 2.25rem;
+        }
+      }
+
+      .summary-card {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+
+        .card {
+          width: 100%;
+          height: auto;
+          padding: 1.5rem;
+        }
+      }
+
+      .card-layanan {
+        width: 100%;
+        height: auto;
+        padding: 2rem;
+
+        .card-content {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+
+          .card-left {
+            .card-title {
+              font-size: 1.5rem;
+            }
+
+            .card-subtitle {
+              margin-bottom: 0.75rem;
+            }
+
+            .card-features {
+              margin-bottom: 0.75rem;
+            }
+
+            .cta-btn {
+              padding: 0.5rem 0.75rem;
+            }
+          }
+
+          .card-right {
+            .card-image {
+              width: 8rem;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .layanan-section-content {
+    .container--custom {
+      .title-content {
+        .title {
+          font-size: 3.875rem;
+        }
+      }
+
+      .summary-card {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 2rem;
+
+        .card {
+          width: 24.563rem;
+          height: 18.875rem;
+          padding: 2rem 1.5rem;
+        }
+      }
+
+      .card-layanan {
+        width: 64rem;
+        height: 27.688rem;
+        padding: 4rem 5.5rem;
+
+        .card-content {
+          flex-direction: row;
+          align-items: center;
+          gap: 2rem;
+
+          .card-left {
+            flex: 1;
+
+            .card-title {
+              font-size: 1.75rem;
+            }
+
+            .card-subtitle {
+              margin-bottom: 1.5rem;
+            }
+
+            .card-features {
+              margin-bottom: 1.5rem;
+            }
+
+            .cta-btn {
+              padding: 0.75rem 1.5rem;
+            }
+          }
+
+          .card-right {
+            flex-shrink: 0;
+
+            .card-image {
+              width: 10rem;
+              height: auto;
+            }
           }
         }
       }

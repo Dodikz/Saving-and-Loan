@@ -1,3 +1,121 @@
 {{#> partials/template_non-user.html }}
+<section class="informasi-section">
+  <div class="container container--custom">
+    <h1 class="section-title">Tentang Kami</h1>
+    <p class="section-subtitle">
+      Kami adalah koperasi modern yang tumbuh bersama anggotanya, menyediakan layanan dan produk untuk kesejahteraan bersama.
+    </p>
 
+    <div class="tentang-grid">
+      <div class="tentang-kiri">
+        <h1 class="tentang-subtitle">Perjalanan Kami</h1>
+        <p class="tentang-text">
+          Etiam accumsan urna a mauris dapibus, nec aliquet nunc convallis. Phasellus eget justo et libero ultricies posuere. Cras euismod, arcu nec congue convallis, ipsum nunc cursus nibh, vel condimentum sapien orci non libero. Integer ullamcorper felis sit amet felis placerat, eu convallis lorem iaculis.
+        </p>
+
+        <div class="tentang-poin">
+          <div class="poin-card">
+            <img src="assets/media/svg/piggy-bank-brown.svg" alt="Gotong Royong" />
+            <h4 class="point-title">Gotong Royong</h4>
+            <p>Bersama membangun kesejahteraan anggota</p>
+          </div>
+          <div class="poin-card">
+            <img src="assets/media/svg/piggy-bank-brown.svg" alt="Transparansi" />
+            <h4 class="point-title">Transparansi</h4>
+            <p>Pengelolaan yang jujur dan terbuka</p>
+          </div>
+          <div class="poin-card">
+            <img src="assets/media/svg/piggy-bank-brown.svg" alt="Profesionalisme" />
+            <h4 class="point-title">Profesionalisme</h4>
+            <p>Layanan berkualitas dan terpercaya</p>
+          </div>
+        </div>
+        <div class="quote-box">
+          <em>“ Kami percaya koperasi bukan hanya soal usaha, tapi tentang kebersamaan ”</em>
+        </div>
+      </div>
+      <div class="tentang-kanan">
+        <img src="assets/media/images/tentang.png" alt="Foto pertemuan" class="tentang-img" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="informasi-section">
+  <div class="container container--custom">
+    <h1 class="section-title">Informasi Simpan & Pinjam</h1>
+    <p class="section-subtitle">
+      Kami menyediakan layanan simpanan dan pinjaman demi kesejahteraan bersama anggota koperasi.
+    </p>
+
+    <div class="info-card-wrapper">
+      <div class="info-card">
+        <h3><img src="assets/media/svg/piggy-bank-brown.svg" alt="" /> Simpanan Anggota</h3>
+        <ul>
+          <li>Simpanan Pokok – Setoran awal saat mendaftar.</li>
+          <li>Simpanan Wajib – Rutin tiap bulan.</li>
+          <li>Simpanan Sukarela – Bebas sesuai kemampuan.</li>
+        </ul>
+        <button class="btn-syarat" id="lihatSyaratBtn">Lihat Syarat Simpanan</button>
+      </div>
+      <div class="info-card">
+        <h3><img src="assets/media/svg/hand-money-cash-hold.svg" alt="" /> Layanan Pinjaman</h3>
+        <ul>
+          <li>Syarat Mudah – Minimal 6 bulan jadi anggota aktif.</li>
+          <li>Plafon Pinjaman – Hingga 300% dari total simpanan.</li>
+          <li>Bunga Kompetitif – Mulai dari 0.8% per bulan flat.</li>
+        </ul>
+        <button class="btn-syarat" onclick="openModal()">Lihat Syarat Simpanan</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="informasi-section">
+  <div class="container container--custom">
+    <h2 class="section-title">Pertanyaan Umum</h2>
+
+    <div class="faq-box">
+      <div class="faq-item">
+        <strong>Apakah harus menjadi anggota untuk mengajukan pinjaman?</strong>
+        <p>Ya, layanan pinjaman hanya tersedia untuk anggota koperasi.</p>
+      </div>
+      <div class="faq-item">
+        <strong>Berapa biaya pendaftaran anggota?</strong>
+        <p>Biaya pendaftaran sudah termasuk dalam simpanan pokok sebesar Rp 500.000</p>
+      </div>
+      <div class="faq-item">
+        <strong>Berapa lama proses verifikasi keanggotaan?</strong>
+        <p>Proses verifikasi memakan waktu 2-3 hari kerja.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="informasi-section">
+  <div class="container container--custom">
+    <h5 class="help-title">Butuh Bantuan ?</h5>
+    <div class="help-items">
+      <div class="help-item">
+        <img src="assets/media/svg/piggy-bank-brown.svg" alt="Download" />
+        <span>Download Formulir</span>
+      </div>
+      <div class="help-item">
+        <img src="assets/media/svg/piggy-bank-brown.svg" alt="Telepon" />
+        <span>Gotong Royong</span>
+      </div>
+      <div class="help-item">
+        <img src="assets/media/svg/piggy-bank-brown.svg" alt="Email" />
+        <span>Gotong Royong</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+ <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      p
+    </div>
+  </div>
 {{/ partials/template_non-user.html }}

@@ -820,4 +820,241 @@ h6 {
   }
 }
 
+.informasi-section {
+  margin-top: 8rem;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+.informasi-section .container--custom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.informasi-section .container--custom .section-title {
+  font-size: 3.875rem;
+  font-weight: 700;
+  color: #504B38;
+}
+.informasi-section .container--custom .section-subtitle {
+  font-size: 1rem;
+  color: #666;
+  max-width: 640px;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.informasi-section .container--custom .tentang-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  justify-content: center;
+}
+.informasi-section .container--custom .tentang-grid .tentang-kiri {
+  flex: 1 1 400px;
+}
+.informasi-section .container--custom .tentang-grid .tentang-subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #504B38;
+  margin-bottom: 1rem;
+}
+.informasi-section .container--custom .tentang-grid .tentang-kanan {
+  flex: 1 1 300px;
+}
+.informasi-section .container--custom .tentang-grid .tentang-kanan .tentang-img {
+  width: 100%;
+  border-radius: 1rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.informasi-section .container--custom .tentang-grid .tentang-poin {
+  display: flex;
+  gap: 1.5rem;
+  margin: 1.5rem 0;
+  flex-wrap: wrap;
+}
+.informasi-section .container--custom .tentang-grid .tentang-poin .poin-card {
+  flex: 1;
+  padding: 1rem;
+  border: 3px solid #ccc;
+  border-radius: 1rem;
+  text-align: center;
+}
+.informasi-section .container--custom .tentang-grid .tentang-poin .poin-card .point-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #504B38;
+  margin-bottom: 0.5rem;
+}
+.informasi-section .container--custom .tentang-grid .tentang-poin .poin-card img {
+  width: 2rem;
+  margin-bottom: 0.5rem;
+}
+.informasi-section .container--custom .tentang-grid .tentang-poin .poin-card h4 {
+  font-weight: bold;
+}
+.informasi-section .container--custom .tentang-grid .tentang-poin .poin-card p {
+  font-size: 0.875rem;
+}
+.informasi-section .container--custom .tentang-grid .quote-box {
+  text-align: center;
+  margin-top: 1rem;
+  background-color: #efe8cf;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.informasi-section .container--custom .tentang-grid .quote-box em {
+  color: #504B38;
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+.informasi-section .container--custom .info-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.informasi-section .container--custom .info-card-wrapper .info-card {
+  flex: 1 1 300px;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+.informasi-section .container--custom .info-card-wrapper .info-card h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.informasi-section .container--custom .info-card-wrapper .info-card h3 img {
+  width: 3.5rem;
+}
+.informasi-section .container--custom .info-card-wrapper .info-card ul {
+  text-align: left;
+  padding-left: 1rem;
+}
+.informasi-section .container--custom .info-card-wrapper .info-card ul li {
+  margin-bottom: 0.5rem;
+}
+.informasi-section .container--custom .info-card-wrapper .info-card .btn-syarat {
+  margin-top: 1rem;
+  background-color: #e7dfc6;
+  padding: 0.5rem 1.25rem;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+.informasi-section .container--custom .info-card-wrapper .info-card .btn-syarat:hover {
+  background-color: #d5cdb2;
+}
+.informasi-section .container--custom .faq-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.informasi-section .container--custom .faq-box .faq-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1.25rem;
+  border-radius: 0.75rem;
+}
+.informasi-section .container--custom .faq-box .faq-item strong {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.informasi-section .container--custom .faq-box .faq-item p {
+  color: #555;
+  font-size: 0.95rem;
+}
+.informasi-section .container--custom .help-title {
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+  color: #504B38;
+}
+.informasi-section .container--custom .help-items {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+.informasi-section .container--custom .help-items .help-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1rem;
+  color: #504B38;
+}
+.informasi-section .container--custom .help-items .help-item img {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.informasi-section .container--custom .help-items .help-item span {
+  font-weight: 500;
+}
+.informasi-section .modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 0;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  max-height: 80vh;
+  overflow-y: auto;
+  font-family: "Inter", sans-serif;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  display: none;
+  animation: fadeIn 0.3s ease forwards;
+}
+.informasi-section .modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  animation: slideIn 0.3s ease forwards;
+}
+.informasi-section .close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+.informasi-section .close:hover {
+  color: #e74c3c;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 /*# sourceMappingURL=tentangkami.css.map*/

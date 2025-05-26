@@ -1,28 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const track = document.getElementById("carouselTrack");
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
+function openModal() {
+  const modal = document.getElementById("modal");
+  modal.style.display = "flex";
+}
 
-  const scrollAmount = 320; // sedikit lebih besar dari lebar kartu
+function closeModal() {
+  const modal = document.getElementById("modal");
+  modal.style.display = "none";
+}
 
-  function updateButtons() {
-    const scrollLeft = track.scrollLeft;
-    const maxScrollLeft = track.scrollWidth - track.clientWidth;
-
-    prevBtn.style.display = scrollLeft > 0 ? "block" : "none";
-    nextBtn.style.display = scrollLeft < maxScrollLeft ? "block" : "none";
+window.onclick = function (event) {
+  const modal = document.getElementById("modal");
+  if (event.target === modal) {
+    modal.style.display = "none";
   }
+};
 
-  nextBtn.addEventListener("click", () => {
-    track.scrollBy({ left: scrollAmount, behavior: "smooth" });
-  });
 
-  prevBtn.addEventListener("click", () => {
-    track.scrollBy({ left: -scrollAmount, behavior: "smooth" });
-  });
-
-  track.addEventListener("scroll", updateButtons);
-
-  // Initial update
-  updateButtons();
-});
+window.openModal = openModal;
+window.closeModal = closeModal;
