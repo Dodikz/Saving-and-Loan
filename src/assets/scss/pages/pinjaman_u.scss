@@ -6,30 +6,18 @@
 
 // Add your style here
 .pinjaman-user-section {
-  position: absolute;
-  top: 5.625rem;
-  left: 15.3125rem;
-  width: calc(100% - 15.3125rem);
-  min-height: calc(100vh - 5.625rem);
   padding: 1.5rem;
   background-color: white;
   font-family: "Inter", sans-serif;
   color: #333;
 
-  @media only screen and (max-width: 600px) {
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-  }
 
   .container-pinjaman {
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
-
-    @media only screen and (max-width: 600px) {
-      gap: 1rem;
-    }
+    margin-top: 8rem;
+    max-width: 100%;
   }
 
   .table-container {
@@ -241,6 +229,107 @@
           border-color: #5a5134;
         }
       }
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .pinjaman-u {
+    .table-container {
+      .detail-pinjaman-table {
+        th,
+        td {
+          font-size: 0.8rem;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-down(sm) {
+  .pinjaman-u {
+    .table-container {
+      .detail-pinjaman-table {
+        th,
+        td {
+          font-size: 0.7rem;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-down(xs) {
+  .pinjaman-u {
+    .table-container {
+      .detail-pinjaman-table {
+        th,
+        td {
+          font-size: 0.6rem;
+        }
+      }
+    }
+  }
+}
+@include media-breakpoint-up(xs-1) {
+  .pinjaman-user-section {
+    padding: 1.25rem;
+  }
+
+  .table-container {
+    padding: 0.75rem;
+    border-radius: 0.5625rem;
+
+    h4 {
+      font-size: 1.375rem;
+    }
+
+    table {
+      thead th {
+        font-size: 0.875rem;
+      }
+
+      tbody td {
+        font-size: 0.8125rem;
+      }
+    }
+
+    .aksi button {
+      font-size: 0.8125rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+}
+@include media-breakpoint-up(lg) {
+  .pinjaman-user-section {
+    padding: 1.5rem;
+  }
+
+  .table-container {
+    padding: 1rem;
+    border-radius: 0.625rem;
+
+    h4 {
+      font-size: 1.5rem;
+    }
+
+    table {
+      thead th {
+        font-size: 0.875rem;
+      }
+
+      tbody td {
+        font-size: 0.875rem;
+      }
+    }
+
+    .aksi button {
+      font-size: 0.875rem;
+      padding: 0.25rem 0.5rem;
+    }
+  }
+  .pagination {
+    button {
+      font-size: 0.875rem;
+      padding: 0.25rem 0.5rem;
     }
   }
 }
