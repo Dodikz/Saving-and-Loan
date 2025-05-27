@@ -820,19 +820,68 @@ h6 {
   }
 }
 
-.pinjaman-superadmin-section {
+.simpanan-superadmin-section {
   padding: 1.5rem;
   background-color: white;
   font-family: "Inter", sans-serif;
   color: #333;
 }
-.pinjaman-superadmin-section .container-pinjaman {
+.simpanan-superadmin-section .container-simpanan {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 8rem;
 }
-.pinjaman-superadmin-section .filter-bar {
+.simpanan-superadmin-section .container-simpanan .summary-cards {
+  display: flex;
+  gap: 2rem;
+  flex-direction: row;
+}
+.simpanan-superadmin-section .container-simpanan .summary-cards .card {
+  flex: 1 1 0;
+  max-width: 100%;
+  padding: 1rem;
+  background-color: #fff;
+  border: 0.125rem solid #e3e1d1;
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  justify-content: center;
+  height: 150px;
+}
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .icon {
+  background: #dcd6b0;
+  border-radius: 2.1875rem;
+  padding: 0.625rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3.125rem;
+  height: 3.125rem;
+  flex-shrink: 0;
+}
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .icon img {
+  width: 1.875rem;
+  height: 1.875rem;
+}
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .info .label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #777;
+}
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .info .count {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2f2f2f;
+}
+.simpanan-superadmin-section .container-simpanan .filter-bar {
   display: flex;
   align-items: center;
   justify-content: start;
@@ -844,18 +893,18 @@ h6 {
   border-radius: 0.625rem;
   overflow-x: auto;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   flex-wrap: wrap;
   min-width: 17rem;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item.search-input {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.search-input {
   position: relative;
   margin-right: 0.75rem;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item.search-input input {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.search-input input {
   padding: 0.5rem 1.75rem;
   width: 21.5625rem;
   height: 2.375rem;
@@ -864,7 +913,7 @@ h6 {
   font-size: 0.875rem;
   background-color: #fff;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item.search-input .icon {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.search-input .icon {
   position: absolute;
   top: 50%;
   left: 0.75rem;
@@ -874,7 +923,7 @@ h6 {
   opacity: 0.6;
   color: #504B38;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item.filter-select select {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.filter-select select {
   padding: 0.5rem 0.75rem;
   height: 2.375rem;
   border: 0.0625rem solid #ccc;
@@ -889,7 +938,7 @@ h6 {
   background-position: right 10px center;
   background-size: 10px;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item.filter-select .date-picker {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.filter-select .date-picker {
   padding: 0.5rem 0.75rem;
   width: 9.375rem;
   height: 2.375rem;
@@ -899,7 +948,7 @@ h6 {
   color: #504B38;
   background-color: #fff;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item button {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item button {
   display: flex;
   align-items: center;
   gap: 0.375rem;
@@ -913,51 +962,51 @@ h6 {
   height: 2.375rem;
   transition: background-color 0.2s ease-in-out;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item button img {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item button img {
   width: 1rem;
   height: 1rem;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item button:hover {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item button:hover {
   background-color: #3f3825;
 }
-.pinjaman-superadmin-section .table-container {
+.simpanan-superadmin-section .container-simpanan .table-container {
   background: #fff;
   padding: 1rem;
   border-radius: 0.625rem;
   border: 0.125rem solid #e3e1d1;
   overflow-x: auto;
 }
-.pinjaman-superadmin-section .table-container h4 {
+.simpanan-superadmin-section .container-simpanan .table-container h4 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: #333;
 }
-.pinjaman-superadmin-section .table-container table {
+.simpanan-superadmin-section .container-simpanan .table-container table {
   width: 100%;
   min-width: 600px;
   border-collapse: collapse;
 }
-.pinjaman-superadmin-section .table-container table thead {
+.simpanan-superadmin-section .container-simpanan .table-container table thead {
   background-color: white;
   font-weight: 600;
   border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
 }
-.pinjaman-superadmin-section .table-container table thead th {
+.simpanan-superadmin-section .container-simpanan .table-container table thead th {
   padding: 0.75rem 0.5rem;
   font-size: 0.875rem;
   color: #333;
   text-align: left;
 }
-.pinjaman-superadmin-section .table-container table tbody tr {
+.simpanan-superadmin-section .container-simpanan .table-container table tbody tr {
   border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
 }
-.pinjaman-superadmin-section .table-container table tbody td {
+.simpanan-superadmin-section .container-simpanan .table-container table tbody td {
   padding: 0.75rem 0.5rem;
   font-size: 0.875rem;
   vertical-align: middle;
 }
-.pinjaman-superadmin-section .table-container table .badge.aktif {
+.simpanan-superadmin-section .container-simpanan .table-container table .badge.aktif {
   background-color: #d1fadf;
   color: #56CDAD;
   padding: 0.25rem 0.5rem;
@@ -965,11 +1014,11 @@ h6 {
   font-size: 0.75rem;
   display: inline-block;
 }
-.pinjaman-superadmin-section .table-container table .aksi {
+.simpanan-superadmin-section .container-simpanan .table-container table .aksi {
   display: flex;
   gap: 0.5rem;
 }
-.pinjaman-superadmin-section .table-container table .aksi button {
+.simpanan-superadmin-section .container-simpanan .table-container table .aksi button {
   background-color: #504B38;
   border: none;
   color: #fff;
@@ -982,14 +1031,14 @@ h6 {
   justify-content: center;
   transition: background-color 0.2s ease-in-out;
 }
-.pinjaman-superadmin-section .table-container table .aksi button:hover {
+.simpanan-superadmin-section .container-simpanan .table-container table .aksi button:hover {
   background-color: #3d3623;
 }
-.pinjaman-superadmin-section .table-container table .aksi button img {
+.simpanan-superadmin-section .container-simpanan .table-container table .aksi button img {
   width: 1rem;
   height: 1rem;
 }
-.pinjaman-superadmin-section .table-container .pagination {
+.simpanan-superadmin-section .container-simpanan .table-container .pagination {
   margin-top: 0;
   padding-top: 1rem;
   border-top: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
@@ -997,7 +1046,7 @@ h6 {
   justify-content: flex-end;
   gap: 0.5rem;
 }
-.pinjaman-superadmin-section .table-container .pagination button {
+.simpanan-superadmin-section .container-simpanan .table-container .pagination button {
   padding: 0.25rem 0.5rem;
   border: 0.0625rem solid #ccc;
   background-color: #fff;
@@ -1005,90 +1054,123 @@ h6 {
   cursor: pointer;
   font-size: 0.75rem;
 }
-.pinjaman-superadmin-section .table-container .pagination button.active {
+.simpanan-superadmin-section .container-simpanan .table-container .pagination button.active {
   background-color: #504B38;
   color: #fff;
   border-color: #504B38;
 }
-.pinjaman-superadmin-section .table-container .pagination button:hover:not(.active) {
+.simpanan-superadmin-section .container-simpanan .table-container .pagination button:hover:not(.active) {
   background-color: #f0f0f0;
 }
 
-.pinjaman-superadmin-section {
-  padding: 1rem;
+.simpanan-superadmin-section .summary-cards {
+  flex-direction: column;
+  gap: 2rem;
 }
-.pinjaman-superadmin-section .container-pinjaman {
-  margin-top: 6rem;
+.simpanan-superadmin-section .summary-cards .card {
+  width: 100%;
+  min-height: 120px;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  border: 0.125rem solid #e3e1d1;
+  border-radius: 0.625rem;
+  background-color: #fff;
 }
-.pinjaman-superadmin-section .filter-bar {
-  flex-wrap: nowrap;
-  gap: 1rem;
+.simpanan-superadmin-section .summary-cards .card .icon {
+  width: 2.5rem;
+  height: 2.5rem;
 }
-.pinjaman-superadmin-section .filter-bar .filter-item.search-input input {
-  width: 18.75rem;
+.simpanan-superadmin-section .summary-cards .card .icon img {
+  width: 1.25rem;
+  height: 1.25rem;
 }
-.pinjaman-superadmin-section .table-container h4 {
-  font-size: 1.25rem;
+.simpanan-superadmin-section .summary-cards .card .info .label {
+  font-size: 0.75rem;
 }
-.pinjaman-superadmin-section .table-container table thead th {
-  font-size: 0.875rem;
-}
-.pinjaman-superadmin-section .table-container tbody td {
-  font-size: 0.875rem;
+.simpanan-superadmin-section .summary-cards .card .info .count {
+  font-size: 1rem;
 }
 
 @media (min-width: 576px) {
-  .pinjaman-superadmin-section .filter-bar .filter-item.search-input input {
-    width: 25rem;
+  .simpanan-superadmin-section .summary-cards {
+    flex-direction: row;
+    gap: 2rem;
   }
-  .pinjaman-superadmin-section .table-container h4 {
-    font-size: 1.5rem;
+  .simpanan-superadmin-section .summary-cards .card {
+    flex: 1 1 0;
+    height: 150px;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .pinjaman-superadmin-section .table-container table thead th {
-    font-size: 1rem;
+  .simpanan-superadmin-section .summary-cards .card .icon {
+    width: 3rem;
+    height: 3rem;
   }
-  .pinjaman-superadmin-section .table-container tbody td {
+  .simpanan-superadmin-section .summary-cards .card .icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .info .label {
     font-size: 0.875rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .info .count {
+    font-size: 1.25rem;
   }
 }
 @media (min-width: 768px) {
-  .pinjaman-superadmin-section {
-    padding: 1.5rem;
+  .simpanan-superadmin-section .summary-cards {
+    gap: 3rem;
   }
-  .pinjaman-superadmin-section .container-pinjaman {
-    margin-top: 8rem;
+  .simpanan-superadmin-section .summary-cards .card {
+    flex: 1 1 0;
+    height: 180px;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .pinjaman-superadmin-section .filter-bar .filter-item.search-input input {
-    width: 30rem;
+  .simpanan-superadmin-section .summary-cards .card .icon {
+    width: 3.5rem;
+    height: 3.5rem;
   }
-  .pinjaman-superadmin-section .table-container h4 {
-    font-size: 1.75rem;
+  .simpanan-superadmin-section .summary-cards .card .icon img {
+    width: 2rem;
+    height: 2rem;
   }
-  .pinjaman-superadmin-section .table-container table thead th {
-    font-size: 1rem;
-  }
-  .pinjaman-superadmin-section .table-container tbody td {
+  .simpanan-superadmin-section .summary-cards .card .info .label {
     font-size: 0.875rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .info .count {
+    font-size: 1.5rem;
   }
 }
 @media (min-width: 992px) {
-  .pinjaman-superadmin-section {
-    padding: 2rem;
+  .simpanan-superadmin-section .summary-cards {
+    gap: 3rem;
   }
-  .pinjaman-superadmin-section .container-pinjaman {
-    margin-top: 10rem;
+  .simpanan-superadmin-section .summary-cards .card {
+    flex: 1 1 0;
+    height: 200px;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .pinjaman-superadmin-section .filter-bar .filter-item.search-input input {
-    width: 35rem;
+  .simpanan-superadmin-section .summary-cards .card .icon {
+    width: 4rem;
+    height: 4rem;
   }
-  .pinjaman-superadmin-section .table-container h4 {
-    font-size: 2rem;
+  .simpanan-superadmin-section .summary-cards .card .icon img {
+    width: 2.5rem;
+    height: 2.5rem;
   }
-  .pinjaman-superadmin-section .table-container table thead th {
-    font-size: 1.125rem;
+  .simpanan-superadmin-section .summary-cards .card .info .label {
+    font-size: 1rem;
   }
-  .pinjaman-superadmin-section .table-container tbody td {
-    font-size: 0.875rem;
+  .simpanan-superadmin-section .summary-cards .card .info .count {
+    font-size: 1.75rem;
   }
 }
 

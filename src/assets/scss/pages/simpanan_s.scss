@@ -16,248 +16,311 @@
     flex-direction: column;
     gap: 1.5rem;
     margin-top: 8rem;
-  }
 
-  .filter-bar {
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    gap: 0.75rem;
-    flex-wrap: wrap;
-    background: #fff;
-    padding: 0.75rem 1.25rem;
+.summary-cards {
+  display: flex;
+  gap: 2rem; 
+  flex-direction: row;
+
+  .card {
+    flex: 1 1 0;
+    max-width: 100%;
+    padding: 1rem;
+    background-color: #fff;
     border: 0.125rem solid #e3e1d1;
     border-radius: 0.625rem;
-    overflow-x: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.75rem;
+    justify-content: center;
+    height: 150px;
 
-    .filter-item {
+    .icon {
+      background: #dcd6b0;
+      border-radius: 2.1875rem;
+      padding: 0.625rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 3.125rem;
+      height: 3.125rem;
+      flex-shrink: 0;
+
+      img {
+        width: 1.875rem;
+        height: 1.875rem;
+      }
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+
+      .label {
+        font-size: 0.875rem;
+        font-weight: 600;
+        color: #777;
+      }
+
+      .count {
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #2f2f2f;
+      }
+    }
+  }
+}
+
+
+    .filter-bar {
       display: flex;
       align-items: center;
+      justify-content: start;
       gap: 0.75rem;
       flex-wrap: wrap;
-      min-width: 17rem;
+      background: #fff;
+      padding: 0.75rem 1.25rem;
+      border: 0.125rem solid #e3e1d1;
+      border-radius: 0.625rem;
+      overflow-x: auto;
 
-      &.search-input {
-        position: relative;
-        margin-right: 0.75rem;
-
-        input {
-          padding: 0.5rem 1.75rem;
-          width: 21.5625rem;
-          height: 2.375rem;
-          border: 0.0625rem solid #ccc;
-          border-radius: 0.375rem;
-          font-size: 0.875rem;
-          background-color: #fff;
-        }
-
-        .icon {
-          position: absolute;
-          top: 50%;
-          left: 0.75rem;
-          transform: translateY(-50%);
-          width: 1rem;
-          height: 1rem;
-          opacity: 0.6;
-          color: $primary;
-        }
-      }
-
-      &.filter-select {
-        select {
-          padding: 0.5rem 0.75rem;
-          height: 2.375rem;
-          border: 0.0625rem solid #ccc;
-          border-radius: 0.375rem;
-          font-size: 0.875rem;
-          background-color: #fff;
-          appearance: none;
-          background-image: url("../assets/media/svg/down-arrow.svg");
-          background-repeat: no-repeat;
-          background-position: right 10px center;
-          background-size: 10px;
-        }
-
-        .date-picker {
-          padding: 0.5rem 0.75rem;
-          width: 9.375rem;
-          height: 2.375rem;
-          border: 0.0625rem solid #ccc;
-          border-radius: 0.375rem;
-          font-size: 0.875rem;
-          color: $primary;
-          background-color: #fff;
-        }
-      }
-
-      button {
+      .filter-item {
         display: flex;
         align-items: center;
-        gap: 0.375rem;
-        background-color: $primary;
-        color: #fff;
-        padding: 0.5rem 0.75rem;
-        border-radius: 0.375rem;
-        border: none;
-        cursor: pointer;
-        font-size: 0.875rem;
-        height: 2.375rem;
-        transition: background-color 0.2s ease-in-out;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+        min-width: 17rem;
 
-        img {
-          width: 1rem;
-          height: 1rem;
+        &.search-input {
+          position: relative;
+          margin-right: 0.75rem;
+
+          input {
+            padding: 0.5rem 1.75rem;
+            width: 21.5625rem;
+            height: 2.375rem;
+            border: 0.0625rem solid #ccc;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            background-color: #fff;
+          }
+
+          .icon {
+            position: absolute;
+            top: 50%;
+            left: 0.75rem;
+            transform: translateY(-50%);
+            width: 1rem;
+            height: 1rem;
+            opacity: 0.6;
+            color: $primary;
+          }
         }
 
-        &:hover {
-          background-color: #3f3825;
+        &.filter-select {
+          select {
+            padding: 0.5rem 0.75rem;
+            height: 2.375rem;
+            border: 0.0625rem solid #ccc;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            background-color: #fff;
+            appearance: none;
+            background-image: url("../assets/media/svg/down-arrow.svg");
+            background-repeat: no-repeat;
+            background-position: right 10px center;
+            background-size: 10px;
+          }
+
+          .date-picker {
+            padding: 0.5rem 0.75rem;
+            width: 9.375rem;
+            height: 2.375rem;
+            border: 0.0625rem solid #ccc;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            color: $primary;
+            background-color: #fff;
+          }
         }
-      }
-    }
-  }
-
-  .table-container {
-    background: #fff;
-    padding: 1rem;
-    border-radius: 0.625rem;
-    border: 0.125rem solid #e3e1d1;
-    overflow-x: auto;
-
-    h4 {
-      margin-bottom: 1rem;
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: #333;
-    }
-
-    table {
-      width: 100%;
-      min-width: 600px;
-      border-collapse: collapse;
-
-      thead {
-        background-color: white;
-        font-weight: 600;
-        border-bottom: 0.125rem solid #00000083;
-
-        th {
-          padding: 0.75rem 0.5rem;
-          font-size: 0.875rem;
-          color: #333;
-          text-align: left;
-        }
-      }
-
-      tbody tr {
-        border-bottom: 0.125rem solid #00000083;
-      }
-
-      tbody td {
-        padding: 0.75rem 0.5rem;
-        font-size: 0.875rem;
-        vertical-align: middle;
-      }
-
-      .badge.aktif {
-        background-color: #d1fadf;
-        color: $success;
-        padding: 0.25rem 0.5rem;
-        border-radius: 0.25rem;
-        font-size: 0.75rem;
-        display: inline-block;
-      }
-
-      .aksi {
-        display: flex;
-        gap: 0.5rem;
 
         button {
-          background-color: $primary;
-          border: none;
-          color: #fff;
-          padding: 0.25rem 0.5rem;
-          border-radius: 0.25rem;
-          cursor: pointer;
-          font-size: 0.75rem;
           display: flex;
           align-items: center;
-          justify-content: center;
+          gap: 0.375rem;
+          background-color: $primary;
+          color: #fff;
+          padding: 0.5rem 0.75rem;
+          border-radius: 0.375rem;
+          border: none;
+          cursor: pointer;
+          font-size: 0.875rem;
+          height: 2.375rem;
           transition: background-color 0.2s ease-in-out;
-
-          &:hover {
-            background-color: #3d3623;
-          }
 
           img {
             width: 1rem;
             height: 1rem;
           }
+
+          &:hover {
+            background-color: #3f3825;
+          }
         }
       }
     }
 
-    .pagination {
-      margin-top: 0;
-      padding-top: 1rem;
-      border-top: 0.125rem solid #00000083;
-      display: flex;
-      justify-content: flex-end;
-      gap: 0.5rem;
+    .table-container {
+      background: #fff;
+      padding: 1rem;
+      border-radius: 0.625rem;
+      border: 0.125rem solid #e3e1d1;
+      overflow-x: auto;
 
-      button {
-        padding: 0.25rem 0.5rem;
-        border: 0.0625rem solid #ccc;
-        background-color: #fff;
-        border-radius: 0.25rem;
-        cursor: pointer;
-        font-size: 0.75rem;
+      h4 {
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #333;
+      }
 
-        &.active {
-          background-color: $primary;
-          color: #fff;
-          border-color: $primary;
+      table {
+        width: 100%;
+        min-width: 600px;
+        border-collapse: collapse;
+
+        thead {
+          background-color: white;
+          font-weight: 600;
+          border-bottom: 0.125rem solid #00000083;
+
+          th {
+            padding: 0.75rem 0.5rem;
+            font-size: 0.875rem;
+            color: #333;
+            text-align: left;
+          }
         }
 
-        &:hover:not(.active) {
-          background-color: #f0f0f0;
+        tbody tr {
+          border-bottom: 0.125rem solid #00000083;
+        }
+
+        tbody td {
+          padding: 0.75rem 0.5rem;
+          font-size: 0.875rem;
+          vertical-align: middle;
+        }
+
+        .badge.aktif {
+          background-color: #d1fadf;
+          color: $success;
+          padding: 0.25rem 0.5rem;
+          border-radius: 0.25rem;
+          font-size: 0.75rem;
+          display: inline-block;
+        }
+
+        .aksi {
+          display: flex;
+          gap: 0.5rem;
+
+          button {
+            background-color: $primary;
+            border: none;
+            color: #fff;
+            padding: 0.25rem 0.5rem;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            font-size: 0.75rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: background-color 0.2s ease-in-out;
+
+            &:hover {
+              background-color: #3d3623;
+            }
+
+            img {
+              width: 1rem;
+              height: 1rem;
+            }
+          }
+        }
+      }
+
+      .pagination {
+        margin-top: 0;
+        padding-top: 1rem;
+        border-top: 0.125rem solid #00000083;
+        display: flex;
+        justify-content: flex-end;
+        gap: 0.5rem;
+
+        button {
+          padding: 0.25rem 0.5rem;
+          border: 0.0625rem solid #ccc;
+          background-color: #fff;
+          border-radius: 0.25rem;
+          cursor: pointer;
+          font-size: 0.75rem;
+
+          &.active {
+            background-color: $primary;
+            color: #fff;
+            border-color: $primary;
+          }
+
+          &:hover:not(.active) {
+            background-color: #f0f0f0;
+          }
         }
       }
     }
   }
 }
 
-// Responsive Breakpoints
-
+// Responsive proplayer
 @include media-breakpoint-up(xs) {
   .simpanan-superadmin-section {
-    padding: 1rem;
+    .summary-cards {
+      flex-direction: column;
+      gap: 2rem;
 
-    .container-simpanan {
-      margin-top: 6rem;
-    }
+      .card {
+        width: 100%;
+        min-height: 120px;
+        padding: 0.75rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 0.75rem;
+        border: 0.125rem solid #e3e1d1;
+        border-radius: 0.625rem;
+        background-color: #fff;
 
-    .filter-bar {
-      flex-wrap: nowrap;
-      gap: 1rem;
+        .icon {
+          width: 2.5rem;
+          height: 2.5rem;
 
-      .filter-item {
-        &.search-input input {
-          width: 18.75rem;
+          img {
+            width: 1.25rem;
+            height: 1.25rem;
+          }
         }
-      }
-    }
 
-    .table-container {
-      h4 {
-        font-size: 1.25rem;
-      }
+        .info {
+          .label {
+            font-size: 0.75rem;
+          }
 
-      table thead th {
-        font-size: 0.875rem;
-      }
-
-      tbody td {
-        font-size: 0.875rem;
+          .count {
+            font-size: 1rem;
+          }
+        }
       }
     }
   }
@@ -265,25 +328,36 @@
 
 @include media-breakpoint-up(sm) {
   .simpanan-superadmin-section {
-    .filter-bar {
-      .filter-item {
-        &.search-input input {
-          width: 25rem;
+    .summary-cards {
+      flex-direction: row;
+      gap: 2rem;
+
+      .card {
+        flex: 1 1 0;
+        height: 150px;
+        padding: 1rem;
+        flex-direction: column;
+        align-items: flex-start;
+
+        .icon {
+          width: 3rem;
+          height: 3rem;
+
+          img {
+            width: 1.5rem;
+            height: 1.5rem;
+          }
         }
-      }
-    }
 
-    .table-container {
-      h4 {
-        font-size: 1.5rem;
-      }
+        .info {
+          .label {
+            font-size: 0.875rem;
+          }
 
-      table thead th {
-        font-size: 1rem;
-      }
-
-      tbody td {
-        font-size: 0.875rem;
+          .count {
+            font-size: 1.25rem;
+          }
+        }
       }
     }
   }
@@ -291,31 +365,35 @@
 
 @include media-breakpoint-up(md) {
   .simpanan-superadmin-section {
-    padding: 1.5rem;
+    .summary-cards {
+      gap: 3rem;
 
-    .container-simpanan {
-      margin-top: 8rem;
-    }
+      .card {
+        flex: 1 1 0;
+        height: 180px;
+        padding: 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
 
-    .filter-bar {
-      .filter-item {
-        &.search-input input {
-          width: 30rem;
+        .icon {
+          width: 3.5rem;
+          height: 3.5rem;
+
+          img {
+            width: 2rem;
+            height: 2rem;
+          }
         }
-      }
-    }
 
-    .table-container {
-      h4 {
-        font-size: 1.75rem;
-      }
+        .info {
+          .label {
+            font-size: 0.875rem;
+          }
 
-      table thead th {
-        font-size: 1rem;
-      }
-
-      tbody td {
-        font-size: 0.875rem;
+          .count {
+            font-size: 1.5rem;
+          }
+        }
       }
     }
   }
@@ -323,32 +401,37 @@
 
 @include media-breakpoint-up(lg) {
   .simpanan-superadmin-section {
-    padding: 2rem;
+    .summary-cards {
+      gap: 3rem;
 
-    .container-simpanan {
-      margin-top: 10rem;
-    }
+      .card {
+        flex: 1 1 0;
+        height: 200px;
+        padding: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
 
-    .filter-bar {
-      .filter-item {
-        &.search-input input {
-          width: 35rem;
+        .icon {
+          width: 4rem;
+          height: 4rem;
+
+          img {
+            width: 2.5rem;
+            height: 2.5rem;
+          }
         }
-      }
-    }
 
-    .table-container {
-      h4 {
-        font-size: 2rem;
-      }
+        .info {
+          .label {
+            font-size: 1rem;
+          }
 
-      table thead th {
-        font-size: 1.125rem;
-      }
-
-      tbody td {
-        font-size: 0.875rem;
+          .count {
+            font-size: 1.75rem;
+          }
+        }
       }
     }
   }
 }
+
