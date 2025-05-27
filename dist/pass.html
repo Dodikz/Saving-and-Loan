@@ -1,82 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--
-Template Name: - 
-Author: -
-Website: -
-Contact: -
-License: -
--->
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saving and Loan</title>
-  <link rel="shortcut icon" href="assets/media/images/Logo.png" />
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-
-    <!-- Start::Global Styles (used by all pages) -->
-    <link href="assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
-  <!-- End::Global Styles (used by all pages) -->
-
-  <!-- Start::Page Styles (used by this page) -->
-  <link class="page-responsive" href="" rel="stylesheet" type="text/css" />
-  <!-- End::Page Styles -->
-  <!-- Start::Global Function (used by all pages) -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      function isCurrentPage(url) {
-        return window.location.href.includes(url);
-      }
-
-      if (isCurrentPage("index.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/login_pages.css";
-      } 
-    });
-  </script>
-  <!-- End::Global Function -->
-</head>
-
-<body>
-
-  <!-- Start:: header navbar section -->
-  <!-- End:: header navbar section -->
-
-   <section class="login-section">
-  <div class="container container--login">
-    <div class="login-form">
-      <h2 class="login-title">Login</h2>
-      <form action="/login" method="POST">
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="Email" />
-        </div>
-        <div class="form-group">
-          <label for="password">Password</label>
-          <input type="password" id="password" name="password" placeholder="Password" />
-        </div>
-        <button type="submit" class="btn-submit">Login</button>
-      </form>
-    </div>
-  </div>
-</section>
- 
-
-  <!-- Start:: header navbar section -->
-  <!-- End:: header navbar section -->
-
-  <!-- Start::Global Bundle Scripts (used by all pages) -->
-  <script src="assets/js/scripts.bundle.js"></script>
-  <!-- End::Global Bundle Scripts -->
-  <!-- Start::Page Scripts (used by this page) -->
-  <script src="assets/js/pages/home-v1.js"></script>
-  <!-- End::Page Scripts -->
-</body>
-
-</html>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'E:\Dodik\Producti  ve\Coding\Saving-and-Loan\src\User\beranda_u.html' in 'E:  \Dodik\Productive\Coding\Saving-and-Loan'
+  ModuleNotFoundError: Module not found: Error: Can't resol  ve 'E:\Dodik\Productive\Coding\Saving-and-Loan\src\User\b  eranda_u.html' in 'E:\Dodik\Productive\Coding\Saving-and-  Loan'
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\Compilation.js:2231:28
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:928:13
+      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:10:1)
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:338:22
+      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:9:1)
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:520:22
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:159:10
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:788:25
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1013:8
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1142:5
+  Module not found: Error: Can't resolve 'E:\Dodik\Producti  ve\Coding\Saving-and-Loan\src\Super-user\beranda_s.html'   in 'E:\Dodik\Productive\Coding\Saving-and-Loan'
+  ModuleNotFoundError: Module not found: Error: Can't resol  ve 'E:\Dodik\Productive\Coding\Saving-and-Loan\src\Super-  user\beranda_s.html' in 'E:\Dodik\Productive\Coding\Savin  g-and-Loan'
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\Compilation.js:2231:28
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:928:13
+      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:10:1)
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:338:22
+      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:9:1)
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:520:22
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:159:10
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:788:25
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1013:8
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1142:5
+  
+  - Compilation.js:2231 
+    [Saving-and-Loan]/[webpack]/lib/Compilation.js:2231:28
+  
+  - NormalModuleFactory.js:928 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    928:13
+  
+  
+  - NormalModuleFactory.js:338 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    338:22
+  
+  
+  - NormalModuleFactory.js:520 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    520:22
+  
+  - NormalModuleFactory.js:159 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    159:10
+  
+  - NormalModuleFactory.js:788 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    788:25
+  
+  - NormalModuleFactory.js:1013 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1013:8
+  
+  - NormalModuleFactory.js:1142 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1142:5
+  
+  - Module not found: Error: Can't resolve 'E:\Dodik\Produc    tive\Coding\Saving-and-Loan\src\Super-user\beranda_s.ht    ml' in 'E:\Dodik\Productive\Coding\Saving-and-Loan'
+  
+  - ModuleNotFoundError: Module not found: Error: Can't res    olve 'E:\Dodik\Productive\Coding\Saving-and-Loan\src\Su    per-user\beranda_s.html' in 'E:\Dodik\Productive\Coding    \Saving-and-Loan'
+  
+  - Compilation.js:2231 
+    [Saving-and-Loan]/[webpack]/lib/Compilation.js:2231:28
+  
+  - NormalModuleFactory.js:928 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    928:13
+  
+  
+  - NormalModuleFactory.js:338 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    338:22
+  
+  
+  - NormalModuleFactory.js:520 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    520:22
+  
+  - NormalModuleFactory.js:159 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    159:10
+  
+  - NormalModuleFactory.js:788 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    788:25
+  
+  - NormalModuleFactory.js:1013 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1013:8
+  
+  - NormalModuleFactory.js:1142 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1142:5
+  
+  - child-compiler.js:211 
+    [Saving-and-Loan]/[html-webpack-plugin]/lib/child-compi    ler.js:211:18
+  
+  - Compiler.js:625 finalCallback
+    [Saving-and-Loan]/[webpack]/lib/Compiler.js:625:5
+  
+  - Compiler.js:661 
+    [Saving-and-Loan]/[webpack]/lib/Compiler.js:661:11
+  
+  - Compiler.js:1347 
+    [Saving-and-Loan]/[webpack]/lib/Compiler.js:1347:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [Saving-and-Loan]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1343 
+    [Saving-and-Loan]/[webpack]/lib/Compiler.js:1343:33
+  
+  - Compilation.js:3061 finalCallback
+    [Saving-and-Loan]/[webpack]/lib/Compilation.js:3061:11
+  
+  - Compilation.js:3404 
+    [Saving-and-Loan]/[webpack]/lib/Compilation.js:3404:11
+  
+  
+</pre>

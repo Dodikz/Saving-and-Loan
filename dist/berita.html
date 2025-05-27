@@ -1,161 +1,111 @@
-<!DOCTYPE html>
-<html lang="en">
-<!--
-Template Name: - 
-Author: -
-Website: -
-Contact: -
-License: -
--->
-
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saving and Loan</title>
-  <link rel="shortcut icon" href="assets/media/images/Logo.png" />
-  <meta name="keywords" content="">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:description" content="">
-
-    <!-- Start::Global Styles (used by all pages) -->
-    <link href="assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
-  <!-- End::Global Styles (used by all pages) -->
-
-  <!-- Start::Page Styles (used by this page) -->
-  <link class="page-responsive" href="" rel="stylesheet" type="text/css" />
-  <!-- End::Page Styles -->
-  <!-- Start::Global Function (used by all pages) -->
-  <script>
-    document.addEventListener("DOMContentLoaded", function () {
-      function isCurrentPage(url) {
-        return window.location.href.includes(url);
-      }
-
-      if (isCurrentPage("Beranda.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/beranda.css";
-      } else if (isCurrentPage("kontak.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/kontak.css";
-      }else if (isCurrentPage("tentangkami.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/tentangkami.css";
-      } else if (isCurrentPage("layanan.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/layanan.css";
-      } else if (isCurrentPage("artikel.html")) {
-        document.querySelector(".page-responsive").href =
-          "assets/css/pages/artikel.css";
-      }
-    });
-  </script>
-  <!-- End::Global Function -->
-</head>
-
-<body>
-
-  <!-- Start:: header navbar section -->
-  <nav class="navbar-non-user">
-    <div class="container container-navbar">
-      <div class="navbar-brand">
-        <img src="assets/media/images/Logo.png" alt="Logo">
-      </div>
+Html Webpack Plugin:
+<pre>
+  Error: Child compilation failed:
+  Module not found: Error: Can't resolve 'E:\Dodik\Producti  ve\Coding\Saving-and-Loan\src\User\beranda_u.html' in 'E:  \Dodik\Productive\Coding\Saving-and-Loan'
+  ModuleNotFoundError: Module not found: Error: Can't resol  ve 'E:\Dodik\Productive\Coding\Saving-and-Loan\src\User\b  eranda_u.html' in 'E:\Dodik\Productive\Coding\Saving-and-  Loan'
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\Compilation.js:2231:28
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:928:13
+      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:10:1)
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:338:22
+      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:9:1)
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:520:22
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:159:10
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:788:25
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1013:8
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1142:5
+  Module not found: Error: Can't resolve 'E:\Dodik\Producti  ve\Coding\Saving-and-Loan\src\Super-user\beranda_s.html'   in 'E:\Dodik\Productive\Coding\Saving-and-Loan'
+  ModuleNotFoundError: Module not found: Error: Can't resol  ve 'E:\Dodik\Productive\Coding\Saving-and-Loan\src\Super-  user\beranda_s.html' in 'E:\Dodik\Productive\Coding\Savin  g-and-Loan'
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\Compilation.js:2231:28
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:928:13
+      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:10:1)
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:338:22
+      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:9:1)
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:520:22
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:159:10
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:788:25
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1013:8
+      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1142:5
   
-      <div class="hamburger" id="hamburger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
+  - Compilation.js:2231 
+    [Saving-and-Loan]/[webpack]/lib/Compilation.js:2231:28
   
-      <div class="navbar-menu" id="navbar-menu">
-        <div><a href="Beranda.html">Beranda</a></div>
-        <div><a href="layanan.html">Layanan</a></div>
-        <div><a href="tentangkami.html">Tentang Kami</a></div>
-        <div><a href="artikel.html">Artikel</a></div>
-        <div><a href="kontak.html">Kontak</a></div>
-      </div>
-    </div>
-  </nav>
+  - NormalModuleFactory.js:928 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    928:13
   
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const hamburger = document.getElementById('hamburger');
-      const navbarMenu = document.getElementById('navbar-menu');
   
-      hamburger.addEventListener('click', function () {
-        navbarMenu.classList.toggle('navbar-show');
-        hamburger.classList.toggle('hamburger--active');
-      });
-    });
-  </script>  <!-- End:: header navbar section -->
-
-   
- 
-
-  <!-- Start:: header navbar section -->
-  <footer class="footer-non">
-      <div class="container">
-          <div class="footer-grid">
-              <div class="footer-section">
-                  <h4>Koperasi Indonesia</h4>
-                  <p>Koperasi anomali bombardilo crocodilo<br>anomali ini hanya muncul bang bang discord discord.</p>
-              </div>
-              <div class="footer-section">
-                  <h4>Layanan</h4>
-                  <ul>
-                      <li>Simpan Pinjam</li>
-                      <li>Toko Chinahhhh</li>
-                  </ul>
-              </div>
-              <div class="footer-section">
-                  <h4>Tautan</h4>
-                  <ul>
-                      <li>Tentang Kami</li>
-                      <li>Artikel</li>
-                      <li>Kontak</li>
-                  </ul>
-              </div>
-              <div class="footer-section">
-                  <h4>Sosial Media</h4>
-                  <div class="social-icons">
-                      <a href="#" aria-label="Facebook">
-                          <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
-                              <path
-                                  d="M22 12.073C22 6.505 17.523 2 12 2S2 6.505 2 12.073C2 17.095 5.656 21.229 10.438 22v-6.997H7.898v-2.93h2.54v-2.23c0-2.507 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.772-1.63 1.562v1.903h2.773l-.443 2.93h-2.33V22C18.344 21.229 22 17.095 22 12.073z" />
-                          </svg>
-                      </a>
-                      <a href="#" aria-label="Instagram">
-                          <svg width="20" height="20" fill="white" viewBox="0 0 24 24" src="assets/media/svg/instagram.svg">
-                              
-                          </svg>
-                      </a>
-                      <a href="#" aria-label="Twitter">
-                          <svg width="20" height="20" fill="white" viewBox="0 0 24 24">
-                              <path
-                                  d="M22.46 6c-.77.35-1.6.59-2.46.7a4.3 4.3 0 001.88-2.37 8.59 8.59 0 01-2.72 1.03 4.28 4.28 0 00-7.3 3.9A12.14 12.14 0 013 4.8a4.28 4.28 0 001.32 5.71A4.24 4.24 0 012.8 9.5v.05a4.28 4.28 0 003.43 4.2 4.3 4.3 0 01-1.93.07 4.29 4.29 0 004 2.98 8.6 8.6 0 01-5.3 1.83A8.8 8.8 0 012 19.54 12.13 12.13 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.35-.02-.53A8.36 8.36 0 0022.46 6z" />
-                          </svg>
-                      </a>
-                  </div>
-              </div>
-          </div>
-          <hr>
-          <p class="footer-copy">Copyright © by Okta Pratama</p>
-      </div>
-  </footer>  <!-- End:: header navbar section -->
-
-  <script src="../assets/js/custom/carousel.js"></script>
-  <script src="../assets/js/custom/modal.js"></script>
-
-
-  <!-- Start::Global Bundle Scripts (used by all pages) -->
-  <script src="assets/js/scripts.bundle.js"></script>
-  <!-- End::Global Bundle Scripts -->
-  <!-- Start::Page Scripts (used by this page) -->
-  <script src="assets/js/pages/home-v1.js"></script>
-  <!-- End::Page Scripts -->
-</body>
-
-</html>
+  - NormalModuleFactory.js:338 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    338:22
+  
+  
+  - NormalModuleFactory.js:520 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    520:22
+  
+  - NormalModuleFactory.js:159 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    159:10
+  
+  - NormalModuleFactory.js:788 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    788:25
+  
+  - NormalModuleFactory.js:1013 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1013:8
+  
+  - NormalModuleFactory.js:1142 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1142:5
+  
+  - Module not found: Error: Can't resolve 'E:\Dodik\Produc    tive\Coding\Saving-and-Loan\src\Super-user\beranda_s.ht    ml' in 'E:\Dodik\Productive\Coding\Saving-and-Loan'
+  
+  - ModuleNotFoundError: Module not found: Error: Can't res    olve 'E:\Dodik\Productive\Coding\Saving-and-Loan\src\Su    per-user\beranda_s.html' in 'E:\Dodik\Productive\Coding    \Saving-and-Loan'
+  
+  - Compilation.js:2231 
+    [Saving-and-Loan]/[webpack]/lib/Compilation.js:2231:28
+  
+  - NormalModuleFactory.js:928 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    928:13
+  
+  
+  - NormalModuleFactory.js:338 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    338:22
+  
+  
+  - NormalModuleFactory.js:520 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    520:22
+  
+  - NormalModuleFactory.js:159 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    159:10
+  
+  - NormalModuleFactory.js:788 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    788:25
+  
+  - NormalModuleFactory.js:1013 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1013:8
+  
+  - NormalModuleFactory.js:1142 
+    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1142:5
+  
+  - child-compiler.js:211 
+    [Saving-and-Loan]/[html-webpack-plugin]/lib/child-compi    ler.js:211:18
+  
+  - Compiler.js:625 finalCallback
+    [Saving-and-Loan]/[webpack]/lib/Compiler.js:625:5
+  
+  - Compiler.js:661 
+    [Saving-and-Loan]/[webpack]/lib/Compiler.js:661:11
+  
+  - Compiler.js:1347 
+    [Saving-and-Loan]/[webpack]/lib/Compiler.js:1347:17
+  
+  
+  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
+    [Saving-and-Loan]/[tapable]/lib/Hook.js:18:14
+  
+  - Compiler.js:1343 
+    [Saving-and-Loan]/[webpack]/lib/Compiler.js:1343:33
+  
+  - Compilation.js:3061 finalCallback
+    [Saving-and-Loan]/[webpack]/lib/Compilation.js:3061:11
+  
+  - Compilation.js:3404 
+    [Saving-and-Loan]/[webpack]/lib/Compilation.js:3404:11
+  
+  
+</pre>
