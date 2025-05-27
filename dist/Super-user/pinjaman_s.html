@@ -1,111 +1,206 @@
-Html Webpack Plugin:
-<pre>
-  Error: Child compilation failed:
-  Module not found: Error: Can't resolve 'E:\Dodik\Producti  ve\Coding\Saving-and-Loan\src\User\beranda_u.html' in 'E:  \Dodik\Productive\Coding\Saving-and-Loan'
-  ModuleNotFoundError: Module not found: Error: Can't resol  ve 'E:\Dodik\Productive\Coding\Saving-and-Loan\src\User\b  eranda_u.html' in 'E:\Dodik\Productive\Coding\Saving-and-  Loan'
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\Compilation.js:2231:28
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:928:13
-      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:338:22
-      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:520:22
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:159:10
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:788:25
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1013:8
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1142:5
-  Module not found: Error: Can't resolve 'E:\Dodik\Producti  ve\Coding\Saving-and-Loan\src\Super-user\beranda_s.html'   in 'E:\Dodik\Productive\Coding\Saving-and-Loan'
-  ModuleNotFoundError: Module not found: Error: Can't resol  ve 'E:\Dodik\Productive\Coding\Saving-and-Loan\src\Super-  user\beranda_s.html' in 'E:\Dodik\Productive\Coding\Savin  g-and-Loan'
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\Compilation.js:2231:28
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:928:13
-      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:10:1)
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:338:22
-      at eval (eval at create (E:\Dodik\Productive\Coding\S  aving-and-Loan\node_modules\tapable\lib\HookCodeFactory.j  s:33:10), <anonymous>:9:1)
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:520:22
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:159:10
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:788:25
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1013:8
-      at E:\Dodik\Productive\Coding\Saving-and-Loan\node_mo  dules\webpack\lib\NormalModuleFactory.js:1142:5
+<!DOCTYPE html>
+<html lang="en">
+<!--
+Template Name: - 
+Author: -
+Website: -
+Contact: -
+License: -
+-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saving and Loan</title>
+  <link rel="shortcut icon" href="../assets/media/images/Logo.png" />
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:description" content="">
+
+    <!-- Start::Global Styles (used by all pages) -->
+    <link href="../assets/css/styles.bundle.css" rel="stylesheet" type="text/css" />
+  <!-- End::Global Styles (used by all pages) -->
+
+  <!-- Start::Page Styles (used by this page) -->
+  <link class="page-responsive" href="" rel="stylesheet" type="text/css" />
+  <!-- End::Page Styles -->
+  <!-- Start::Global Function (used by all pages) -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      function isCurrentPage(url) {
+        return window.location.href.includes(url);
+      }
+
+      if (isCurrentPage("anggota_s.html")) {
+        document.querySelector(".page-responsive").href =
+          "../assets/css/pages/anggota_s.css";
+      }else if (isCurrentPage("pinjaman_s.html")) {
+        document.querySelector(".page-responsive").href =
+          "../assets/css/pages/pinjaman_s.css";
+      } else if (isCurrentPage("simpanan_s.html")) {
+        document.querySelector(".page-responsive").href =
+          "../assets/css/pages/simpanan_s.css";
+      } else if (isCurrentPage("laporan_s.html")) {
+        document.querySelector(".page-responsive").href =
+          "../assets/css/pages/laporan_s.css";
+      }
+    });
+  </script>
+  <!-- End::Global Function -->
+</head>
+
+<body>
+
+  <!-- Start:: header navbar section -->
+  <nav class="navbar-super-user">
+    <div class="container container-navbar">
+      <div class="navbar-brand">
+        <img src="../assets/media/images/Logo.png" alt="Logo">
+      </div>
   
-  - Compilation.js:2231 
-    [Saving-and-Loan]/[webpack]/lib/Compilation.js:2231:28
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
   
-  - NormalModuleFactory.js:928 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    928:13
+      <div class="navbar-menu" id="navbar-menu">
+        <div class="nav-item"><img src="../assets/media/svg/people-community-svgrepo-com (2).svg" class="svg"><a href="anggota_s.html">Anggota</a></div>
+        <div class="nav-item"><img src="../assets/media/svg/pinjaman.svg" class="svg"><a href="pinjaman_s.html">Pinjaman</a></div>
+        <div class="nav-item"><img src="../assets/media/svg/simpanan.svg" class="svg"><a href="simpanan_s.html">Simpanan</a></div>
+        <div class="nav-item"><img src="../assets/media/svg/laporan.svg" class="svg"><a href="laporan_s.html">laporan</a></div>
+        <div class="logout">
+          <img src="../assets/media/svg/log-out.svg" alt="Logout" class="svg"> <a href="logout.html">Logout</a>
+        </div>
+      </div>
   
+    </div>
+  </nav>
   
-  - NormalModuleFactory.js:338 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    338:22
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const hamburger = document.getElementById('hamburger');
+      const navbarMenu = document.getElementById('navbar-menu');
   
-  
-  - NormalModuleFactory.js:520 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    520:22
-  
-  - NormalModuleFactory.js:159 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    159:10
-  
-  - NormalModuleFactory.js:788 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    788:25
-  
-  - NormalModuleFactory.js:1013 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1013:8
-  
-  - NormalModuleFactory.js:1142 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1142:5
-  
-  - Module not found: Error: Can't resolve 'E:\Dodik\Produc    tive\Coding\Saving-and-Loan\src\Super-user\beranda_s.ht    ml' in 'E:\Dodik\Productive\Coding\Saving-and-Loan'
-  
-  - ModuleNotFoundError: Module not found: Error: Can't res    olve 'E:\Dodik\Productive\Coding\Saving-and-Loan\src\Su    per-user\beranda_s.html' in 'E:\Dodik\Productive\Coding    \Saving-and-Loan'
-  
-  - Compilation.js:2231 
-    [Saving-and-Loan]/[webpack]/lib/Compilation.js:2231:28
-  
-  - NormalModuleFactory.js:928 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    928:13
-  
-  
-  - NormalModuleFactory.js:338 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    338:22
-  
-  
-  - NormalModuleFactory.js:520 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    520:22
-  
-  - NormalModuleFactory.js:159 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    159:10
-  
-  - NormalModuleFactory.js:788 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    788:25
-  
-  - NormalModuleFactory.js:1013 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1013:8
-  
-  - NormalModuleFactory.js:1142 
-    [Saving-and-Loan]/[webpack]/lib/NormalModuleFactory.js:    1142:5
-  
-  - child-compiler.js:211 
-    [Saving-and-Loan]/[html-webpack-plugin]/lib/child-compi    ler.js:211:18
-  
-  - Compiler.js:625 finalCallback
-    [Saving-and-Loan]/[webpack]/lib/Compiler.js:625:5
-  
-  - Compiler.js:661 
-    [Saving-and-Loan]/[webpack]/lib/Compiler.js:661:11
-  
-  - Compiler.js:1347 
-    [Saving-and-Loan]/[webpack]/lib/Compiler.js:1347:17
-  
-  
-  - Hook.js:18 Hook.CALL_ASYNC_DELEGATE [as _callAsync]
-    [Saving-and-Loan]/[tapable]/lib/Hook.js:18:14
-  
-  - Compiler.js:1343 
-    [Saving-and-Loan]/[webpack]/lib/Compiler.js:1343:33
-  
-  - Compilation.js:3061 finalCallback
-    [Saving-and-Loan]/[webpack]/lib/Compilation.js:3061:11
-  
-  - Compilation.js:3404 
-    [Saving-and-Loan]/[webpack]/lib/Compilation.js:3404:11
-  
-  
-</pre>
+      hamburger.addEventListener('click', function () {
+        navbarMenu.classList.toggle('navbar-show');
+        hamburger.classList.toggle('hamburger--active');
+      });
+    });
+  </script>  <!-- End:: header navbar section -->
+
+   <section class="simpanan-superadmin-section">
+    <div class="container container-simpanan">
+
+        <div class="summary-cards">
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/pie-chart-2-svgrepo-com.svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Total Anggota</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/money-bag-svgrepo-com.svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Tidak Aktif</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="icon">
+                    <img src="../assets/media/svg/wallet-money-svgrepo-com.svg" alt="icon" />
+                </div>
+                <div class="info">
+                    <p class="label">Anggota Baru</p>
+                    <p class="count">154</p>
+                </div>
+            </div>
+        </div>
+        <div class="filter-bar">
+            <div class="filter-item search-input">
+                <img class="icon" src="../assets/media/svg/search.svg" alt="search">
+                <input type="text" placeholder="Cari Nama / NIK / No HP">
+            </div>
+
+            <div class="filter-item filter-select">
+                <select>
+                    <option>Jenis Transaksi</option>
+                    <option>Aktif</option>
+                    <option>Tidak Aktif</option>
+                </select>
+                <input class="date-picker" type="date" placeholder="Tanggal">
+            </div>
+
+            <div class="filter-item">
+                <button>
+                    <img src="../assets/media/svg/xls-svgrepo-com (1).svg" alt="filter">
+                    <span>Export XLS</span>
+                </button>
+                <button>
+                    <img src="../assets/media/svg/pdf-svgrepo-com.svg" alt="print">
+                    <span>Export PDF</span>
+                </button>
+            </div>
+        </div>
+
+
+
+
+        <div class="table-container">
+            <h4>Daftar Anggota</h4>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama Anggota</th>
+                        <th>Tanggal</th>
+                        <th>Keterangan</th>
+                        <th>Nominal</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Okta Sigma</td>
+                        <td>12 Apr 2025</td>
+                        <td>Simpanan Wajib</td>
+                        <td>Rp. 1.400.000</td>
+                        <td><span class="badge aktif">Lunas</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="pagination">
+                <button>&lt;</button>
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>&gt;</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+ 
+
+  <!-- Start:: footer section -->
+  <!-- End:: footer section -->
+
+  <!-- Start::Global Bundle Scripts (used by all pages) -->
+  <script src="../assets/js/scripts.bundle.js"></script>
+  <!-- End::Global Bundle Scripts -->
+  <!-- Start::Page Scripts (used by this page) -->
+  <script src="../assets/js/pages/home-v1.js"></script>
+  <!-- End::Page Scripts -->
+</body>
+
+</html>
