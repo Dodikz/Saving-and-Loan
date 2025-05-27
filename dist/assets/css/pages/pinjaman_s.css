@@ -848,8 +848,8 @@ h6 {
   flex-direction: row;
   align-items: center;
   gap: 0.75rem;
-  justify-content: center;
-  height: 150px;
+  justify-content: start;
+  height: 7.25rem;
 }
 .simpanan-superadmin-section .container-simpanan .summary-cards .card .icon {
   background: #dcd6b0;
@@ -1069,7 +1069,7 @@ h6 {
 }
 .simpanan-superadmin-section .summary-cards .card {
   width: 100%;
-  min-height: 120px;
+  min-height: 7.25rem;
   padding: 0.75rem;
   display: flex;
   flex-direction: row;
@@ -1101,7 +1101,7 @@ h6 {
   }
   .simpanan-superadmin-section .summary-cards .card {
     flex: 1 1 0;
-    height: 150px;
+    height: 8.5rem;
     padding: 1rem;
     flex-direction: column;
     align-items: flex-start;
@@ -1127,7 +1127,7 @@ h6 {
   }
   .simpanan-superadmin-section .summary-cards .card {
     flex: 1 1 0;
-    height: 180px;
+    height: 10rem;
     padding: 1.25rem;
     flex-direction: column;
     align-items: flex-start;
@@ -1153,7 +1153,7 @@ h6 {
   }
   .simpanan-superadmin-section .summary-cards .card {
     flex: 1 1 0;
-    height: 200px;
+    height: 11rem;
     padding: 1.5rem;
     flex-direction: column;
     align-items: flex-start;
