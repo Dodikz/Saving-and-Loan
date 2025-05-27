@@ -34,10 +34,7 @@ License: -
         return window.location.href.includes(url);
       }
 
-      if (isCurrentPage("beranda_u.html")) {
-        document.querySelector(".page-responsive").href =
-          "../assets/css/pages/beranda_u.css";
-      } else if (isCurrentPage("simpanan_u.html")) {
+      if (isCurrentPage("simpanan_u.html")) {
         document.querySelector(".page-responsive").href =
           "../assets/css/pages/simpanan_u.css";
       } else if (isCurrentPage("pinjaman_u.html")) {

@@ -34,10 +34,7 @@ License: -
         return window.location.href.includes(url);
       }
 
-      if (isCurrentPage("beranda_s.html")) {
-        document.querySelector(".page-responsive").href =
-          "../assets/css/pages/beranda_s.css";
-      } else if (isCurrentPage("anggota_s.html")) {
+      if (isCurrentPage("anggota_s.html")) {
         document.querySelector(".page-responsive").href =
           "../assets/css/pages/anggota_s.css";
       }else if (isCurrentPage("pinjaman_s.html")) {
