@@ -31,11 +31,12 @@
     overflow-x: auto;
 
     .filter-item {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-wrap: wrap;
-      min-width: 10rem;
+      display: flex
+;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    min-width: 17rem;
 
       &.search-input {
         position: relative;
