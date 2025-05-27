@@ -1,6 +1,6 @@
-/*!********************************************************************************************************************************************************************************************************************************************************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./src/assets/scss/pages/laporan_s.scss ***!
-  \********************************************************************************************************************************************************************************************************************************************************************************************************/
+/*!*********************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/resolve-url-loader/index.js!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[4]!./src/assets/scss/pages/pinjaman_u.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************************************************************************************/
 @font-face {
   font-family: "Inter";
   src: url("../../media/fonts/Inter-Black.eot");
@@ -820,154 +820,65 @@ h6 {
   }
 }
 
-.simpanan-superadmin-section {
+.pinjaman-user-section {
   padding: 1.5rem;
   background-color: white;
   font-family: "Inter", sans-serif;
   color: #333;
 }
-.simpanan-superadmin-section .container-simpanan {
+.pinjaman-user-section .container-pinjaman {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   margin-top: 8rem;
+  max-width: 100%;
 }
-.simpanan-superadmin-section .filter-bar {
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  gap: 0.75rem;
-  flex-wrap: wrap;
-  background: #fff;
-  padding: 0.75rem 1.25rem;
-  border: 0.125rem solid #e3e1d1;
-  border-radius: 0.625rem;
-}
-.simpanan-superadmin-section .filter-bar .filter-item {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-.simpanan-superadmin-section .filter-bar .filter-item.search-input {
-  position: relative;
-  margin-right: 0.75rem;
-}
-.simpanan-superadmin-section .filter-bar .filter-item.search-input input {
-  padding: 0.5rem 0.75rem;
-  width: 21.5625rem;
-  height: 2.375rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  background-color: #fff;
-}
-.simpanan-superadmin-section .filter-bar .filter-item.search-input .icon {
-  position: absolute;
-  top: 50%;
-  left: 0.75rem;
-  transform: translateY(-50%);
-  width: 1rem;
-  height: 1rem;
-  opacity: 0.6;
-  color: #504B38;
-}
-.simpanan-superadmin-section .filter-bar .filter-item.filter-select select {
-  padding: 0.5rem 0.75rem;
-  height: 2.375rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  background-color: #fff;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background-image: url("../assets/media/svg/down-arrow.svg");
-  background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 10px;
-}
-.simpanan-superadmin-section .filter-bar .filter-item.filter-select .date-picker {
-  padding: 0.5rem 0.75rem;
-  width: 9.375rem;
-  height: 2.375rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.375rem;
-  font-size: 0.875rem;
-  color: #504B38;
-  background-color: #fff;
-}
-.simpanan-superadmin-section .filter-bar .filter-item button {
-  display: flex;
-  align-items: center;
-  gap: 0.375rem;
-  background-color: #504B38;
-  color: #fff;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.375rem;
-  border: none;
-  cursor: pointer;
-  font-size: 0.875rem;
-  height: 2.375rem;
-  transition: background-color 0.2s ease-in-out;
-}
-.simpanan-superadmin-section .filter-bar .filter-item button img {
-  width: 1rem;
-  height: 1rem;
-}
-.simpanan-superadmin-section .filter-bar .filter-item button:hover {
-  background-color: #3f3825;
-}
-.simpanan-superadmin-section .table-container {
+.pinjaman-user-section .table-container {
   background: #fff;
   padding: 1rem;
   border-radius: 0.625rem;
   border: 0.125rem solid #e3e1d1;
-  overflow-x: auto;
 }
-.simpanan-superadmin-section .table-container h4 {
+.pinjaman-user-section .table-container h4 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: #333;
 }
-.simpanan-superadmin-section .table-container table {
+.pinjaman-user-section .table-container table {
   width: 100%;
-  min-width: 600px;
   border-collapse: collapse;
 }
-.simpanan-superadmin-section .table-container table thead {
+.pinjaman-user-section .table-container table thead {
   background-color: white;
   font-weight: 600;
   border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
 }
-.simpanan-superadmin-section .table-container table thead th {
+.pinjaman-user-section .table-container table thead th {
   padding: 0.75rem 0.5rem;
   font-size: 0.875rem;
   color: #333;
-  text-align: left;
 }
-.simpanan-superadmin-section .table-container table tbody tr {
-  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
-}
-.simpanan-superadmin-section .table-container table tbody td {
+.pinjaman-user-section .table-container table tbody td {
   padding: 0.75rem 0.5rem;
   font-size: 0.875rem;
-  vertical-align: middle;
+  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
 }
-.simpanan-superadmin-section .table-container table .badge.aktif {
+.pinjaman-user-section .table-container table .badge.aktif {
   background-color: #d1fadf;
-  color: #56CDAD;
+  color: #118e3c;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
   display: inline-block;
 }
-.simpanan-superadmin-section .table-container table .aksi {
+.pinjaman-user-section .table-container table .aksi {
   display: flex;
   gap: 0.5rem;
+  margin-bottom: -1px;
 }
-.simpanan-superadmin-section .table-container table .aksi button {
-  background-color: #504B38;
+.pinjaman-user-section .table-container table .aksi button {
+  background-color: #5a5134;
   border: none;
   color: #fff;
   padding: 0.25rem 0.5rem;
@@ -977,116 +888,199 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease-in-out;
 }
-.simpanan-superadmin-section .table-container table .aksi button:hover {
+.pinjaman-user-section .table-container table .aksi button:hover {
   background-color: #3d3623;
 }
-.simpanan-superadmin-section .table-container table .aksi button img {
-  width: 1rem;
-  height: 1rem;
+.pinjaman-user-section .table-container table .aksi button img {
+  width: 1.4375rem;
+  height: 1.4375rem;
 }
-.simpanan-superadmin-section .table-container .pagination {
-  margin-top: 0;
-  padding-top: 1rem;
-  border-top: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
+.pinjaman-user-section .table-container .modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+.pinjaman-user-section .table-container .modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  animation: slideIn 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.pinjaman-user-section .table-container .modal-content .total-pinjaman {
+  margin: 1rem 0;
+}
+.pinjaman-user-section .table-container .modal-content .total-pinjaman .label {
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+.pinjaman-user-section .table-container .modal-content .total-pinjaman .nominal {
+  background-color: #e5e2d5;
+  color: #504B38;
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+.pinjaman-user-section .table-container .modal-content .detail-pinjaman-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.pinjaman-user-section .table-container .modal-content .detail-pinjaman-table th,
+.pinjaman-user-section .table-container .modal-content .detail-pinjaman-table td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  font-size: 0.95rem;
+}
+.pinjaman-user-section .table-container .modal-content .detail-pinjaman-table thead th {
+  font-weight: bold;
+}
+.pinjaman-user-section .table-container .modal-content .detail-pinjaman-table tfoot td {
+  font-weight: bold;
+}
+.pinjaman-user-section .table-container .modal-content .badge {
+  padding: 4px 8px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+.pinjaman-user-section .table-container .modal-content .badge.lunas {
+  background-color: #e0f8e7;
+  color: #1c944d;
+}
+.pinjaman-user-section .table-container .modal-content .badge.belum {
+  background-color: #fef6c3;
+  color: #c29300;
+}
+.pinjaman-user-section .table-container .close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+.pinjaman-user-section .table-container .close:hover {
+  color: #e74c3c;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.pinjaman-user-section .table-container .pagination {
+  margin-top: 1.5rem;
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
 }
-.simpanan-superadmin-section .table-container .pagination button {
+.pinjaman-user-section .table-container .pagination button {
   padding: 0.25rem 0.5rem;
   border: 0.0625rem solid #ccc;
   background-color: #fff;
   border-radius: 0.25rem;
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
 }
-.simpanan-superadmin-section .table-container .pagination button.active {
-  background-color: #504B38;
+.pinjaman-user-section .table-container .pagination button.active {
+  background-color: #5a5134;
   color: #fff;
-  border-color: #504B38;
-}
-.simpanan-superadmin-section .table-container .pagination button:hover:not(.active) {
-  background-color: #f0f0f0;
+  border-color: #5a5134;
 }
 
-.simpanan-superadmin-section {
-  padding: 1rem;
+@media (max-width: 767.98px) {
+  .pinjaman-u .table-container .detail-pinjaman-table th,
+  .pinjaman-u .table-container .detail-pinjaman-table td {
+    font-size: 0.8rem;
+  }
 }
-.simpanan-superadmin-section .container-simpanan {
-  margin-top: 6rem;
+@media (max-width: 575.98px) {
+  .pinjaman-u .table-container .detail-pinjaman-table th,
+  .pinjaman-u .table-container .detail-pinjaman-table td {
+    font-size: 0.7rem;
+  }
 }
-.simpanan-superadmin-section .filter-bar {
-  flex-wrap: nowrap;
-  gap: 1rem;
-}
-.simpanan-superadmin-section .filter-bar .filter-item.search-input input {
-  width: 18.75rem;
-}
-.simpanan-superadmin-section .table-container h4 {
-  font-size: 1.25rem;
-}
-.simpanan-superadmin-section .table-container table thead th {
-  font-size: 0.875rem;
-}
-.simpanan-superadmin-section .table-container tbody td {
-  font-size: 0.875rem;
+.pinjaman-u .table-container .detail-pinjaman-table th,
+.pinjaman-u .table-container .detail-pinjaman-table td {
+  font-size: 0.6rem;
 }
 
-@media (min-width: 576px) {
-  .simpanan-superadmin-section .filter-bar .filter-item.search-input input {
-    width: 25rem;
+@media (min-width: 480px) {
+  .pinjaman-user-section {
+    padding: 1.25rem;
   }
-  .simpanan-superadmin-section .table-container h4 {
-    font-size: 1.5rem;
+  .table-container {
+    padding: 0.75rem;
+    border-radius: 0.5625rem;
   }
-  .simpanan-superadmin-section .table-container table thead th {
-    font-size: 1rem;
+  .table-container h4 {
+    font-size: 1.375rem;
   }
-  .simpanan-superadmin-section .table-container tbody td {
+  .table-container table thead th {
     font-size: 0.875rem;
   }
-}
-@media (min-width: 768px) {
-  .simpanan-superadmin-section {
-    padding: 1.5rem;
+  .table-container table tbody td {
+    font-size: 0.8125rem;
   }
-  .simpanan-superadmin-section .container-simpanan {
-    margin-top: 8rem;
-  }
-  .simpanan-superadmin-section .filter-bar .filter-item.search-input input {
-    width: 30rem;
-  }
-  .simpanan-superadmin-section .table-container h4 {
-    font-size: 1.75rem;
-  }
-  .simpanan-superadmin-section .table-container table thead th {
-    font-size: 1rem;
-  }
-  .simpanan-superadmin-section .table-container tbody td {
-    font-size: 0.875rem;
+  .table-container .aksi button {
+    font-size: 0.8125rem;
+    padding: 0.25rem 0.5rem;
   }
 }
 @media (min-width: 992px) {
-  .simpanan-superadmin-section {
-    padding: 2rem;
+  .pinjaman-user-section {
+    padding: 1.5rem;
   }
-  .simpanan-superadmin-section .container-simpanan {
-    margin-top: 10rem;
+  .table-container {
+    padding: 1rem;
+    border-radius: 0.625rem;
   }
-  .simpanan-superadmin-section .filter-bar .filter-item.search-input input {
-    width: 35rem;
+  .table-container h4 {
+    font-size: 1.5rem;
   }
-  .simpanan-superadmin-section .table-container h4 {
-    font-size: 2rem;
-  }
-  .simpanan-superadmin-section .table-container table thead th {
-    font-size: 1.125rem;
-  }
-  .simpanan-superadmin-section .table-container tbody td {
+  .table-container table thead th {
     font-size: 0.875rem;
+  }
+  .table-container table tbody td {
+    font-size: 0.875rem;
+  }
+  .table-container .aksi button {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
+  }
+  .pagination button {
+    font-size: 0.875rem;
+    padding: 0.25rem 0.5rem;
   }
 }
 
-/*# sourceMappingURL=laporan_s.css.map*/
+/*# sourceMappingURL=pinjaman_u.css.map*/

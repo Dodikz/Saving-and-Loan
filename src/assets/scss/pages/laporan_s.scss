@@ -1,16 +1,11 @@
 // Initialize first
 @import "../init";
 
-// Import files  
+// Import files
 @import "home";
 
 // Add your style here
 .simpanan-superadmin-section {
-  position: absolute;
-  top: 5.625rem;
-  left: 15.3125rem;
-  width: calc(100% - 15.3125rem);
-  min-height: calc(100vh - 5.625rem);
   padding: 1.5rem;
   background-color: white;
   font-family: "Inter", sans-serif;
@@ -20,6 +15,7 @@
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
+    margin-top: 8rem;
   }
 
   .filter-bar {
@@ -78,6 +74,7 @@
           background-position: right 10px center;
           background-size: 10px;
         }
+
         .date-picker {
           padding: 0.5rem 0.75rem;
           width: 9.375rem;
@@ -121,6 +118,7 @@
     padding: 1rem;
     border-radius: 0.625rem;
     border: 0.125rem solid #e3e1d1;
+    overflow-x: auto; 
 
     h4 {
       margin-bottom: 1rem;
@@ -131,6 +129,7 @@
 
     table {
       width: 100%;
+      min-width: 600px; 
       border-collapse: collapse;
 
       thead {
@@ -142,13 +141,18 @@
           padding: 0.75rem 0.5rem;
           font-size: 0.875rem;
           color: #333;
+          text-align: left;
         }
+      }
+
+      tbody tr {
+        border-bottom: 0.125rem solid #00000083;
       }
 
       tbody td {
         padding: 0.75rem 0.5rem;
-        font-size: 0.875rem;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
-        border-bottom: 0.125rem solid #00000083;
+        font-size: 0.875rem;
+        vertical-align: middle;
       }
 
       .badge.aktif {
@@ -164,7 +168,6 @@
         display: flex;
         gap: 0.5rem;
 
-      
         button {
           background-color: $primary;
           border: none;
@@ -176,6 +179,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
+          transition: background-color 0.2s ease-in-out;
 
           &:hover {
             background-color: #3d3623;
@@ -190,7 +194,9 @@
     }
 
     .pagination {
-      margin-top: 1rem;
+      margin-top: 0;
+      padding-top: 1rem;
+      border-top: 0.125rem solid #00000083;
       display: flex;
       justify-content: flex-end;
       gap: 0.5rem;
@@ -208,6 +214,137 @@
           color: #fff;
           border-color: $primary;
         }
+
+        &:hover:not(.active) {
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+}
+
+// Responsive Breakpoints
+
+@include media-breakpoint-up(xs) {
+  .simpanan-superadmin-section {
+    padding: 1rem;
+
+    .container-simpanan {
+      margin-top: 6rem;
+    }
+
+    .filter-bar {
+      flex-wrap: nowrap;
+      gap: 1rem;
+
+      .filter-item {
+        &.search-input input {
+          width: 18.75rem;
+        }
+      }
+    }
+
+    .table-container {
+      h4 {
+        font-size: 1.25rem;
+      }
+
+      table thead th {
+        font-size: 0.875rem;
+      }
+
+      tbody td {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(sm) {
+  .simpanan-superadmin-section {
+    .filter-bar {
+      .filter-item {
+        &.search-input input {
+          width: 25rem;
+        }
+      }
+    }
+
+    .table-container {
+      h4 {
+        font-size: 1.5rem;
+      }
+
+      table thead th {
+        font-size: 1rem;
+      }
+
+      tbody td {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .simpanan-superadmin-section {
+    padding: 1.5rem;
+
+    .container-simpanan {
+      margin-top: 8rem;
+    }
+
+    .filter-bar {
+      .filter-item {
+        &.search-input input {
+          width: 30rem;
+        }
+      }
+    }
+
+    .table-container {
+      h4 {
+        font-size: 1.75rem;
+      }
+
+      table thead th {
+        font-size: 1rem;
+      }
+
+      tbody td {
+        font-size: 0.875rem;
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .simpanan-superadmin-section {
+    padding: 2rem;
+
+    .container-simpanan {
+      margin-top: 10rem;
+    }
+
+    .filter-bar {
+      .filter-item {
+        &.search-input input {
+          width: 35rem;
+        }
+      }
+    }
+
+    .table-container {
+      h4 {
+        font-size: 2rem;
+      }
+
+      table thead th {
+        font-size: 1.125rem;
+      }
+
+      tbody td {
+        font-size: 0.875rem;
       }
     }
   }
