@@ -821,64 +821,37 @@ h6 {
 }
 
 .simpanan-superadmin-section {
-  position: absolute;
-  top: 5.625rem;
-  left: 15.3125rem;
-  width: calc(100% - 15.3125rem);
-  min-height: calc(100vh - 5.625rem);
   padding: 1.5rem;
   background-color: white;
   font-family: "Inter", sans-serif;
   color: #333;
 }
-@media only screen and (max-width: 600px) {
-  .simpanan-superadmin-section {
-    left: 0;
-    width: 100%;
-    padding: 1rem;
-  }
-}
 .simpanan-superadmin-section .container-simpanan {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
+  margin-top: 8rem;
 }
-@media only screen and (max-width: 600px) {
-  .simpanan-superadmin-section .container-simpanan {
-    gap: 1rem;
-  }
-}
-.simpanan-superadmin-section .summary-cards {
+.simpanan-superadmin-section .container-simpanan .summary-cards {
   display: flex;
-  gap: 5.5rem;
+  gap: 2rem;
+  flex-direction: row;
 }
-@media only screen and (max-width: 600px) {
-  .simpanan-superadmin-section .summary-cards {
-    gap: 1rem;
-    flex-direction: column;
-  }
-}
-.simpanan-superadmin-section .summary-cards .card {
-  flex: 1;
+.simpanan-superadmin-section .container-simpanan .summary-cards .card {
+  flex: 1 1 0;
+  max-width: 100%;
   padding: 1rem;
   background-color: #fff;
-  border-left: 0.125rem solid #dcd6b0;
   border: 0.125rem solid #e3e1d1;
   border-radius: 0.625rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  text-align: left;
   gap: 0.75rem;
+  justify-content: start;
+  height: 7.25rem;
 }
-@media only screen and (max-width: 600px) {
-  .simpanan-superadmin-section .summary-cards .card {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-}
-.simpanan-superadmin-section .summary-cards .card .icon {
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .icon {
   background: #dcd6b0;
   border-radius: 2.1875rem;
   padding: 0.625rem;
@@ -889,70 +862,50 @@ h6 {
   height: 3.125rem;
   flex-shrink: 0;
 }
-.simpanan-superadmin-section .summary-cards .card .icon img {
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .icon img {
   width: 1.875rem;
   height: 1.875rem;
 }
-@media only screen and (max-width: 600px) {
-  .simpanan-superadmin-section .summary-cards .card .icon {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  .simpanan-superadmin-section .summary-cards .card .icon img {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-}
-.simpanan-superadmin-section .summary-cards .card .info {
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .info {
   display: flex;
   flex-direction: column;
+  gap: 0.25rem;
 }
-.simpanan-superadmin-section .summary-cards .card .info .label {
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .info .label {
   font-size: 0.875rem;
   font-weight: 600;
-  color: #444;
+  color: #777;
 }
-.simpanan-superadmin-section .summary-cards .card .info .count {
+.simpanan-superadmin-section .container-simpanan .summary-cards .card .info .count {
   font-size: 1.5rem;
   font-weight: 700;
   color: #2f2f2f;
 }
-@media only screen and (max-width: 600px) {
-  .simpanan-superadmin-section .summary-cards .card .info .label {
-    font-size: 0.75rem;
-  }
-  .simpanan-superadmin-section .summary-cards .card .info .count {
-    font-size: 1.25rem;
-  }
-}
-.simpanan-superadmin-section .filter-bar {
+.simpanan-superadmin-section .container-simpanan .filter-bar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: start;
   gap: 0.75rem;
   flex-wrap: wrap;
   background: #fff;
   padding: 0.75rem 1.25rem;
   border: 0.125rem solid #e3e1d1;
   border-radius: 0.625rem;
+  overflow-x: auto;
 }
-@media only screen and (max-width: 600px) {
-  .simpanan-superadmin-section .filter-bar {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
-  }
-}
-.simpanan-superadmin-section .filter-bar .filter-item {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
+  flex-wrap: wrap;
+  min-width: 17rem;
 }
-.simpanan-superadmin-section .filter-bar .filter-item.search-input {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.search-input {
   position: relative;
+  margin-right: 0.75rem;
 }
-.simpanan-superadmin-section .filter-bar .filter-item.search-input input {
-  padding: 0.5rem 0.75rem;
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.search-input input {
+  padding: 0.5rem 1.75rem;
   width: 21.5625rem;
   height: 2.375rem;
   border: 0.0625rem solid #ccc;
@@ -960,7 +913,7 @@ h6 {
   font-size: 0.875rem;
   background-color: #fff;
 }
-.simpanan-superadmin-section .filter-bar .filter-item.search-input .icon {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.search-input .icon {
   position: absolute;
   top: 50%;
   left: 0.75rem;
@@ -970,13 +923,8 @@ h6 {
   opacity: 0.6;
   color: #504B38;
 }
-@media only screen and (max-width: 600px) {
-  .simpanan-superadmin-section .filter-bar .filter-item.search-input input {
-    width: 100%;
-  }
-}
-.simpanan-superadmin-section .filter-bar .filter-item.filter-select select {
-  padding: 0.5rem 1.25rem;
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.filter-select select {
+  padding: 0.5rem 0.75rem;
   height: 2.375rem;
   border: 0.0625rem solid #ccc;
   border-radius: 0.375rem;
@@ -987,33 +935,26 @@ h6 {
           appearance: none;
   background-image: url("../assets/media/svg/down-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 0.75rem center;
-  background-size: 0.5rem;
+  background-position: right 10px center;
+  background-size: 10px;
 }
-.simpanan-superadmin-section .filter-bar .filter-item.filter-select .date-picker {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item.filter-select .date-picker {
   padding: 0.5rem 0.75rem;
-  width: 9.0625rem;
+  width: 9.375rem;
   height: 2.375rem;
   border: 0.0625rem solid #ccc;
   border-radius: 0.375rem;
   font-size: 0.875rem;
+  color: #504B38;
   background-color: #fff;
 }
-@media only screen and (max-width: 600px) {
-  .simpanan-superadmin-section .filter-bar .filter-item.filter-select select {
-    width: 100%;
-  }
-  .simpanan-superadmin-section .filter-bar .filter-item.filter-select .date-picker {
-    width: 100%;
-  }
-}
-.simpanan-superadmin-section .filter-bar .filter-item button {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item button {
   display: flex;
   align-items: center;
   gap: 0.375rem;
   background-color: #504B38;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 0.75rem;
   border-radius: 0.375rem;
   border: none;
   cursor: pointer;
@@ -1021,59 +962,64 @@ h6 {
   height: 2.375rem;
   transition: background-color 0.2s ease-in-out;
 }
-.simpanan-superadmin-section .filter-bar .filter-item button img {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item button img {
   width: 1rem;
   height: 1rem;
 }
-.simpanan-superadmin-section .filter-bar .filter-item button:hover {
+.simpanan-superadmin-section .container-simpanan .filter-bar .filter-item button:hover {
   background-color: #3f3825;
 }
-.simpanan-superadmin-section .table-container {
+.simpanan-superadmin-section .container-simpanan .table-container {
   background: #fff;
   padding: 1rem;
   border-radius: 0.625rem;
   border: 0.125rem solid #e3e1d1;
+  overflow-x: auto;
 }
-.simpanan-superadmin-section .table-container h4 {
+.simpanan-superadmin-section .container-simpanan .table-container h4 {
   margin-bottom: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: #333;
 }
-.simpanan-superadmin-section .table-container table {
+.simpanan-superadmin-section .container-simpanan .table-container table {
   width: 100%;
+  min-width: 600px;
   border-collapse: collapse;
 }
-.simpanan-superadmin-section .table-container table thead {
+.simpanan-superadmin-section .container-simpanan .table-container table thead {
   background-color: white;
   font-weight: 600;
   border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
 }
-.simpanan-superadmin-section .table-container table thead th {
+.simpanan-superadmin-section .container-simpanan .table-container table thead th {
   padding: 0.75rem 0.5rem;
   font-size: 0.875rem;
   color: #333;
+  text-align: left;
 }
-.simpanan-superadmin-section .table-container table tbody td {
-  padding: 0.75rem 0.5rem;
-  font-size: 0.875rem;
+.simpanan-superadmin-section .container-simpanan .table-container table tbody tr {
   border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
 }
-.simpanan-superadmin-section .table-container table .badge.aktif {
+.simpanan-superadmin-section .container-simpanan .table-container table tbody td {
+  padding: 0.75rem 0.5rem;
+  font-size: 0.875rem;
+  vertical-align: middle;
+}
+.simpanan-superadmin-section .container-simpanan .table-container table .badge.aktif {
   background-color: #d1fadf;
-  color: #118e3c;
+  color: #56CDAD;
   padding: 0.25rem 0.5rem;
   border-radius: 0.25rem;
   font-size: 0.75rem;
   display: inline-block;
 }
-.simpanan-superadmin-section .table-container table .aksi {
+.simpanan-superadmin-section .container-simpanan .table-container table .aksi {
   display: flex;
   gap: 0.5rem;
-  margin-bottom: -1px;
 }
-.simpanan-superadmin-section .table-container table .aksi button {
-  background-color: #5a5134;
+.simpanan-superadmin-section .container-simpanan .table-container table .aksi button {
+  background-color: #504B38;
   border: none;
   color: #fff;
   padding: 0.25rem 0.5rem;
@@ -1083,32 +1029,149 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 0.2s ease-in-out;
 }
-.simpanan-superadmin-section .table-container table .aksi button:hover {
+.simpanan-superadmin-section .container-simpanan .table-container table .aksi button:hover {
   background-color: #3d3623;
 }
-.simpanan-superadmin-section .table-container table .aksi button img {
-  width: 1.4375rem;
-  height: 1.4375rem;
+.simpanan-superadmin-section .container-simpanan .table-container table .aksi button img {
+  width: 1rem;
+  height: 1rem;
 }
-.simpanan-superadmin-section .table-container .pagination {
-  margin-top: 1rem;
+.simpanan-superadmin-section .container-simpanan .table-container .pagination {
+  margin-top: 0;
+  padding-top: 1rem;
+  border-top: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
 }
-.simpanan-superadmin-section .table-container .pagination button {
+.simpanan-superadmin-section .container-simpanan .table-container .pagination button {
   padding: 0.25rem 0.5rem;
   border: 0.0625rem solid #ccc;
   background-color: #fff;
   border-radius: 0.25rem;
   cursor: pointer;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
-.simpanan-superadmin-section .table-container .pagination button.active {
-  background-color: #5a5134;
+.simpanan-superadmin-section .container-simpanan .table-container .pagination button.active {
+  background-color: #504B38;
   color: #fff;
-  border-color: #5a5134;
+  border-color: #504B38;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .pagination button:hover:not(.active) {
+  background-color: #f0f0f0;
+}
+
+.simpanan-superadmin-section .summary-cards {
+  flex-direction: column;
+  gap: 2rem;
+}
+.simpanan-superadmin-section .summary-cards .card {
+  width: 100%;
+  min-height: 7.25rem;
+  padding: 0.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  border: 0.125rem solid #e3e1d1;
+  border-radius: 0.625rem;
+  background-color: #fff;
+}
+.simpanan-superadmin-section .summary-cards .card .icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.simpanan-superadmin-section .summary-cards .card .icon img {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+.simpanan-superadmin-section .summary-cards .card .info .label {
+  font-size: 0.75rem;
+}
+.simpanan-superadmin-section .summary-cards .card .info .count {
+  font-size: 1rem;
+}
+
+@media (min-width: 576px) {
+  .simpanan-superadmin-section .summary-cards {
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card {
+    flex: 1 1 0;
+    height: 8.5rem;
+    padding: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .simpanan-superadmin-section .summary-cards .card .icon {
+    width: 3rem;
+    height: 3rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .icon img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .info .label {
+    font-size: 0.875rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .info .count {
+    font-size: 1.25rem;
+  }
+}
+@media (min-width: 768px) {
+  .simpanan-superadmin-section .summary-cards {
+    gap: 3rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card {
+    flex: 1 1 0;
+    height: 10rem;
+    padding: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .simpanan-superadmin-section .summary-cards .card .icon {
+    width: 3.5rem;
+    height: 3.5rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .icon img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .info .label {
+    font-size: 0.875rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .info .count {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .simpanan-superadmin-section .summary-cards {
+    gap: 3rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card {
+    flex: 1 1 0;
+    height: 11rem;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .simpanan-superadmin-section .summary-cards .card .icon {
+    width: 4rem;
+    height: 4rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .icon img {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .info .label {
+    font-size: 1rem;
+  }
+  .simpanan-superadmin-section .summary-cards .card .info .count {
+    font-size: 1.75rem;
+  }
 }
 
 /*# sourceMappingURL=simpanan_s.css.map*/
