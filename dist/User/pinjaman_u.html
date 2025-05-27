@@ -34,10 +34,7 @@ License: -
         return window.location.href.includes(url);
       }
 
-      if (isCurrentPage("beranda_u.html")) {
-        document.querySelector(".page-responsive").href =
-          "../assets/css/pages/beranda_u.css";
-      } else if (isCurrentPage("simpanan_u.html")) {
+      if (isCurrentPage("simpanan_u.html")) {
         document.querySelector(".page-responsive").href =
           "../assets/css/pages/simpanan_u.css";
       } else if (isCurrentPage("pinjaman_u.html")) {
@@ -65,7 +62,6 @@ License: -
       </div>
   
       <div class="navbar-menu" id="navbar-menu">
-        <div class="nav-item"><img src="../assets/media/svg/home-c.svg" class="svg"><a href="beranda_u.html">Beranda</a></div>
         <div class="nav-item"><img src="../assets/media/svg/simpanan.svg" class="svg"><a href="simpanan_u.html">Simpanan</a></div>
         <div class="nav-item"><img src="../assets/media/svg/pinjaman.svg" class="svg"><a href="pinjaman_u.html">Pinjaman</a></div>
         <div class="logout">
