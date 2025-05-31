@@ -125,62 +125,92 @@ License: -
             </div>
         </div>
 
-
-        
         <div class="filter-bar">
-            <div class="filter-item search-input">
-                <img class="icon" src="../assets/media/svg/search.svg" alt="search">
-                <input type="text" placeholder="Cari Nama / NIK / No HP">
+            <div class="filter-row search-row">
+                <div class="filter-item search-input">
+                    <img class="icon" src="../assets/media/svg/search.svg" alt="search">
+                    <input type="text" placeholder="Cari Nama / NIK / No HP">
+                </div>
             </div>
 
-            <div class="filter-item filter-select">
-                <select>
-                    <option>Jenis Transaksi</option>
-                    <option>Aktif</option>
-                    <option>Tidak Aktif</option>
-                </select>
-                <input class="date-picker" type="date" placeholder="Tanggal">
-            </div>
+            <div class="filter-row filter-controls">
+                <div class="filter-selects">
+                    <select>
+                        <option>Jenis Transaksi</option>
+                        <option>Aktif</option>
+                        <option>Tidak Aktif</option>
+                    </select>
+                    <input class="date-picker" type="date" placeholder="Tanggal">
+                </div>
 
-            <div class="filter-item">
-                <button>
-                    <img src="../assets/media/svg/xls-svgrepo-com (1).svg" alt="filter">
-                    <span>Export XLS</span>
-                </button>
-                <button>
-                    <img src="../assets/media/svg/pdf-svgrepo-com.svg" alt="print">
-                    <span>Export PDF</span>
-                </button>
+                <div class="action-buttons">
+                    <button>
+                        <img src="../assets/media/svg/xls-svgrepo-com (1).svg" alt="filter">
+                        <span>Export XLS</span>
+                    </button>
+                    <button>
+                        <img src="../assets/media/svg/pdf-svgrepo-com.svg" alt="print">
+                        <span>Export PDF</span>
+                    </button>
+                </div>
             </div>
         </div>
 
-
-
-
         <div class="table-container">
             <h4>Daftar Anggota</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Nama Anggota</th>
-                        <th>Tanggal</th>
-                        <th>Keterangan</th>
-                        <th>Nominal</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Okta Sigma</td>
-                        <td>12 Apr 2025</td>
-                        <td>Simpanan Wajib</td>
-                        <td>Rp. 1.400.000</td>
-                        <td><span class="badge aktif">Lunas</span></td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nama Anggota</th>
+                            <th>Tanggal</th>
+                            <th>Keterangan</th>
+                            <th>Nominal</th>
+                            <th>Status</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Okta Sigma</td>
+                            <td>12 Apr 2025</td>
+                            <td>Simpanan Wajib</td>
+                            <td>Rp. 1.400.000</td>
+                            <td><span class="badge aktif">Lunas</span></td>
+                            <td>
+                                <div class="aksi">
+                                    <button>
+                                        <img src="../assets/media/svg/edit.svg" alt="edit">
+                                    </button>
+                                    <button>
+                                        <img src="../assets/media/svg/delete.svg" alt="delete">
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Sarah Wijaya</td>
+                            <td>15 Apr 2025</td>
+                            <td>Simpanan Sukarela</td>
+                            <td>Rp. 2.500.000</td>
+                            <td><span class="badge aktif">Lunas</span></td>
+                            <td>
+                                <div class="aksi">
+                                    <button>
+                                        <img src="../assets/media/svg/edit.svg" alt="edit">
+                                    </button>
+                                    <button>
+                                        <img src="../assets/media/svg/delete.svg" alt="delete">
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
             <div class="pagination">
                 <button>&lt;</button>

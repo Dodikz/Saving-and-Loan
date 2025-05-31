@@ -17,94 +17,98 @@
     gap: 1.5rem;
     margin-top: 8rem;
 
-.summary-cards {
-  display: flex;
-  gap: 2rem; 
-  flex-direction: row;
+    .summary-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
 
-  .card {
-    flex: 1 1 0;
-    max-width: 100%;
-    padding: 1rem;
-    background-color: #fff;
-    border: 0.125rem solid #e3e1d1;
-    border-radius: 0.625rem;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 0.75rem;
-    justify-content: start;
-    height: 7.25rem;
+      .card {
+        padding: 1.5rem;
+        background-color: #fff;
+        border: 0.125rem solid #e3e1d1;
+        border-radius: 0.625rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1rem;
+        min-height: 5rem;
 
-    .icon {
-      background: #dcd6b0;
-      border-radius: 2.1875rem;
-      padding: 0.625rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 3.125rem;
-      height: 3.125rem;
-      flex-shrink: 0;
+        .icon {
+          background: #dcd6b0;
+          border-radius: 50%;
+          padding: 0.75rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 3.5rem;
+          height: 3.5rem;
+          flex-shrink: 0;
 
-      img {
-        width: 1.875rem;
-        height: 1.875rem;
+          img {
+            width: 2rem;
+            height: 2rem;
+          }
+        }
+
+        .info {
+          display: flex;
+          flex-direction: column;
+          gap: 0.25rem;
+          flex: 1;
+
+          .label {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: #666;
+            margin: 0;
+          }
+
+          .count {
+            font-size: 1.75rem;
+            font-weight: 700;
+            color: #2f2f2f;
+            margin: 0;
+          }
+        }
       }
     }
-
-    .info {
-      display: flex;
-      flex-direction: column;
-      gap: 0.25rem;
-
-      .label {
-        font-size: 0.875rem;
-        font-weight: 600;
-        color: #777;
-      }
-
-      .count {
-        font-size: 1.5rem;
-        font-weight: 700;
-        color: #2f2f2f;
-      }
-    }
-  }
-}
-
 
     .filter-bar {
       display: flex;
       align-items: center;
-      justify-content: start;
-      gap: 0.75rem;
+      justify-content: space-between;
+      gap: 1rem;
       flex-wrap: wrap;
       background: #fff;
-      padding: 0.75rem 1.25rem;
+      padding: 1rem 1.5rem;
       border: 0.125rem solid #e3e1d1;
       border-radius: 0.625rem;
-      overflow-x: auto;
 
       .filter-item {
         display: flex;
         align-items: center;
         gap: 0.75rem;
-        flex-wrap: wrap;
-        min-width: 17rem;
 
         &.search-input {
           position: relative;
-          margin-right: 0.75rem;
+          flex: 1;
+          min-width: 300px;
 
           input {
-            padding: 0.5rem 1.75rem;
-            width: 21.5625rem;
-            height: 2.375rem;
-            border: 0.0625rem solid #ccc;
-            border-radius: 0.375rem;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
+            width: 100%;
+            height: 2.5rem;
+            border: 0.0625rem solid #ddd;
+            border-radius: 0.5rem;
             font-size: 0.875rem;
             background-color: #fff;
+            box-sizing: border-box;
+
+            &:focus {
+              outline: none;
+              border-color: $primary;
+              box-shadow: 0 0 0 2px rgba(77, 70, 41, 0.1);
+            }
           }
 
           .icon {
@@ -115,58 +119,82 @@
             width: 1rem;
             height: 1rem;
             opacity: 0.6;
-            color: $primary;
+            z-index: 1;
           }
         }
 
         &.filter-select {
+          display: flex;
+          gap: 0.75rem;
+
           select {
-            padding: 0.5rem 0.75rem;
-            height: 2.375rem;
-            border: 0.0625rem solid #ccc;
-            border-radius: 0.375rem;
+            padding: 0.75rem 2rem 0.75rem 0.75rem;
+            height: 2.5rem;
+            border: 0.0625rem solid #ddd;
+            border-radius: 0.5rem;
             font-size: 0.875rem;
             background-color: #fff;
             appearance: none;
             background-image: url("../assets/media/svg/down-arrow.svg");
             background-repeat: no-repeat;
-            background-position: right 10px center;
-            background-size: 10px;
+            background-position: right 0.75rem center;
+            background-size: 0.75rem;
+            min-width: 140px;
+            cursor: pointer;
+
+            &:focus {
+              outline: none;
+              border-color: $primary;
+              box-shadow: 0 0 0 2px rgba(77, 70, 41, 0.1);
+            }
           }
 
           .date-picker {
-            padding: 0.5rem 0.75rem;
+            padding: 0.75rem;
             width: 9.375rem;
-            height: 2.375rem;
-            border: 0.0625rem solid #ccc;
-            border-radius: 0.375rem;
+            height: 2.5rem;
+            border: 0.0625rem solid #ddd;
+            border-radius: 0.5rem;
             font-size: 0.875rem;
             color: $primary;
             background-color: #fff;
           }
         }
 
-        button {
+        &.action-buttons {
           display: flex;
-          align-items: center;
-          gap: 0.375rem;
-          background-color: $primary;
-          color: #fff;
-          padding: 0.5rem 0.75rem;
-          border-radius: 0.375rem;
-          border: none;
-          cursor: pointer;
-          font-size: 0.875rem;
-          height: 2.375rem;
-          transition: background-color 0.2s ease-in-out;
+          gap: 0.5rem;
 
-          img {
-            width: 1rem;
-            height: 1rem;
-          }
+          button {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background-color: $primary;
+            color: #fff;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            border: none;
+            cursor: pointer;
+            font-size: 0.875rem;
+            font-weight: 500;
+            height: 2.5rem;
+            transition: all 0.2s ease-in-out;
+            white-space: nowrap;
 
-          &:hover {
-            background-color: #3f3825;
+            img {
+              width: 1rem;
+              height: 1rem;
+            }
+
+            &:hover {
+              background-color: #3f3825;
+              transform: translateY(-1px);
+              box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            }
+
+            &:active {
+              transform: translateY(0);
+            }
           }
         }
       }
@@ -174,13 +202,13 @@
 
     .table-container {
       background: #fff;
-      padding: 1rem;
+      padding: 1.5rem;
       border-radius: 0.625rem;
       border: 0.125rem solid #e3e1d1;
       overflow-x: auto;
 
       h4 {
-        margin-bottom: 1rem;
+        margin-bottom: 1.5rem;
         font-size: 1.5rem;
         font-weight: 700;
         color: #333;
@@ -192,24 +220,29 @@
         border-collapse: collapse;
 
         thead {
-          background-color: white;
+          background-color:white;
           font-weight: 600;
-          border-bottom: 0.125rem solid #00000083;
 
           th {
-            padding: 0.75rem 0.5rem;
+            padding: 1rem 0.75rem;
             font-size: 0.875rem;
             color: #333;
             text-align: left;
+            border-bottom: 2px solid #e9ecef;
           }
         }
 
         tbody tr {
-          border-bottom: 0.125rem solid #00000083;
+          border-bottom: 1px solid #e9ecef;
+          transition: background-color 0.2s ease;
+
+          &:hover {
+            background-color: #f8f9fa;
+          }
         }
 
         tbody td {
-          padding: 0.75rem 0.5rem;
+          padding: 1rem 0.75rem;
           font-size: 0.875rem;
           vertical-align: middle;
         }
@@ -217,9 +250,10 @@
         .badge.aktif {
           background-color: #d1fadf;
           color: $success;
-          padding: 0.25rem 0.5rem;
-          border-radius: 0.25rem;
+          padding: 0.375rem 0.75rem;
+          border-radius: 1rem;
           font-size: 0.75rem;
+          font-weight: 500;
           display: inline-block;
         }
 
@@ -231,17 +265,20 @@
             background-color: $primary;
             border: none;
             color: #fff;
-            padding: 0.25rem 0.5rem;
-            border-radius: 0.25rem;
+            padding: 0.5rem;
+            border-radius: 0.375rem;
             cursor: pointer;
             font-size: 0.75rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: background-color 0.2s ease-in-out;
+            transition: all 0.2s ease-in-out;
+            width: 2rem;
+            height: 2rem;
 
             &:hover {
               background-color: #3d3623;
+              transform: translateY(-1px);
             }
 
             img {
@@ -253,20 +290,23 @@
       }
 
       .pagination {
-        margin-top: 0;
+        margin-top: 1.5rem;
         padding-top: 1rem;
-        border-top: 0.125rem solid #00000083;
+        border-top: 1px solid #e9ecef;
         display: flex;
         justify-content: flex-end;
         gap: 0.5rem;
 
         button {
-          padding: 0.25rem 0.5rem;
-          border: 0.0625rem solid #ccc;
+          padding: 0.5rem 0.75rem;
+          border: 1px solid #ddd;
           background-color: #fff;
-          border-radius: 0.25rem;
+          border-radius: 0.375rem;
           cursor: pointer;
-          font-size: 0.75rem;
+          font-size: 0.875rem;
+          min-width: 2.5rem;
+          height: 2.5rem;
+          transition: all 0.2s ease;
 
           &.active {
             background-color: $primary;
@@ -275,7 +315,8 @@
           }
 
           &:hover:not(.active) {
-            background-color: #f0f0f0;
+            background-color: #f8f9fa;
+            border-color: #adb5bd;
           }
         }
       }
@@ -283,42 +324,146 @@
   }
 }
 
-// Responsive proplayer
-@include media-breakpoint-up(xs) {
+@include media-breakpoint-down(xs-1) {
   .anggota-superadmin-section {
-    .summary-cards {
-      flex-direction: column;
-      gap: 2rem;
+    padding: 1rem;
+    
+    .container-anggota {
+      margin-top: 2rem;
+      gap: 1rem;
 
-      .card {
-        width: 100%;
-        min-height: 7.25rem;
-        padding: 0.75rem;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: 0.75rem;
-        border: 0.125rem solid #e3e1d1;
-        border-radius: 0.625rem;
-        background-color: #fff;
+      .summary-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
 
-        .icon {
-          width: 2.5rem;
-          height: 2.5rem;
+        .card {
+          padding: 1rem;
+          min-height: 4rem;
 
-          img {
-            width: 1.25rem;
-            height: 1.25rem;
+          .icon {
+            width: 3rem;
+            height: 3rem;
+            padding: 0.5rem;
+
+            img {
+              width: 1.5rem;
+              height: 1.5rem;
+            }
+          }
+
+          .info {
+            .label {
+              font-size: 0.75rem;
+            }
+
+            .count {
+              font-size: 1.5rem;
+            }
           }
         }
+      }
 
-        .info {
-          .label {
+      .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 1rem;
+        padding: 1rem;
+
+        .filter-item {
+          &.search-input {
+            min-width: auto;
+
+            input {
+              width: 100%;
+            }
+          }
+
+          &.filter-select {
+            flex-direction: column;
+            gap: 0.5rem;
+
+            select {
+              min-width: auto;
+              width: 100%;
+            }
+          }
+
+          &.action-buttons {
+            justify-content: center;
+
+            button {
+              flex: 1;
+            }
+          }
+        }
+      }
+
+      .table-container {
+        padding: 1rem;
+
+        h4 {
+          font-size: 1.25rem;
+          margin-bottom: 1rem;
+        }
+
+        table {
+          thead th {
+            padding: 0.75rem 0.5rem;
             font-size: 0.75rem;
           }
 
-          .count {
-            font-size: 1rem;
+          tbody td {
+            padding: 0.75rem 0.5rem;
+            font-size: 0.75rem;
+          }
+
+          .aksi {
+            gap: 0.25rem;
+
+            button {
+              width: 1.75rem;
+              height: 1.75rem;
+              padding: 0.25rem;
+
+              img {
+                width: 0.875rem;
+                height: 0.875rem;
+              }
+            }
+          }
+        }
+
+        .pagination {
+          justify-content: center;
+          gap: 0.25rem;
+
+          button {
+            min-width: 2rem;
+            height: 2rem;
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(xs-1) {
+  .anggota-superadmin-section {
+    padding: 1.25rem;
+
+    .container-anggota {
+      margin-top: 4rem;
+
+      .summary-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+      }
+
+      .filter-bar {
+        .filter-item {
+          &.search-input {
+            min-width: 250px;
           }
         }
       }
@@ -328,34 +473,19 @@
 
 @include media-breakpoint-up(sm) {
   .anggota-superadmin-section {
-    .summary-cards {
-      flex-direction: row;
-      gap: 2rem;
+    .container-anggota {
+      margin-top: 6rem;
 
-      .card {
-        flex: 1 1 0;
-        height: 8.5rem ;
-        padding: 1rem;
-        flex-direction: column;
-        align-items: flex-start;
+      .summary-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
 
-        .icon {
-          width: 3rem;
-          height: 3rem;
+      .filter-bar {
+        flex-wrap: nowrap;
 
-          img {
-            width: 1.5rem;
-            height: 1.5rem;
-          }
-        }
-
-        .info {
-          .label {
-            font-size: 0.875rem;
-          }
-
-          .count {
-            font-size: 1.25rem;
+        .filter-item {
+          &.search-input {
+            min-width: 300px;
           }
         }
       }
@@ -365,35 +495,14 @@
 
 @include media-breakpoint-up(md) {
   .anggota-superadmin-section {
-    .summary-cards {
-      gap: 3rem;
+    padding: 1.5rem;
 
-      .card {
-        flex: 1 1 0;
-        height: 10rem ;
-        padding: 1.25rem;
-        flex-direction: column;
-        align-items: flex-start;
+    .container-anggota {
+      margin-top: 8rem;
 
-        .icon {
-          width: 3.5rem;
-          height: 3.5rem;
-
-          img {
-            width: 2rem;
-            height: 2rem;
-          }
-        }
-
-        .info {
-          .label {
-            font-size: 0.875rem;
-          }
-
-          .count {
-            font-size: 1.5rem;
-          }
-        }
+      .summary-cards {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
       }
     }
   }
@@ -401,33 +510,32 @@
 
 @include media-breakpoint-up(lg) {
   .anggota-superadmin-section {
-    .summary-cards {
-      gap: 3rem;
+    .container-anggota {
+      .summary-cards {
+        gap: 2rem;
 
-      .card {
-        flex: 1 1 0;
-        height: 11rem;
-        padding: 1.5rem;
-        flex-direction: column;
-        align-items: flex-start;
+        .card {
+          padding: 2rem;
 
-        .icon {
-          width: 4rem;
-          height: 4rem;
+          .icon {
+            width: 4rem;
+            height: 4rem;
+            padding: 1rem;
 
-          img {
-            width: 2.5rem;
-            height: 2.5rem;
-          }
-        }
-
-        .info {
-          .label {
-            font-size: 1rem;
+            img {
+              width: 2.25rem;
+              height: 2.25rem;
+            }
           }
 
-          .count {
-            font-size: 1.75rem;
+          .info {
+            .label {
+              font-size: 1rem;
+            }
+
+            .count {
+              font-size: 2rem;
+            }
           }
         }
       }
@@ -435,3 +543,12 @@
   }
 }
 
+@include media-breakpoint-up(xl) {
+  .anggota-superadmin-section {
+    .container-anggota {
+      .summary-cards {
+        gap: 2.5rem;
+      }
+    }
+  }
+}

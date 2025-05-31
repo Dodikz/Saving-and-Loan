@@ -833,85 +833,89 @@ h6 {
   margin-top: 8rem;
 }
 .anggota-superadmin-section .container-anggota .summary-cards {
-  display: flex;
-  gap: 2rem;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
 }
 .anggota-superadmin-section .container-anggota .summary-cards .card {
-  flex: 1 1 0;
-  max-width: 100%;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #fff;
   border: 0.125rem solid #e3e1d1;
   border-radius: 0.625rem;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 0.75rem;
-  justify-content: start;
-  height: 7.25rem;
+  gap: 1rem;
+  min-height: 5rem;
 }
 .anggota-superadmin-section .container-anggota .summary-cards .card .icon {
   background: #dcd6b0;
-  border-radius: 2.1875rem;
-  padding: 0.625rem;
+  border-radius: 50%;
+  padding: 0.75rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 3.125rem;
-  height: 3.125rem;
+  width: 3.5rem;
+  height: 3.5rem;
   flex-shrink: 0;
 }
 .anggota-superadmin-section .container-anggota .summary-cards .card .icon img {
-  width: 1.875rem;
-  height: 1.875rem;
+  width: 2rem;
+  height: 2rem;
 }
 .anggota-superadmin-section .container-anggota .summary-cards .card .info {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  flex: 1;
 }
 .anggota-superadmin-section .container-anggota .summary-cards .card .info .label {
   font-size: 0.875rem;
-  font-weight: 600;
-  color: #777;
+  font-weight: 500;
+  color: #666;
+  margin: 0;
 }
 .anggota-superadmin-section .container-anggota .summary-cards .card .info .count {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
   font-weight: 700;
   color: #2f2f2f;
+  margin: 0;
 }
 .anggota-superadmin-section .container-anggota .filter-bar {
   display: flex;
   align-items: center;
-  justify-content: start;
-  gap: 0.75rem;
+  justify-content: space-between;
+  gap: 1rem;
   flex-wrap: wrap;
   background: #fff;
-  padding: 0.75rem 1.25rem;
+  padding: 1rem 1.5rem;
   border: 0.125rem solid #e3e1d1;
   border-radius: 0.625rem;
-  overflow-x: auto;
 }
 .anggota-superadmin-section .container-anggota .filter-bar .filter-item {
   display: flex;
   align-items: center;
   gap: 0.75rem;
-  flex-wrap: wrap;
-  min-width: 17rem;
 }
 .anggota-superadmin-section .container-anggota .filter-bar .filter-item.search-input {
   position: relative;
-  margin-right: 0.75rem;
+  flex: 1;
+  min-width: 300px;
 }
 .anggota-superadmin-section .container-anggota .filter-bar .filter-item.search-input input {
-  padding: 0.5rem 1.75rem;
-  width: 21.5625rem;
-  height: 2.375rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.375rem;
+  padding: 0.75rem 1rem 0.75rem 2.5rem;
+  width: 100%;
+  height: 2.5rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.5rem;
   font-size: 0.875rem;
   background-color: #fff;
+  box-sizing: border-box;
+}
+.anggota-superadmin-section .container-anggota .filter-bar .filter-item.search-input input:focus {
+  outline: none;
+  border-color: #504B38;
+  box-shadow: 0 0 0 2px rgba(77, 70, 41, 0.1);
 }
 .anggota-superadmin-section .container-anggota .filter-bar .filter-item.search-input .icon {
   position: absolute;
@@ -921,13 +925,17 @@ h6 {
   width: 1rem;
   height: 1rem;
   opacity: 0.6;
-  color: #504B38;
+  z-index: 1;
+}
+.anggota-superadmin-section .container-anggota .filter-bar .filter-item.filter-select {
+  display: flex;
+  gap: 0.75rem;
 }
 .anggota-superadmin-section .container-anggota .filter-bar .filter-item.filter-select select {
-  padding: 0.5rem 0.75rem;
-  height: 2.375rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.375rem;
+  padding: 0.75rem 2rem 0.75rem 0.75rem;
+  height: 2.5rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.5rem;
   font-size: 0.875rem;
   background-color: #fff;
   -webkit-appearance: none;
@@ -935,49 +943,67 @@ h6 {
           appearance: none;
   background-image: url("../assets/media/svg/down-arrow.svg");
   background-repeat: no-repeat;
-  background-position: right 10px center;
-  background-size: 10px;
+  background-position: right 0.75rem center;
+  background-size: 0.75rem;
+  min-width: 140px;
+  cursor: pointer;
+}
+.anggota-superadmin-section .container-anggota .filter-bar .filter-item.filter-select select:focus {
+  outline: none;
+  border-color: #504B38;
+  box-shadow: 0 0 0 2px rgba(77, 70, 41, 0.1);
 }
 .anggota-superadmin-section .container-anggota .filter-bar .filter-item.filter-select .date-picker {
-  padding: 0.5rem 0.75rem;
+  padding: 0.75rem;
   width: 9.375rem;
-  height: 2.375rem;
-  border: 0.0625rem solid #ccc;
-  border-radius: 0.375rem;
+  height: 2.5rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.5rem;
   font-size: 0.875rem;
   color: #504B38;
   background-color: #fff;
 }
-.anggota-superadmin-section .container-anggota .filter-bar .filter-item button {
+.anggota-superadmin-section .container-anggota .filter-bar .filter-item.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+.anggota-superadmin-section .container-anggota .filter-bar .filter-item.action-buttons button {
   display: flex;
   align-items: center;
-  gap: 0.375rem;
+  gap: 0.5rem;
   background-color: #504B38;
   color: #fff;
-  padding: 0.5rem 0.75rem;
-  border-radius: 0.375rem;
+  padding: 0.75rem 1rem;
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
   font-size: 0.875rem;
-  height: 2.375rem;
-  transition: background-color 0.2s ease-in-out;
+  font-weight: 500;
+  height: 2.5rem;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
 }
-.anggota-superadmin-section .container-anggota .filter-bar .filter-item button img {
+.anggota-superadmin-section .container-anggota .filter-bar .filter-item.action-buttons button img {
   width: 1rem;
   height: 1rem;
 }
-.anggota-superadmin-section .container-anggota .filter-bar .filter-item button:hover {
+.anggota-superadmin-section .container-anggota .filter-bar .filter-item.action-buttons button:hover {
   background-color: #3f3825;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.anggota-superadmin-section .container-anggota .filter-bar .filter-item.action-buttons button:active {
+  transform: translateY(0);
 }
 .anggota-superadmin-section .container-anggota .table-container {
   background: #fff;
-  padding: 1rem;
+  padding: 1.5rem;
   border-radius: 0.625rem;
   border: 0.125rem solid #e3e1d1;
   overflow-x: auto;
 }
 .anggota-superadmin-section .container-anggota .table-container h4 {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-size: 1.5rem;
   font-weight: 700;
   color: #333;
@@ -990,28 +1016,33 @@ h6 {
 .anggota-superadmin-section .container-anggota .table-container table thead {
   background-color: white;
   font-weight: 600;
-  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
 }
 .anggota-superadmin-section .container-anggota .table-container table thead th {
-  padding: 0.75rem 0.5rem;
+  padding: 1rem 0.75rem;
   font-size: 0.875rem;
   color: #333;
   text-align: left;
+  border-bottom: 2px solid #e9ecef;
 }
 .anggota-superadmin-section .container-anggota .table-container table tbody tr {
-  border-bottom: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
+  border-bottom: 1px solid #e9ecef;
+  transition: background-color 0.2s ease;
+}
+.anggota-superadmin-section .container-anggota .table-container table tbody tr:hover {
+  background-color: #f8f9fa;
 }
 .anggota-superadmin-section .container-anggota .table-container table tbody td {
-  padding: 0.75rem 0.5rem;
+  padding: 1rem 0.75rem;
   font-size: 0.875rem;
   vertical-align: middle;
 }
 .anggota-superadmin-section .container-anggota .table-container table .badge.aktif {
   background-color: #d1fadf;
   color: #56CDAD;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
+  padding: 0.375rem 0.75rem;
+  border-radius: 1rem;
   font-size: 0.75rem;
+  font-weight: 500;
   display: inline-block;
 }
 .anggota-superadmin-section .container-anggota .table-container table .aksi {
@@ -1022,37 +1053,43 @@ h6 {
   background-color: #504B38;
   border: none;
   color: #fff;
-  padding: 0.25rem 0.5rem;
-  border-radius: 0.25rem;
+  padding: 0.5rem;
+  border-radius: 0.375rem;
   cursor: pointer;
   font-size: 0.75rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  width: 2rem;
+  height: 2rem;
 }
 .anggota-superadmin-section .container-anggota .table-container table .aksi button:hover {
   background-color: #3d3623;
+  transform: translateY(-1px);
 }
 .anggota-superadmin-section .container-anggota .table-container table .aksi button img {
   width: 1rem;
   height: 1rem;
 }
 .anggota-superadmin-section .container-anggota .table-container .pagination {
-  margin-top: 0;
+  margin-top: 1.5rem;
   padding-top: 1rem;
-  border-top: 0.125rem solid rgba(0, 0, 0, 0.5137254902);
+  border-top: 1px solid #e9ecef;
   display: flex;
   justify-content: flex-end;
   gap: 0.5rem;
 }
 .anggota-superadmin-section .container-anggota .table-container .pagination button {
-  padding: 0.25rem 0.5rem;
-  border: 0.0625rem solid #ccc;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #ddd;
   background-color: #fff;
-  border-radius: 0.25rem;
+  border-radius: 0.375rem;
   cursor: pointer;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  transition: all 0.2s ease;
 }
 .anggota-superadmin-section .container-anggota .table-container .pagination button.active {
   background-color: #504B38;
@@ -1060,117 +1097,171 @@ h6 {
   border-color: #504B38;
 }
 .anggota-superadmin-section .container-anggota .table-container .pagination button:hover:not(.active) {
-  background-color: #f0f0f0;
+  background-color: #f8f9fa;
+  border-color: #adb5bd;
 }
 
-.anggota-superadmin-section .summary-cards {
-  flex-direction: column;
-  gap: 2rem;
-}
-.anggota-superadmin-section .summary-cards .card {
-  width: 100%;
-  min-height: 7.25rem;
-  padding: 0.75rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 0.75rem;
-  border: 0.125rem solid #e3e1d1;
-  border-radius: 0.625rem;
-  background-color: #fff;
-}
-.anggota-superadmin-section .summary-cards .card .icon {
-  width: 2.5rem;
-  height: 2.5rem;
-}
-.anggota-superadmin-section .summary-cards .card .icon img {
-  width: 1.25rem;
-  height: 1.25rem;
-}
-.anggota-superadmin-section .summary-cards .card .info .label {
-  font-size: 0.75rem;
-}
-.anggota-superadmin-section .summary-cards .card .info .count {
-  font-size: 1rem;
-}
-
-@media (min-width: 576px) {
-  .anggota-superadmin-section .summary-cards {
-    flex-direction: row;
-    gap: 2rem;
-  }
-  .anggota-superadmin-section .summary-cards .card {
-    flex: 1 1 0;
-    height: 8.5rem;
+@media (max-width: 479.98px) {
+  .anggota-superadmin-section {
     padding: 1rem;
-    flex-direction: column;
-    align-items: flex-start;
   }
-  .anggota-superadmin-section .summary-cards .card .icon {
+  .anggota-superadmin-section .container-anggota {
+    margin-top: 2rem;
+    gap: 1rem;
+  }
+  .anggota-superadmin-section .container-anggota .summary-cards {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .anggota-superadmin-section .container-anggota .summary-cards .card {
+    padding: 1rem;
+    min-height: 4rem;
+  }
+  .anggota-superadmin-section .container-anggota .summary-cards .card .icon {
     width: 3rem;
     height: 3rem;
+    padding: 0.5rem;
   }
-  .anggota-superadmin-section .summary-cards .card .icon img {
+  .anggota-superadmin-section .container-anggota .summary-cards .card .icon img {
     width: 1.5rem;
     height: 1.5rem;
   }
-  .anggota-superadmin-section .summary-cards .card .info .label {
-    font-size: 0.875rem;
+  .anggota-superadmin-section .container-anggota .summary-cards .card .info .label {
+    font-size: 0.75rem;
   }
-  .anggota-superadmin-section .summary-cards .card .info .count {
+  .anggota-superadmin-section .container-anggota .summary-cards .card .info .count {
+    font-size: 1.5rem;
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar .filter-item.search-input {
+    min-width: auto;
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar .filter-item.search-input input {
+    width: 100%;
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar .filter-item.filter-select {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar .filter-item.filter-select select {
+    min-width: auto;
+    width: 100%;
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar .filter-item.action-buttons {
+    justify-content: center;
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar .filter-item.action-buttons button {
+    flex: 1;
+  }
+  .anggota-superadmin-section .container-anggota .table-container {
+    padding: 1rem;
+  }
+  .anggota-superadmin-section .container-anggota .table-container h4 {
     font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+  .anggota-superadmin-section .container-anggota .table-container table thead th {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  .anggota-superadmin-section .container-anggota .table-container table tbody td {
+    padding: 0.75rem 0.5rem;
+    font-size: 0.75rem;
+  }
+  .anggota-superadmin-section .container-anggota .table-container table .aksi {
+    gap: 0.25rem;
+  }
+  .anggota-superadmin-section .container-anggota .table-container table .aksi button {
+    width: 1.75rem;
+    height: 1.75rem;
+    padding: 0.25rem;
+  }
+  .anggota-superadmin-section .container-anggota .table-container table .aksi button img {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+  .anggota-superadmin-section .container-anggota .table-container .pagination {
+    justify-content: center;
+    gap: 0.25rem;
+  }
+  .anggota-superadmin-section .container-anggota .table-container .pagination button {
+    min-width: 2rem;
+    height: 2rem;
+    font-size: 0.75rem;
+  }
+}
+@media (min-width: 480px) {
+  .anggota-superadmin-section {
+    padding: 1.25rem;
+  }
+  .anggota-superadmin-section .container-anggota {
+    margin-top: 4rem;
+  }
+  .anggota-superadmin-section .container-anggota .summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar .filter-item.search-input {
+    min-width: 250px;
+  }
+}
+@media (min-width: 576px) {
+  .anggota-superadmin-section .container-anggota {
+    margin-top: 6rem;
+  }
+  .anggota-superadmin-section .container-anggota .summary-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar {
+    flex-wrap: nowrap;
+  }
+  .anggota-superadmin-section .container-anggota .filter-bar .filter-item.search-input {
+    min-width: 300px;
   }
 }
 @media (min-width: 768px) {
-  .anggota-superadmin-section .summary-cards {
-    gap: 3rem;
+  .anggota-superadmin-section {
+    padding: 1.5rem;
   }
-  .anggota-superadmin-section .summary-cards .card {
-    flex: 1 1 0;
-    height: 10rem;
-    padding: 1.25rem;
-    flex-direction: column;
-    align-items: flex-start;
+  .anggota-superadmin-section .container-anggota {
+    margin-top: 8rem;
   }
-  .anggota-superadmin-section .summary-cards .card .icon {
-    width: 3.5rem;
-    height: 3.5rem;
-  }
-  .anggota-superadmin-section .summary-cards .card .icon img {
-    width: 2rem;
-    height: 2rem;
-  }
-  .anggota-superadmin-section .summary-cards .card .info .label {
-    font-size: 0.875rem;
-  }
-  .anggota-superadmin-section .summary-cards .card .info .count {
-    font-size: 1.5rem;
+  .anggota-superadmin-section .container-anggota .summary-cards {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
   }
 }
 @media (min-width: 992px) {
-  .anggota-superadmin-section .summary-cards {
-    gap: 3rem;
+  .anggota-superadmin-section .container-anggota .summary-cards {
+    gap: 2rem;
   }
-  .anggota-superadmin-section .summary-cards .card {
-    flex: 1 1 0;
-    height: 11rem;
-    padding: 1.5rem;
-    flex-direction: column;
-    align-items: flex-start;
+  .anggota-superadmin-section .container-anggota .summary-cards .card {
+    padding: 2rem;
   }
-  .anggota-superadmin-section .summary-cards .card .icon {
+  .anggota-superadmin-section .container-anggota .summary-cards .card .icon {
     width: 4rem;
     height: 4rem;
+    padding: 1rem;
   }
-  .anggota-superadmin-section .summary-cards .card .icon img {
-    width: 2.5rem;
-    height: 2.5rem;
+  .anggota-superadmin-section .container-anggota .summary-cards .card .icon img {
+    width: 2.25rem;
+    height: 2.25rem;
   }
-  .anggota-superadmin-section .summary-cards .card .info .label {
+  .anggota-superadmin-section .container-anggota .summary-cards .card .info .label {
     font-size: 1rem;
   }
-  .anggota-superadmin-section .summary-cards .card .info .count {
-    font-size: 1.75rem;
+  .anggota-superadmin-section .container-anggota .summary-cards .card .info .count {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .anggota-superadmin-section .container-anggota .summary-cards {
+    gap: 2.5rem;
   }
 }
 
