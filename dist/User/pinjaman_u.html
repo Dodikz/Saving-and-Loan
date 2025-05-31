@@ -109,7 +109,7 @@ License: -
                         <td>Rp. 1.400.000</td>
                         <td><span class="badge aktif">Lunas</span></td>
                         <td class="aksi">
-                            <button title="Lihat" onclick="openModal()">
+                            <button title="Lihat" onclick="openModal('view')">
                                 <img src="../assets/media/svg/eye-svgrepo-com.svg" alt="print">
                             </button>
                         </td>
@@ -118,9 +118,9 @@ License: -
             </table>
 
 
-            <div id="modal" class="modal" style="display: none;">
+            <div id="view" class="modal" style="display: none;">
                 <div class="modal-content">
-                    <span class="close" onclick="closeModal()">&times;</span>
+                    <span class="close" onclick="closeModal('view')">&times;</span>
                     <h4>Detail pinjaman</h4>
 
                     <div class="total-pinjaman">
