@@ -15881,7 +15881,7 @@ textarea.form-control-lg {
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     padding: 4rem 0;
     background-color: #bebebe;
     flex-direction: column;
@@ -15985,7 +15985,7 @@ textarea.form-control-lg {
     left: 0;
     z-index: -1;
     width: 100%;
-    height: 100vh;
+    height: 120vh;
     padding: 4rem 0;
     background-color: #bebebe;
     flex-direction: column;
