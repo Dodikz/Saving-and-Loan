@@ -1,10 +1,11 @@
-function openModal() {
-  const modal = document.getElementById("modal");
+function openModal(modalID) {
+  const modal = document.getElementById(modalID);
+
   modal.style.display = "flex";
 }
 
-function closeModal() {
-  const modal = document.getElementById("modal");
+function closeModal(modalID) {
+  const modal = document.getElementById(modalID);
   modal.style.display = "none";
 }
 

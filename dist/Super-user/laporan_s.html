@@ -136,43 +136,141 @@ License: -
                             <td>+62 123456789</td>
                             <td><span class="badge aktif">Aktif</span></td>
                             <td class="aksi">
-                                <button title="Lihat">
+                                <button title="Lihat" onclick="openModal('view')">
                                     <img src="../assets/media/svg/eye-svgrepo-com.svg" alt="view">
                                 </button>
-                                <button title="Edit">
+                                <button title="Edit" onclick="openModal('edit')">
                                     <img src="../assets/media/svg/pencil.svg" alt="edit">
                                 </button>
-                                <button title="Aktivasi">
+                                <button title="Aktivasi" onclick="openModal('activate')">
                                     <img src="../assets/media/svg/key.svg" alt="activate">
                                 </button>
-                                <button title="Non-aktif">
+                                <button title="Non-aktif" onclick="openModal('deactivate')">
                                     <img src="../assets/media/svg/no-svgrepo-com (1).svg" alt="deactivate">
                                 </button>
                             </td>
                         </tr>
-                        <tr>
-                            <td>2</td>
-                            <td>Budi Santoso</td>
-                            <td>15 Mar 2025</td>
-                            <td>+62 987654321</td>
-                            <td><span class="badge aktif">Aktif</span></td>
-                            <td class="aksi">
-                                <button title="Lihat">
-                                    <img src="../assets/media/svg/eye-svgrepo-com.svg" alt="view">
-                                </button>
-                                <button title="Edit">
-                                    <img src="../assets/media/svg/pencil.svg" alt="edit">
-                                </button>
-                                <button title="Aktivasi">
-                                    <img src="../assets/media/svg/key.svg" alt="activate">
-                                </button>
-                                <button title="Non-aktif">
-                                    <img src="../assets/media/svg/no-svgrepo-com (1).svg" alt="deactivate">
-                                </button>
-                            </td>
-                        </tr>
+
                     </tbody>
                 </table>
+            </div>
+
+            
+            <div id="view" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('view')">&times;</span>
+                    <div class="modal-body">
+                        <div class="view-content">
+                            <h2>Detail Anggota</h2>
+                            <div class="detail-item">
+                                <label>Nama</label>
+                                <p>Okta Sigma</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>NIK</label>
+                                <p>12 Apr 2025</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Nomor HP</label>
+                                <p>+62 123456789</p>
+                            </div>
+                            <div class="detail-item">
+                                <label>Status</label>
+                                <p class="aktif">Aktif</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-cancel" onclick="closeModal('view')">Tutup</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="edit" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('edit')">&times;</span>
+                    <div class="modal-body">
+                        <div class="edit-content">
+                            <h2>Edit Anggota</h2>
+                            <form action="">
+                                <div class="form-group">
+                                    <label for="nama">Nama</label>
+                                    <input type="text" name="nama" id="nama" placeholder="Nama" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="nik">NIK</label>
+                                    <input type="text" name="nik" id="nik" placeholder="NIK" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="hp">Nomor HP</label>
+                                    <input type="text" name="hp" id="hp" placeholder="Nomor HP" required>
+                                </div>
+
+                            </form>
+                            
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-cancel" onclick="closeModal('edit')">Batal</button>
+                        <button class="btn-confirm">Simpan</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="acivate" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('acivate')">&times;</span>
+                    <div class="modal-body">
+                        <div class="confirmation-content">
+                            <div class="icon-wrapper success">
+                                <img src="../assets/media/svg/check-brown.svg" alt="icon" />
+                            </div>
+                            <h4>Aktivasi Anggota</h4>
+                            <p>Apakah Anda yakin ingin mengaktifkan anggota <strong>Okta Sigma</strong>?</p>
+                            <div class="member-info">
+                                <span class="info-item">NIK: 3201234567890123</span>
+                                <span class="info-item">HP: +62 123456789</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-cancel" onclick="closeModal('acivate')">Batal</button>
+                        <button class="btn-confirm">Ya, Aktifkan</button>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="deactivate" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('deactivate')">&times;</span>
+                    <div class="modal-body">
+                        <div class="confirmation-content">
+                            <div class="icon-wrapper success">
+                                <img src="../assets/media/svg/no-svgrepo-com.svg" alt="icon" />
+                            </div>
+                            <h4>Non Aktif Anggota</h4>
+                            <p>Apakah Anda yakin ingin mengaktifkan anggota <strong>Okta Sigma</strong>?</p>
+                            <div class="member-info">
+                                <span class="info-item">NIK: 3201234567890123</span>
+                                <span class="info-item">HP: +62 123456789</span>
+                            </div>
+                            <div class="warning-note">
+                                <small>⚠️ Anggota yang dinonaktifkan tidak akan dapat mengakses sistem.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn-cancel" onclick="closeModal()">Batal</button>
+                        <button class="btn-confirm">Ya, Aktifkan</button>
+                    </div>
+
+                </div>
             </div>
 
             <div class="pagination">
@@ -190,6 +288,7 @@ License: -
   <!-- Start:: footer section -->
   <!-- End:: footer section -->
 
+  <script src="../assets/js/custom/modal.js"></script>
   <!-- Start::Global Bundle Scripts (used by all pages) -->
   <script src="../assets/js/scripts.bundle.js"></script>
   <!-- End::Global Bundle Scripts -->

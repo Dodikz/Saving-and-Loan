@@ -1101,6 +1101,185 @@ h6 {
   width: 0.875rem;
   height: 0.875rem;
 }
+.simpanan-superadmin-section .container-simpanan .table-container .modal {
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  max-width: 800px;
+  width: 100%;
+  font-family: "Inter", sans-serif;
+  position: relative;
+  animation: slideIn 0.3s ease;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .view-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #504B38;
+  text-align: center;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .view-content .detail-item {
+  margin-bottom: 1.5rem;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .view-content .detail-item label {
+  display: block;
+  font-size: 0.875rem;
+  color: #504B38;
+  margin-bottom: 0.5rem;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .view-content .detail-item p {
+  font-size: 0.875rem;
+  color: #333;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .view-content .detail-item .aktif {
+  background-color: #d1fadf;
+  color: #56CDAD;
+  padding: 0.375rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  display: inline-block;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .edit-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #504B38;
+  text-align: center;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .edit-content form .form-group {
+  margin-bottom: 1.5rem;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .edit-content form .form-group label {
+  display: block;
+  font-size: 0.875rem;
+  color: #504B38;
+  margin-bottom: 0.5rem;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .edit-content form .form-group input[type=text] {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 0.875rem;
+  border: 0.0625rem solid #ddd;
+  border-radius: 0.5rem;
+  color: #333;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .edit-content form .form-group input[type=text]:focus {
+  outline: none;
+  border-color: #504B38;
+  box-shadow: 0 0 0 0.125rem rgba(77, 70, 41, 0.1);
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .confirmation-content {
+  text-align: center;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .confirmation-content .icon-wrapper {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1.5rem;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .confirmation-content .icon-wrapper img {
+  height: 4rem;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .member-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+  justify-content: center;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .member-info .info-item {
+  color: #504B38;
+  text-align: center;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .warning-note {
+  margin-top: 1rem;
+  background-color: #fef3cd;
+  border-radius: 1rem;
+  width: auto;
+  padding: 1rem;
+  text-align: center;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-content .warning-note small {
+  color: #8b6b0d;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-footer button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-footer button.btn-cancel {
+  background-color: #f8f9fa;
+  color: #333;
+  border: 1px solid #ddd;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-footer button.btn-cancel:hover {
+  background-color: #e9ecef;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-footer button.btn-confirm {
+  background-color: #504B38;
+  color: #fff;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .modal-footer button.btn-confirm:hover {
+  background-color: #3d3623;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .close {
+  position: absolute;
+  top: 12px;
+  right: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+}
+.simpanan-superadmin-section .container-simpanan .table-container .close:hover {
+  color: #e74c3c;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideIn {
+  from {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .simpanan-superadmin-section .container-simpanan .table-container .pagination {
   margin-top: 1rem;
   padding-top: 1rem;
