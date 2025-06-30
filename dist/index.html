@@ -177,62 +177,6 @@ License: -
   }
 }
 </style>
-<script>
-  const closeModalBtn = document.getElementById('closeModal');
-
-  closeModalBtn.addEventListener('click', () => {
-    passwordModal.style.display = 'none';
-    adminPasswordInput.value = '';
-  });
-
-  window.addEventListener('click', (event) => {
-    if (event.target === passwordModal) {
-      passwordModal.style.display = 'none';
-      adminPasswordInput.value = '';
-    }
-  });
-
-  const users = [
-    { nik: '123', role: 'anggota' },
-    { nik: 'admin123', role: 'admin', password: '123' }
-  ];
-
-  const loginForm = document.getElementById('loginForm');
-  const nikInput = document.getElementById('nikInput');
-  const passwordModal = document.getElementById('passwordModal');
-  const confirmPasswordBtn = document.getElementById('confirmPassword');
-  const adminPasswordInput = document.getElementById('adminPassword');
-
-  loginForm.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const nik = nikInput.value.trim();
-    const user = users.find(u => u.nik === nik);
-
-    if (!user) {
-      alert('NIK/No Anggota tidak ditemukan');
-      return;
-    }
-
-    if (user.role === 'anggota') {
-      window.location.href = 'index.html';
-    } else if (user.role === 'admin') {
-      passwordModal.style.display = 'flex';
-    }
-  });
-
-  confirmPasswordBtn.addEventListener('click', () => {
-    const nik = nikInput.value.trim();
-    const password = adminPasswordInput.value;
-    const user = users.find(u => u.nik === nik);
-
-    if (user && user.password === password) {
-      window.location.href = 'Beranda.html';
-    } else {
-      alert('Password salah');
-    }
-  });
-
-</script>
  
 
   <!-- Start:: header navbar section -->
@@ -243,6 +187,9 @@ License: -
   <!-- End::Global Bundle Scripts -->
   <!-- Start::Page Scripts (used by this page) -->
   <script src="assets/js/pages/home-v1.js"></script>
+
+  <script type="module" src="../assets/js/custom/auth.js"></script>
+
   <!-- End::Page Scripts -->
 </body>
 

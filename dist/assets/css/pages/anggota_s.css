@@ -1397,7 +1397,7 @@ h6 {
     grid-template-columns: repeat(2, 1fr);
   }
   .anggota-superadmin-section .container-anggota .filter-bar {
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
   }
   .anggota-superadmin-section .container-anggota .filter-bar .filter-item.search-input {
     min-width: 300px;

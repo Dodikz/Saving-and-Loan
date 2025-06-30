@@ -1397,6 +1397,7 @@ h6 {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     padding: 1.25rem;
   }
   .simpanan-superadmin-section .container-simpanan .filter-bar .filter-row.search-row {

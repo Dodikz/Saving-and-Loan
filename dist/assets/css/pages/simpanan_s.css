@@ -1441,7 +1441,7 @@ h6 {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     padding: 1rem 1.5rem;
   }
   .simpanan-superadmin-section .container-simpanan .filter-bar .filter-row {

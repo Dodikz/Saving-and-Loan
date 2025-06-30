@@ -696,7 +696,7 @@
       }
 
       .filter-bar {
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
 
         .filter-item {
           &.search-input {
