@@ -90,10 +90,16 @@ License: -
     document.addEventListener('DOMContentLoaded', function () {
       const hamburger = document.getElementById('hamburger');
       const navbarMenu = document.getElementById('navbar-menu');
+      const logout = document.getElementById('logout');
+  
   
       hamburger.addEventListener('click', function () {
         navbarMenu.classList.toggle('navbar-show');
         hamburger.classList.toggle('hamburger--active');
+      });
+      logout.addEventListener('click', function () {
+        localStorage.removeItem('user');
+        window.location.href = '/Beranda.html';
       });
     });
   </script>  <!-- End:: header navbar section -->
@@ -298,7 +304,8 @@ License: -
   <!-- End::Global Bundle Scripts -->
   <!-- Start::Page Scripts (used by this page) -->
   <script src="../assets/js/pages/home-v1.js"></script>
-    <script type="module" src="assets/js/custom/auth.js"></script>
+    <script type="module" src="../assets/js/custom/auth.js"></script>
+    <script type="module" src="../assets/js/custom/route.js"></script>
 
   <!-- End::Page Scripts -->
 </body>

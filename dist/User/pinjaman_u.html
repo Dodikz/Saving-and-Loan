@@ -64,8 +64,8 @@ License: -
       <div class="navbar-menu" id="navbar-menu">
         <div class="nav-item"><img src="../assets/media/svg/simpanan.svg" class="svg"><a href="simpanan_u.html">Simpanan</a></div>
         <div class="nav-item"><img src="../assets/media/svg/pinjaman.svg" class="svg"><a href="pinjaman_u.html">Pinjaman</a></div>
-        <div class="logout">
-          <img src="../assets/media/svg/log-out.svg" alt="Logout" class="svg"> <a href="logout.html">Logout</a>
+        <div class="logout" id="logout">
+          <img src="../assets/media/svg/log-out.svg" alt="Logout" class="svg"> <a>Logout</a>
         </div>
       </div>
   
@@ -76,13 +76,20 @@ License: -
     document.addEventListener('DOMContentLoaded', function () {
       const hamburger = document.getElementById('hamburger');
       const navbarMenu = document.getElementById('navbar-menu');
+      const logout = document.getElementById('logout');
   
       hamburger.addEventListener('click', function () {
         navbarMenu.classList.toggle('navbar-show');
         hamburger.classList.toggle('hamburger--active');
       });
+  
+      logout.addEventListener('click', function () {
+        localStorage.removeItem('user');
+        window.location.href = '/Beranda.html';
+      });
     });
-  </script>  <!-- End:: header navbar section -->
+  </script>
+  <!-- End:: header navbar section -->
 
 
    
@@ -101,20 +108,9 @@ License: -
                         <th>Lihat Lebih Detail</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>pinjaman Wajib</td>
-                        <td>12 Apr 2025</td>
-                        <td>Rp. 1.400.000</td>
-                        <td><span class="badge aktif">Lunas</span></td>
-                        <td class="aksi">
-                            <button title="Lihat" onclick="openModal('view')">
-                                <img src="../assets/media/svg/eye-svgrepo-com.svg" alt="print">
-                            </button>
-                        </td>
-                    </tr>
+                <tbody id="pinjamanTableBody">
                 </tbody>
+
             </table>
 
 
@@ -154,7 +150,7 @@ License: -
                                 <td><span class="badge belum">Belum Dibayar</span></td>
                             </tr>
                         </tbody>
-                        <tfoot >
+                        <tfoot>
                             <tr>
                                 <td colspan="3"><strong>TOTAL DIBAYAR :</strong></td>
                                 <td colspan="2"><strong>Rp 20.000.000</strong></td>
@@ -168,13 +164,9 @@ License: -
                 </div>
             </div>
 
-            <div class="pagination">
-                <button>&lt;</button>
-                <button class="active">1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>&gt;</button>
+            <div class="pagination" id="paginationContainer">
             </div>
+
         </div>
     </div>
 </section>
@@ -190,6 +182,9 @@ License: -
   <!-- End::Global Bundle Scripts -->
   <!-- Start::Page Scripts (used by this page) -->
   <script src="../assets/js/pages/home-v1.js"></script>
+  <script type="module" src="../assets/js/custom/auth.js"></script>
+  <script type="module" src="../assets/js/custom/route.js"></script>
+  <script type="module" src="../assets/js/custom/pinjaman_u.js"></script>
   <!-- End::Page Scripts -->
 </body>
 

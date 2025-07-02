@@ -33,10 +33,16 @@
   document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.getElementById('hamburger');
     const navbarMenu = document.getElementById('navbar-menu');
+    const logout = document.getElementById('logout');
+
 
     hamburger.addEventListener('click', function () {
       navbarMenu.classList.toggle('navbar-show');
       hamburger.classList.toggle('hamburger--active');
+    });
+    logout.addEventListener('click', function () {
+      localStorage.removeItem('user');
+      window.location.href = '/Beranda.html';
     });
   });
 </script>

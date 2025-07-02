@@ -3,8 +3,7 @@ import { getUsers } from "./helper.js";
 let currentUser = null;
 
 document
-  .getElementById("loginForm")
-  .addEventListener("submit", async function (e) {
+  .getElementById("loginForm")?.addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const nikInput = document.getElementById("nikInput").value.trim();
@@ -18,37 +17,33 @@ document
     }
 
     currentUser = foundUser;
-
-    if (foundUser.role === "admin") {
+    if (foundUser.role === "admin" || foundUser.role === "user") {
       document.getElementById("passwordModal").style.display = "flex";
-    } else {
-      localStorage.setItem("user", JSON.stringify(foundUser));
-      window.location.href = "./User/pinjaman_u.html";
     }
   });
 
 document
-  .getElementById("confirmPassword")
-  .addEventListener("click", function () {
+  .getElementById("confirmPassword")?.addEventListener("click", function () {
     const inputPassword = document.getElementById("adminPassword").value.trim();
 
     if (!currentUser) return;
 
     if (inputPassword === currentUser.password) {
-      localStorage.setItem("user", JSON.stringify(currentUser));
-      alert(`Selamat datang, ${currentUser.username}`);
-      window.location.href = "./Super-user/pinjaman_s.html";
+      if (currentUser.role === "admin") {
+        localStorage.setItem("user", JSON.stringify(currentUser));
+        window.location.href = "Super-user/anggota_s.html";
+      }
+      else if (currentUser.role === "user") {
+        localStorage.setItem("user", JSON.stringify(currentUser));
+        window.location.href = "User/simpanan_u.html";
+      }
     } else {
       alert("Password salah!");
     }
   });
 
-document.getElementById("closeModal").addEventListener("click", function () {
+document.getElementById("closeModal")?.addEventListener("click", function () {
   document.getElementById("passwordModal").style.display = "none";
 });
 
-document.getElementById("logout").addEventListener("click", () => {
-  localStorage.removeItem("user");
-  window.location.href = "/src/partials/layout/login_pages.html";
-});
 

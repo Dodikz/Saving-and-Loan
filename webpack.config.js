@@ -208,8 +208,8 @@ module.exports = {
           noErrorOnMissing: true
         },
         {
-          from: path.resolve(srcPath, 'assets/data'),
-          to: path.resolve(distPath, 'assets/data'),
+          from: path.resolve(srcPath, 'assets/js/data'),
+          to: path.resolve(distPath, 'assets/js/data'),
           noErrorOnMissing: true
         }
       ]

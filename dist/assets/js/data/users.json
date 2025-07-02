@@ -1,0 +1,95 @@
+[
+  {
+    "username": "1234567890",
+    "password": "admin123",
+    "role": "admin"
+  },
+  {
+    "username": "1122334455",
+    "password": "user123",
+    "role": "user",
+    "pinjaman": [
+      {
+        "id": 1,
+        "amount": 5000000,
+        "status": "approved"
+      },
+      {
+        "id": 2,
+        "amount": 3000000,
+        "status": "pending"
+      }
+    ],
+    "simpanan": [
+      {
+        "id": 1,
+        "amount": 1000000,
+        "type": "savings"
+      },
+      {
+        "id": 2,
+        "amount": 2000000,
+        "type": "fixed"
+      }
+    ]
+  },
+  {
+    "username": "1234512345",
+    "password": "user123",
+    "role": "user",
+    "pinjaman": [
+      {
+        "id": 1,
+        "amount": 5000000,
+        "status": "approved"
+      },
+      {
+        "id": 2,
+        "amount": 3000000,
+        "status": "pending"
+      }
+    ],
+    "simpanan": [
+      {
+        "id": 1,
+        "amount": 1000000,
+        "type": "savings"
+      },
+      {
+        "id": 2,
+        "amount": 2000000,
+        "type": "fixed"
+      }
+    ]
+  },
+  {
+    "username": "0987609876",
+    "password": "user123",
+    "role": "user",
+    "pinjaman": [
+      {
+        "id": 1,
+        "amount": 5000000,
+        "status": "approved"
+      },
+      {
+        "id": 2,
+        "amount": 3000000,
+        "status": "pending"
+      }
+    ],
+    "simpanan": [
+      {
+        "id": 1,
+        "amount": 1000000,
+        "type": "savings"
+      },
+      {
+        "id": 2,
+        "amount": 2000000,
+        "type": "fixed"
+      }
+    ]
+  }
+]
+

@@ -15,20 +15,9 @@
                         <th>Lihat Lebih Detail</th>
                     </tr>
                 </thead>
-                <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>pinjaman Wajib</td>
-                        <td>12 Apr 2025</td>
-                        <td>Rp. 1.400.000</td>
-                        <td><span class="badge aktif">Lunas</span></td>
-                        <td class="aksi">
-                            <button title="Lihat" onclick="openModal('view')">
-                                <img src="../assets/media/svg/eye-svgrepo-com.svg" alt="print">
-                            </button>
-                        </td>
-                    </tr>
+                <tbody id="pinjamanTableBody">
                 </tbody>
+
             </table>
 
 
@@ -68,7 +57,7 @@
                                 <td><span class="badge belum">Belum Dibayar</span></td>
                             </tr>
                         </tbody>
-                        <tfoot >
+                        <tfoot>
                             <tr>
                                 <td colspan="3"><strong>TOTAL DIBAYAR :</strong></td>
                                 <td colspan="2"><strong>Rp 20.000.000</strong></td>
@@ -82,13 +71,9 @@
                 </div>
             </div>
 
-            <div class="pagination">
-                <button>&lt;</button>
-                <button class="active">1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>&gt;</button>
+            <div class="pagination" id="paginationContainer">
             </div>
+
         </div>
     </div>
 </section>

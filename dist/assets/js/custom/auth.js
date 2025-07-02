@@ -14,14 +14,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function getUsers() {
   const saved = localStorage.getItem("users");
-  if (saved) return Promise.resolve(JSON.parse(saved));
 
-  return fetch("assets/js/custom/users.json")
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        console.log("User dari localStorage:", parsed);
+        return Promise.resolve(parsed);
+      }
+    } catch (err) {
+      console.warn("Gagal parse localStorage, fetch ulang.");
+    }
+  }
+
+  return fetch("../assets/data/users.json")
     .then((res) => {
       if (!res.ok) throw new Error("user.json not found");
       return res.json();
     })
     .then((data) => {
+      console.log("User dari file JSON:", data);
+
+      if (!Array.isArray(data)) {
+        throw new Error("Format users.json harus array");
+      }
+
       localStorage.setItem("users", JSON.stringify(data));
       return data;
     })
@@ -104,8 +121,7 @@ __webpack_require__.r(__webpack_exports__);
 let currentUser = null;
 
 document
-  .getElementById("loginForm")
-  .addEventListener("submit", async function (e) {
+  .getElementById("loginForm")?.addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const nikInput = document.getElementById("nikInput").value.trim();
@@ -119,39 +135,35 @@ document
     }
 
     currentUser = foundUser;
-
-    if (foundUser.role === "admin") {
+    if (foundUser.role === "admin" || foundUser.role === "user") {
       document.getElementById("passwordModal").style.display = "flex";
-    } else {
-      localStorage.setItem("user", JSON.stringify(foundUser));
-      window.location.href = "./User/pinjaman_u.html";
     }
   });
 
 document
-  .getElementById("confirmPassword")
-  .addEventListener("click", function () {
+  .getElementById("confirmPassword")?.addEventListener("click", function () {
     const inputPassword = document.getElementById("adminPassword").value.trim();
 
     if (!currentUser) return;
 
     if (inputPassword === currentUser.password) {
-      localStorage.setItem("user", JSON.stringify(currentUser));
-      alert(`Selamat datang, ${currentUser.username}`);
-      window.location.href = "./Super-user/pinjaman_s.html";
+      if (currentUser.role === "admin") {
+        localStorage.setItem("user", JSON.stringify(currentUser));
+        window.location.href = "Super-user/anggota_s.html";
+      }
+      else if (currentUser.role === "user") {
+        localStorage.setItem("user", JSON.stringify(currentUser));
+        window.location.href = "User/simpanan_u.html";
+      }
     } else {
       alert("Password salah!");
     }
   });
 
-document.getElementById("closeModal").addEventListener("click", function () {
+document.getElementById("closeModal")?.addEventListener("click", function () {
   document.getElementById("passwordModal").style.display = "none";
 });
 
-document.getElementById("logout").addEventListener("click", () => {
-  localStorage.removeItem("user");
-  window.location.href = "/src/partials/layout/login_pages.html";
-});
 
 
 })();

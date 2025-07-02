@@ -13,8 +13,8 @@
     <div class="navbar-menu" id="navbar-menu">
       <div class="nav-item"><img src="../assets/media/svg/simpanan.svg" class="svg"><a href="simpanan_u.html">Simpanan</a></div>
       <div class="nav-item"><img src="../assets/media/svg/pinjaman.svg" class="svg"><a href="pinjaman_u.html">Pinjaman</a></div>
-      <div class="logout">
-        <img src="../assets/media/svg/log-out.svg" alt="Logout" class="svg"> <a href="logout.html">Logout</a>
+      <div class="logout" id="logout">
+        <img src="../assets/media/svg/log-out.svg" alt="Logout" class="svg"> <a>Logout</a>
       </div>
     </div>
 
@@ -25,10 +25,16 @@
   document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.getElementById('hamburger');
     const navbarMenu = document.getElementById('navbar-menu');
+    const logout = document.getElementById('logout');
 
     hamburger.addEventListener('click', function () {
       navbarMenu.classList.toggle('navbar-show');
       hamburger.classList.toggle('hamburger--active');
+    });
+
+    logout.addEventListener('click', function () {
+      localStorage.removeItem('user');
+      window.location.href = '/Beranda.html';
     });
   });
 </script>

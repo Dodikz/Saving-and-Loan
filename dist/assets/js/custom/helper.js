@@ -43,14 +43,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 function getUsers() {
   const saved = localStorage.getItem("users");
-  if (saved) return Promise.resolve(JSON.parse(saved));
 
-  return fetch("assets/js/custom/users.json")
+  if (saved) {
+    try {
+      const parsed = JSON.parse(saved);
+      if (Array.isArray(parsed) && parsed.length > 0) {
+        console.log("User dari localStorage:", parsed);
+        return Promise.resolve(parsed);
+      }
+    } catch (err) {
+      console.warn("Gagal parse localStorage, fetch ulang.");
+    }
+  }
+
+  return fetch("../assets/data/users.json")
     .then((res) => {
       if (!res.ok) throw new Error("user.json not found");
       return res.json();
     })
     .then((data) => {
+      console.log("User dari file JSON:", data);
+
+      if (!Array.isArray(data)) {
+        throw new Error("Format users.json harus array");
+      }
+
       localStorage.setItem("users", JSON.stringify(data));
       return data;
     })
