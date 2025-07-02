@@ -27,7 +27,7 @@ function getUsers() {
     }
   }
 
-  return fetch("../assets/data/users.json")
+  return fetch("./assets/data/users.json")
     .then((res) => {
       if (!res.ok) throw new Error("user.json not found");
       return res.json();
