@@ -206,6 +206,11 @@ module.exports = {
           from: path.resolve(srcPath, 'assets/plugins'),
           to: path.resolve(distPath, 'assets/plugins'),
           noErrorOnMissing: true
+        },
+        {
+          from: path.resolve(srcPath, 'assets/data'),
+          to: path.resolve(distPath, 'assets/data'),
+          noErrorOnMissing: true
         }
       ]
     }),
@@ -235,3 +240,4 @@ module.exports = {
   /** What bundle information gets displayed */
   stats: isProduction ? 'errors-warnings' : 'errors-only',
 }
+
