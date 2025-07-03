@@ -93,81 +93,35 @@ License: -
 
 
    
-
 <section class="simpanan-user-section">
-    <div class="container container-simpanan">
-        <div class="table-container">
-            <h4>Riwayat Simpanan Anda</h4>
-            <table>
-                <thead>
-                    <tr>
-                        <th>No</th>
-                        <th>Keterangan</th>
-                        <th>Tanggal</th>
-                        <th>Nominal</th>
-                        <th>Pembayaran</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class="item">
-                                <div class="item-content">
-                                    1
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="item">
-                                <div class="item-content">
-                                    Simpanan Wajib
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="item">
-                                <div class="item-content">
-                                    12 Apr 2025
-                                </div>
-                                
-                            </div>
-                        </td>
-                        <td>
-                            <div class="item">
-                                <div class="item-content">
-                                    Rp. 1.400.000
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="item">
-                                <div class="item-content">
-                                    BCA
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="item">
-                                <span class="badge aktif">Lunas</span>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
+  <div class="container container-simpanan">
+    <div class="table-container">
+      <h4>Riwayat Simpanan Anda</h4>
+      <table>
+        <thead>
+          <tr>
+            <th>No</th>
+            <th>Keterangan</th>
+            <th>Tanggal</th>
+            <th>Nominal</th>
+            <th>Pembayaran</th>
+            <th>Status</th>
+          </tr>
+        </thead>
 
-            <div class="pagination">
-                <button>&lt;</button>
-                <button class="active">1</button>
-                <button>2</button>
-                <button>3</button>
-                <button>&gt;</button>
-            </div>
-        </div>
+        <tbody id="simpananTableBody">
+          <tr>
+            <td colspan="6">Memuat data...</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="pagination" id="paginationContainer"></div>
     </div>
+  </div>
 </section>
 
-
+<script type="module" src="/assets/js/custom/simpanan_u.js"></script>
 
  
 

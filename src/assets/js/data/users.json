@@ -5,91 +5,58 @@
     "role": "admin"
   },
   {
-    "username": "1122334455",
-    "password": "user123",
+    "username": "dodik",
+    "password": "123456",
     "role": "user",
     "pinjaman": [
       {
-        "id": 1,
-        "amount": 5000000,
-        "status": "approved"
-      },
-      {
-        "id": 2,
-        "amount": 3000000,
-        "status": "pending"
+        "keterangan": "Pinjaman Wajib",
+        "tanggal": "12 Apr 2025",
+        "nominal": 1400000,
+        "status": "Lunas",
+        "detail": {
+          "total": 50000000,
+          "cicilan": [
+            {
+              "bulan": 1,
+              "keterangan": "Tunai",
+              "tanggal": "7 Mei 2025",
+              "dibayar": 10000000,
+              "status": "Dibayar"
+            },
+            {
+              "bulan": 2,
+              "keterangan": "Transfer",
+              "tanggal": "10 Mei 2025",
+              "dibayar": 10000000,
+              "status": "Belum Dibayar"
+            },
+            {
+              "bulan": 3,
+              "keterangan": "Transfer",
+              "tanggal": "15 Mei 2025",
+              "dibayar": 0,
+              "status": "Belum Dibayar"
+            }
+          ]
+        }
       }
     ],
-    "simpanan": [
+    "simpanan": [ 
       {
-        "id": 1,
-        "amount": 1000000,
-        "type": "savings"
+        "keterangan": "Simpanan Wajib",
+        "tanggal": "12 Apr 2025",
+        "nominal": 1000000,
+        "status": "Aktif",
+        "pembayaran": "Tunai"
       },
       {
-        "id": 2,
-        "amount": 2000000,
-        "type": "fixed"
-      }
-    ]
-  },
-  {
-    "username": "1234512345",
-    "password": "user123",
-    "role": "user",
-    "pinjaman": [
-      {
-        "id": 1,
-        "amount": 5000000,
-        "status": "approved"
-      },
-      {
-        "id": 2,
-        "amount": 3000000,
-        "status": "pending"
-      }
-    ],
-    "simpanan": [
-      {
-        "id": 1,
-        "amount": 1000000,
-        "type": "savings"
-      },
-      {
-        "id": 2,
-        "amount": 2000000,
-        "type": "fixed"
-      }
-    ]
-  },
-  {
-    "username": "0987609876",
-    "password": "user123",
-    "role": "user",
-    "pinjaman": [
-      {
-        "id": 1,
-        "amount": 5000000,
-        "status": "approved"
-      },
-      {
-        "id": 2,
-        "amount": 3000000,
-        "status": "pending"
-      }
-    ],
-    "simpanan": [
-      {
-        "id": 1,
-        "amount": 1000000,
-        "type": "savings"
-      },
-      {
-        "id": 2,
-        "amount": 2000000,
-        "type": "fixed"
+        "keterangan": "Simpanan Sukarela",
+        "tanggal": "12 Apr 2025",
+        "nominal": 500000,
+        "pembayaran": "BCA",
+        "status": "Aktif"
       }
     ]
   }
 ]
-

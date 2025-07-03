@@ -6,7 +6,10 @@ document.addEventListener("DOMContentLoaded", async () => {
   const userData = JSON.parse(localStorage.getItem("user"));
   if (!userData) return;
 
-  const res = await fetch("/src/assets/data/users.json");
+  const res = await fetch("../assets/js/data/users.json?v=" + Date.now());
+    if (!res.ok) {
+      throw new Error("user.json not found");
+    }
   const users = await res.json();
 
   const currentUser = users.find(u => u.username === userData.username);
@@ -19,7 +22,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
 function renderTable() {
   const tableBody = document.getElementById("pinjamanTableBody");
-  tableBody.innerHTML = "";
+  if (!tableBody) return;
 
   const startIndex = (currentPage - 1) * itemsPerPage;
   const currentItems = userPinjaman.slice(startIndex, startIndex + itemsPerPage);
@@ -45,7 +48,7 @@ function renderTable() {
 function renderPagination() {
   const totalPages = Math.ceil(userPinjaman.length / itemsPerPage);
   const container = document.getElementById("paginationContainer");
-  container.innerHTML = "";
+    if (!container) return;
 
   const prev = document.createElement("button");
   prev.innerHTML = "&lt;";

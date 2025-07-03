@@ -15,22 +15,17 @@
                         <th>Lihat Lebih Detail</th>
                     </tr>
                 </thead>
-                <tbody id="pinjamanTableBody">
-                </tbody>
-
+                <tbody id="pinjamanTableBody"></tbody>
             </table>
-
 
             <div id="view" class="modal" style="display: none;">
                 <div class="modal-content">
                     <span class="close" onclick="closeModal('view')">&times;</span>
-                    <h4>Detail pinjaman</h4>
-
+                    <h4>Detail Pinjaman</h4>
                     <div class="total-pinjaman">
                         <span class="label">Pinjaman :</span>
-                        <span class="nominal">Rp 50.000.000</span>
+                        <span class="nominal" id="totalPinjamanModal">Rp 0</span>
                     </div>
-
                     <table class="detail-pinjaman-table">
                         <thead>
                             <tr>
@@ -41,40 +36,16 @@
                                 <th>Status</th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Tunai</td>
-                                <td>7 Mei 2025</td>
-                                <td>Rp 10.000.000</td>
-                                <td><span class="badge lunas">Dibayar</span></td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Transfer</td>
-                                <td>10 Mei 2025</td>
-                                <td>Rp 10.000.000</td>
-                                <td><span class="badge belum">Belum Dibayar</span></td>
-                            </tr>
-                        </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="3"><strong>TOTAL DIBAYAR :</strong></td>
-                                <td colspan="2"><strong>Rp 20.000.000</strong></td>
-                            </tr>
-                            <tr>
-                                <td colspan="3"><strong>PERLU DIBAYAR :</strong></td>
-                                <td colspan="2"><strong>Rp 20.000.000</strong></td>
-                            </tr>
-                        </tfoot>
+                        <tbody id="cicilanBody"></tbody>
+                        <tfoot id="cicilanFooter"></tfoot>
                     </table>
                 </div>
             </div>
 
-            <div class="pagination" id="paginationContainer">
-            </div>
-
+            <div class="pagination" id="paginationContainer"></div>
         </div>
     </div>
 </section>
+
+
 {{/ ../partials/template_user.html }}
